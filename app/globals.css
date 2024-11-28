@@ -44,7 +44,8 @@ body {
 }
 
 .nav-link:hover {
-  color: #000;
+  color: #fef74b;
+  transform: scale(1.12);
 }
 
 .newsletter-button {
@@ -58,13 +59,20 @@ body {
 }
 
 .newsletter-button:hover {
-  background-color: #0056b3;
+  background-color: #f3ef98;
+  color: #504081;
 }
 
 .logo-link {
   display: inline-block;
   margin: 10px;
   cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.logo-link:hover {
+  transform: scale(1.1); 
+  filter: brightness(1.2);
 }
 
 .logo {
