@@ -8,7 +8,13 @@ export default function Home() {
         <Link href="/" className="logo-link">
           <Image src="/elifcakmaklogo.svg" alt="Elif Cakmak Logo" width={100} height={100} className="logo" />
         </Link>
-        <p className="header-subtitle">Your source for insights, apps, books, and more.</p>
+        <nav className="nav">
+          <Link href="/about" className="nav-link">About</Link>
+          <Link href="/podcast" className="nav-link">Podcast</Link>
+          <Link href="/apps" className="nav-link">Apps</Link>
+          <Link href="/books" className="nav-link">Books</Link>
+          <button className="newsletter-button">Newsletter</button>
+        </nav>
       </header>
       <main className="main-content">
         <section className="about-section">
@@ -23,4 +29,5 @@ export default function Home() {
     </div>
   );
 }
+
 
