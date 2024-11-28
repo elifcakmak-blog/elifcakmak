@@ -36,7 +36,7 @@ export default function Home() {
     <h1 className="text-4xl md:text-6xl font-thin tracking-tight mt-7 max-w-lg">with</h1>
     <h1 className="text-4xl md:text-6xl font-bold tracking-wider mt-4 text-yellow-300">Simplifying Tasks</h1>
     <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">Every tool you use can simplify your tasks and make work effortless.</p>
-    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">I'm on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
+    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">I&apos;m on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
     <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">Because when we simplify the process, we make work effortless, one system at a time.</p>
     <div className="mt-6 max-w-lg">
       <Link href="/about" className="btn-primary">Learn More</Link>
