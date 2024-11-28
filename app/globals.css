@@ -32,7 +32,7 @@ body {
 
 .nav {
   display: flex;
-  gap: 15px;
+  gap: 16px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -42,6 +42,7 @@ body {
   color: #504081;
   font-weight: 500;
   transition: color 0.3s;
+  position: relative; /* For positioning the dot */
 }
 
 .nav-link:hover {
@@ -49,8 +50,23 @@ body {
   transform: scale(1.12);
 }
 
+/* Add styles for active links */
+.nav-link.active::after {
+  content: '';
+  display: block;
+  width: 6px; /* Adjust size of the dot */
+  height: 6px; /* Adjust size of the dot */
+  background-color: #fef74b; /* Dot color */
+  border: 1px solid #939851; /* Border around the dot */
+  border-radius: 50%; /* Make it circular */
+  position: absolute;
+  right: -8px; /* Adjust spacing from the link */
+  top: 70%; /* Adjust this value to move the dot lower or higher */
+  transform: translateY(-50%);
+}
+
 .newsletter-button {
-  padding: 10px 20px;
+  padding: 3px 10px;
   background-color: #504081;
   color: #fef74b;
   border: none;
@@ -81,11 +97,6 @@ body {
   height: auto;
 }
 
-.header-subtitle {
-  color: #555;
-  margin-top: 10px;
-}
-
 .main-content {
   padding: 40px 20px;
   text-align: center;
@@ -101,6 +112,55 @@ body {
   line-height: 1.6;
 }
 
+
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; /* Vertically center by default */
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .relative.z-10 {
+  max-width: 90%; /* Restrict text width for all views */
+  margin: 0 auto; /* Center the content horizontally */
+  text-align: center; /* Center text by default */
+  padding: 0 16px; /* Add padding */
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #fef74b;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fcd34d;
+}
+
+.btn-secondary {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #fef74b;
+  font-weight: bold;
+  border: 2px solid #fef74b;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #fef74b;
+  color: #333;
+}
+
 .footer {
   margin-top: 40px;
   padding: 20px;
@@ -108,7 +168,6 @@ body {
   color: #fff;
   text-align: center;
 }
-
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
@@ -123,5 +182,26 @@ body {
 
   .logo {
     width: 160px; /* Resize logo for smaller screens */
+  }
+
+  .hero {
+    background-position: left center; /* Show the left side on smaller screens */
+    align-items: flex-start; /* Align content to the top for smaller screens */
+    padding-top: 20px;
+  }
+
+  .hero .relative.z-10 {
+    margin-top: 20px; /* Adjust the content margin for better spacing */
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero .relative.z-10 {
+    position: absolute;
+    right: 20px; /* Align text to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    text-align: right; /* Right-align the text */
   }
 }
