@@ -51,7 +51,7 @@ export default function Home() {
           <Image src="/portrait.jpg" alt="Elif Cakmak" width={150} height={150} className="mx-auto rounded-full" />
           <h2 className="text-3xl font-bold mt-6">About Me</h2>
           <p className="mt-4 text-lg text-gray-700">
-            Hi, I'm Elif! A passionate creator of inspiring podcasts, innovative apps, and captivating books. Let's explore the possibilities together.
+            Hi, I&apos;m Elif! A passionate creator of inspiring podcasts, innovative apps, and captivating books. Let&apos;s explore the possibilities together.
           </p>
         </div>
       </section>
