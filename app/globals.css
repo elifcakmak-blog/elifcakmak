@@ -115,6 +115,6 @@ body {
   }
 
   .logo {
-    width: 80px; /* Resize logo for smaller screens */
+    width: 160px; /* Resize logo for smaller screens */
   }
 }
