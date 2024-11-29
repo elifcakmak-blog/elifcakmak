@@ -69,7 +69,7 @@ export default function Home() {
     <div className="grid grid-cols-3 gap-8 mt-[-10px]">
       <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
         <h3 className="text-2xl text-[#fef74b] font-bold">4+</h3>
-        <p className="mt-2 text-[#efe1ff]">Years in DM & SD</p>
+        <p className="mt-2 text-[#efe1ff]">Years Expertise</p>
       </div>
       <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
         <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
@@ -89,7 +89,7 @@ export default function Home() {
       </div>
       <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
         <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
-        <p className="mt-2 text-[#efe1ff]">Books & Guides</p>
+        <p className="mt-2 text-[#efe1ff]">Publications</p>
       </div>
     </div>
   </div>
@@ -98,43 +98,48 @@ export default function Home() {
 
 
 
-      {/* Introduction Section */}
-      <section className="about-section py-16 text-center">
-        <div className="container mx-auto px-4">
-          <Image src="/portrait.jpg" alt="Elif Cakmak" width={150} height={150} className="mx-auto rounded-full" />
-          <h2 className="text-3xl font-bold mt-6">About Me</h2>
-          <p className="mt-4 text-lg text-gray-700">
-            Hi, I&apos;m Elif! A passionate creator of inspiring podcasts, innovative apps, and captivating books. Let&apos;s explore the possibilities together.
-          </p>
-        </div>
-      </section>
+<section className="about-section py-8 mb-8">
+  <div className="about-content px-8 ml-0">
+    <h1 className="text-4xl font-bold text-hover-yellow">About Elif</h1>
+    <p className="mt-4 text-3lg text-hover-yellow">Elif Cakmak is a data management expert, software developer, and content creator. With a passion for simplifying complex processes, she provides practical solutions that help individuals and businesses achieve effortless productivity. Through her tools and insights, she empowers others to work smarter and live better.</p>
+  </div>
+</section>
+
 
       {/* Services Section */}
-      <section className="services bg-gray-100 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center">What I Offer</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div className="service-card p-6 bg-white shadow-md rounded-md text-center">
-              <h3 className="text-xl font-bold">Podcasts</h3>
-              <p className="mt-2 text-gray-600">Listen to thought-provoking episodes on diverse topics.</p>
-              <Link href="/podcast" className="text-blue-500 hover:underline mt-4 block">Explore Podcasts</Link>
-            </div>
-            <div className="service-card p-6 bg-white shadow-md rounded-md text-center">
-              <h3 className="text-xl font-bold">Apps</h3>
-              <p className="mt-2 text-gray-600">Discover apps designed to simplify your life.</p>
-              <Link href="/apps" className="text-blue-500 hover:underline mt-4 block">Explore Apps</Link>
-            </div>
-            <div className="service-card p-6 bg-white shadow-md rounded-md text-center">
-              <h3 className="text-xl font-bold">Books</h3>
-              <p className="mt-2 text-gray-600">Read engaging and insightful stories.</p>
-              <Link href="/books" className="text-blue-500 hover:underline mt-4 block">Explore Books</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Services Section */}
+<section className="services bg-[#504081] py-16">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center text-yellow-400">EasyFlow Media Presents</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+        <h3 className="text-xl font-bold">Podcasts</h3>
+        <p className="mt-2 text-gray-600">Simplified Insights on Data and Software</p>
+        <Link href="/podcast">
+          <button className="btn-primary mt-4"> View Here</button>
+        </Link>
+      </div>
+      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+        <h3 className="text-xl font-bold">Apps</h3>
+        <p className="mt-2 text-gray-600">Conquer Tasks and Learning Objectives</p>
+        <Link href="/apps">
+          <button className="btn-primary mt-4"> View Here</button>
+        </Link>
+      </div>
+      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+        <h3 className="text-xl font-bold">Books</h3>
+        <p className="mt-2 text-gray-600"> Wise Wisdom To Aid Your Own Story</p>
+        <Link href="/books">
+          <button className="btn-primary mt-4">View Here</button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Call-to-Action Section */}
-      <section className="cta bg-blue-600 text-white py-16 text-center">
+      <section className="cta bg-[#504081] text-[#efe1ff] py-16 text-center">
         <h2 className="text-3xl font-bold">Join My Newsletter</h2>
         <p className="mt-4 text-lg">Stay updated on my latest projects and insights.</p>
         <button className="btn-primary mt-6">Subscribe Now</button>

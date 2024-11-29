@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #f5f5f5; /* Light background */
+  --background: #efe1ff; /* Light background */
   --foreground: #333; /* Dark text */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #efe1ff;
+    --foreground: #333;
   }
 }
 
@@ -126,6 +126,15 @@ body {
   justify-content: center;
   text-align: center;
   height: 70vh;
+  border: 10px solid #504081; /* Initial border color */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15);
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for border color and transform */
+}
+
+.hero:hover {
+  border-color: #fef74b; /* Change border color to yellow when hovered */
+  transform: translateY(-8px); /* Lifts the card on hover */
 }
 
 .hero .relative.z-10 {
@@ -159,10 +168,10 @@ body {
   background-color: #fef74b;
   color: #333;
   font-weight: bold;
-  border: 2px solid #fef74b;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: 2px solid #ccc61f; /* Dark purple border */
 }
 
 .btn-primary:hover {
@@ -186,8 +195,6 @@ body {
   color: #333;
 }
 
-
-
 .stat-card {
   transition: background-color 0.3s, color 0.3s;
   display: flex;
@@ -207,6 +214,110 @@ body {
   50% { transform: rotate(-10deg); }
   75% { transform: rotate(10deg); }
   100% { transform: rotate(0deg); }
+}
+
+.about-section {
+  background-image: url('/images/aboutbackground.png'); /* Adjust the image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating the background */
+  border: 10px solid #504081; /* Border color and thickness */
+  border-radius: 16px; /* Rounded corners */
+  padding: 40px; /* Padding inside the section */
+  height: 500px; /* Adjust the height as necessary */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15); /* Shadow effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+  z-index: 1; /* Ensures the section appears on top */
+  color: #333; /* Dark text color */
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  overflow: hidden; /* Prevents overflow */
+  position: relative;
+}
+
+
+.about-content {
+  max-width: 50%; /* Limits the content width to half of the screen */
+  text-align: left; /* Left-aligns the text */
+  padding: 0 20px;
+  overflow: auto;
+}
+
+.about-section:hover {
+  transform: translateY(-8px); /* Lifts the card on hover */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3), 0 -8px 24px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover with top shadow */
+  border-color: #fef74b;
+}
+
+.about-section h1, .about-section p {
+  display: block; /* Ensures it takes up space */
+  width: 100%; /* Full width of its parent */
+  padding: 20px; /* Add padding as needed */
+  box-sizing: border-box; /* Include padding in width calculation */
+  overflow: visible; /* Prevent scroll bars */
+}
+
+.about-section h1::before, .about-section p::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute;
+  top: -8px; /* Align with the top of the text */
+  left: -12px; /* Align with the left of the text */
+  width: calc(100% + 24px); /* Make the card wider horizontally */
+  height: calc(100% + 16px); /* Make the card taller vertically */
+  background-color: #504081; /* Dark purple background */
+  z-index: -1; /* Place behind the text */
+  border-radius: 8px; /* Optional: Rounded corners */
+  transform: scale(0.9); /* Start slightly smaller for a subtle animation effect */
+  opacity: 0; /* Initially hidden */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for appearance */
+}
+
+.about-section h1:hover::before, .about-section p:hover::before {
+  transform: scale(1); /* Expand to full size */
+  opacity: 1; /* Make visible */
+}
+
+.about-section h1:hover, .about-section p:hover {
+  color: #fef74b; /* Change text color to yellow */
+}
+
+.about-section h1 {
+  color: #333; /* Darker color for the heading */
+  text-align: left; /* Left-aligns the heading */
+}
+
+.about-section p {
+  color: #333; /* Darker color for the paragraph */
+  text-align: left; /* Left-aligns the paragraph */
+  margin-top: 1rem; /* Adds top margin */
+}
+
+.services h2, .services a {
+  color: #fef74b; /* Yellow color */
+}
+
+.services p, .services h3 {
+  color: #504081;
+}
+.cta {
+  width: 100%; /* Full width of the viewport */
+  max-width: 100%; /* Ensures it does not exceed the viewport width */
+  border: 10px solid #504081; /* Initial border color */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15);
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  padding: 20px; /* Padding inside the section */
+  display: block; /* Ensures it takes the full width */
+  margin: 0 auto; /* Centering */
+  box-sizing: border-box; /* Includes padding in the width */
+  margin-top: 40px;
+}
+
+/* Hover effect */
+.cta:hover {
+  border-color: #fef74b; /* Change border color to yellow on hover */
+  transform: translateY(-8px); /* Lifts the card on hover */
 }
 
 
@@ -243,7 +354,29 @@ body {
     margin-top: 20px; /* Adjust the content margin for better spacing */
     padding: 0 16px;
   }
+  .about-content {
+    max-width: 90%; /* Adjust width for smaller screens */
+    padding: 0 10px; /* Reduce padding for better fitting */
+  }
+
+  /* Optional: Make sure content can wrap to a new line */
+.about-content h1, .about-content p {
+  word-wrap: break-word; /* Ensures long words break and don't overflow */
 }
+
+.about-section h1, .about-section p {
+  color: #333;
+}
+
+.about-section p {
+  margin-top: 1rem;
+}
+
+}
+
+
+
+
 
 @media (min-width: 1024px) {
   .hero .relative.z-10 {
