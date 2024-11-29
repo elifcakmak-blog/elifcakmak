@@ -106,30 +106,64 @@ export default function Home() {
 </section>
 
 
-      {/* Services Section */}
-      {/* Services Section */}
-<section className="services bg-[#504081] py-16">
+   {/* Services Section */}
+<section className="services bg-[#504081] py-16 relative opacity-80 overflow-hidden">
+  <div className="rain">
+    {/* Adding multiple layers of rain for a stronger effect */}
+    {Array.from({ length: 20 }).map((_, index) => (
+      <div
+        key={index}
+        className="rain-drop"
+        style={{ animationDelay: `${index * 0.1}s`, left: `${Math.random() * 100}vw` }}
+      ></div>
+    ))}
+  </div>
   <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center text-yellow-400">EasyFlow Media Presents</h2>
+    <div className="services-content text-center mb-8">
+      <div className="bg-[#fef74b] p-6 rounded-lg shadow-lg inline-block animate-spinShake border-4 border-[#1c0e45] hover:transform hover:translateY(-8px) transition-transform">
+        <h2 className="text-3xl font-bold text-[#504081]">EasyFlow Media Presents</h2>
+      </div>
+    </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+      <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
         <h3 className="text-xl font-bold">Podcasts</h3>
         <p className="mt-2 text-gray-600">Simplified Insights on Data and Software</p>
         <Link href="/podcast">
           <button className="btn-primary mt-4">Explore</button>
         </Link>
       </div>
-      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+      <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
         <h3 className="text-xl font-bold">Apps</h3>
         <p className="mt-2 text-gray-600">Conquer Tasks and Learning Objectives</p>
         <Link href="/apps">
           <button className="btn-primary mt-4">Explore</button>
         </Link>
       </div>
-      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+      <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
         <h3 className="text-xl font-bold">Books</h3>
-        <p className="mt-2 text-gray-600"> Wise Wisdom To Aid Your Own Story</p>
+        <p className="mt-2 text-gray-600">Wise Wisdom To Aid Your Own Story</p>
         <Link href="/books">
+          <button className="btn-primary mt-4">Explore</button>
+        </Link>
+      </div>
+      <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+        <h3 className="text-xl font-bold">Courses</h3>
+        <p className="mt-2 text-gray-600">Learn, Grow, and Achieve Mastery</p>
+        <Link href="/courses">
+          <button className="btn-primary mt-4">Explore</button>
+        </Link>
+      </div>
+      <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+        <h3 className="text-xl font-bold">Contact</h3>
+        <p className="mt-2 text-gray-600">Get In Touch for More Information</p>
+        <Link href="/contact">
+          <button className="btn-primary mt-4">Reach Out</button>
+        </Link>
+      </div>
+      <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+        <h3 className="text-xl font-bold">Effortless Works</h3>
+        <p className="mt-2 text-gray-600">Simplify Your Tasks Effortlessly</p>
+        <Link href="/contact">
           <button className="btn-primary mt-4">Explore</button>
         </Link>
       </div>
@@ -138,9 +172,11 @@ export default function Home() {
 </section>
 
 
+
+
       {/* Call-to-Action Section */}
       <section className="cta bg-[#504081] text-[#efe1ff] py-16 text-center">
-        <h2 className="text-3xl font-bold">Join My Newsletter</h2>
+        <h2 className="text-3xl font-bold text-[#4bfe5a]">Join My Newsletter</h2>
         <p className="mt-4 text-lg">Stay updated on my latest projects and insights.</p>
         <button className="btn-primary mt-6">Subscribe Now</button>
       </section>
