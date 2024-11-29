@@ -49,12 +49,12 @@ export default function Home() {
 
         {/* Content */}
   <div className="relative z-10 text-white max-w-xl">
-    <h1 className="text-3xl md:text-4xl font-thin tracking-tight">Effortless Work Begins</h1>
-    <h1 className="text-3xl md:text-4xl font-thin tracking-tight mt-7 max-w-lg">with</h1>
-    <h1 className="text-3xl md:text-4xl font-bold tracking-wider mt-4 text-yellow-300">Simplifying Tasks</h1>
-    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">Every tool you use can simplify your tasks and make work effortless.</p>
-    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">I&apos;m on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
-    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">Because when we simplify the process, we make work effortless, one system at a time.</p>
+    <h1 className="text-3xl md:text-4xl font-thin tracking-tight text-hover-yellow">Effortless Work Begins</h1>
+    <h1 className="text-3xl md:text-4xl font-thin tracking-tight mt-7 max-w-lg text-hover-yellow">with</h1>
+    <h1 className="text-3xl md:text-4xl font-bold tracking-wider mt-4 text-yellow-300 text-hover-grow">Simplifying Tasks</h1>
+    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Every tool you use can simplify your tasks and make work effortless.</p>
+    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">I&apos;m on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
+    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we simplify the process, we make work effortless, one system at a time.</p>
     <div className="mt-6 max-w-lg">
       <Link href="/about" className="btn-primary">Learn More</Link>
       <Link href="/contact" className="btn-secondary ml-4">Contact Me</Link>
@@ -62,43 +62,84 @@ export default function Home() {
   </div>
 </section>
 
-      {/* Introduction Section */}
-      <section className="about-section py-16 text-center">
-        <div className="container mx-auto px-4">
-          <Image src="/portrait.jpg" alt="Elif Cakmak" width={150} height={150} className="mx-auto rounded-full" />
-          <h2 className="text-3xl font-bold mt-6">About Me</h2>
-          <p className="mt-4 text-lg text-gray-700">
-            Hi, I&apos;m Elif! A passionate creator of inspiring podcasts, innovative apps, and captivating books. Let&apos;s explore the possibilities together.
-          </p>
-        </div>
-      </section>
+
+{/* Statistics Section */}
+<section className="statistics h-70 py-8 bg-[#efe1ff]">
+  <div className="container mx-auto px-8">
+    <div className="grid grid-cols-3 gap-8 mt-[-10px]">
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">4+</h3>
+        <p className="mt-2 text-[#efe1ff]">Years Expertise</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Media Creations</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Digital Products</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Podcast Episodes</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Apps Developed</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Publications</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section className="about-section py-8 mb-8">
+  <div className="about-content px-8 ml-0">
+    <h1 className="text-4xl font-bold text-hover-yellow">About Elif</h1>
+    <p className="mt-4 text-3lg text-hover-yellow">Elif Cakmak is a data management expert, software developer, and content creator. With a passion for simplifying complex processes, she provides practical solutions that help individuals and businesses achieve effortless productivity. Through her tools and insights, she empowers others to work smarter and live better.</p>
+  </div>
+</section>
+
 
       {/* Services Section */}
-      <section className="services bg-gray-100 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center">What I Offer</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div className="service-card p-6 bg-white shadow-md rounded-md text-center">
-              <h3 className="text-xl font-bold">Podcasts</h3>
-              <p className="mt-2 text-gray-600">Listen to thought-provoking episodes on diverse topics.</p>
-              <Link href="/podcast" className="text-blue-500 hover:underline mt-4 block">Explore Podcasts</Link>
-            </div>
-            <div className="service-card p-6 bg-white shadow-md rounded-md text-center">
-              <h3 className="text-xl font-bold">Apps</h3>
-              <p className="mt-2 text-gray-600">Discover apps designed to simplify your life.</p>
-              <Link href="/apps" className="text-blue-500 hover:underline mt-4 block">Explore Apps</Link>
-            </div>
-            <div className="service-card p-6 bg-white shadow-md rounded-md text-center">
-              <h3 className="text-xl font-bold">Books</h3>
-              <p className="mt-2 text-gray-600">Read engaging and insightful stories.</p>
-              <Link href="/books" className="text-blue-500 hover:underline mt-4 block">Explore Books</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Services Section */}
+<section className="services bg-[#504081] py-16">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center text-yellow-400">EasyFlow Media Presents</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+        <h3 className="text-xl font-bold">Podcasts</h3>
+        <p className="mt-2 text-gray-600">Simplified Insights on Data and Software</p>
+        <Link href="/podcast">
+          <button className="btn-primary mt-4">Explore</button>
+        </Link>
+      </div>
+      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+        <h3 className="text-xl font-bold">Apps</h3>
+        <p className="mt-2 text-gray-600">Conquer Tasks and Learning Objectives</p>
+        <Link href="/apps">
+          <button className="btn-primary mt-4">Explore</button>
+        </Link>
+      </div>
+      <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
+        <h3 className="text-xl font-bold">Books</h3>
+        <p className="mt-2 text-gray-600"> Wise Wisdom To Aid Your Own Story</p>
+        <Link href="/books">
+          <button className="btn-primary mt-4">Explore</button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Call-to-Action Section */}
-      <section className="cta bg-blue-600 text-white py-16 text-center">
+      <section className="cta bg-[#504081] text-[#efe1ff] py-16 text-center">
         <h2 className="text-3xl font-bold">Join My Newsletter</h2>
         <p className="mt-4 text-lg">Stay updated on my latest projects and insights.</p>
         <button className="btn-primary mt-6">Subscribe Now</button>
