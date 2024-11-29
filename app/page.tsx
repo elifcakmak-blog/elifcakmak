@@ -66,7 +66,7 @@ export default function Home() {
 {/* Statistics Section */}
 <section className="statistics h-70 py-8 bg-[#efe1ff]">
   <div className="container mx-auto px-8">
-    <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-8 mt-[-10px]">
+    <div className="grid grid-cols-3 gap-8 mt-[-10px]">
       <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
         <h3 className="text-2xl text-[#fef74b] font-bold">4+</h3>
         <p className="mt-2 text-[#efe1ff]">Years in DM & SD</p>
@@ -94,6 +94,8 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+
 
 
       {/* Introduction Section */}
