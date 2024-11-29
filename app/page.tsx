@@ -116,21 +116,21 @@ export default function Home() {
         <h3 className="text-xl font-bold">Podcasts</h3>
         <p className="mt-2 text-gray-600">Simplified Insights on Data and Software</p>
         <Link href="/podcast">
-          <button className="btn-primary mt-4"> View Here</button>
+          <button className="btn-primary mt-4">Explore</button>
         </Link>
       </div>
       <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
         <h3 className="text-xl font-bold">Apps</h3>
         <p className="mt-2 text-gray-600">Conquer Tasks and Learning Objectives</p>
         <Link href="/apps">
-          <button className="btn-primary mt-4"> View Here</button>
+          <button className="btn-primary mt-4">Explore</button>
         </Link>
       </div>
       <div className="service-card p-6 bg-[#efe1ff] shadow-md rounded-md text-center">
         <h3 className="text-xl font-bold">Books</h3>
         <p className="mt-2 text-gray-600"> Wise Wisdom To Aid Your Own Story</p>
         <Link href="/books">
-          <button className="btn-primary mt-4">View Here</button>
+          <button className="btn-primary mt-4">Explore</button>
         </Link>
       </div>
     </div>
