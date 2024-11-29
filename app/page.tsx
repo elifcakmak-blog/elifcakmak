@@ -49,18 +49,52 @@ export default function Home() {
 
         {/* Content */}
   <div className="relative z-10 text-white max-w-xl">
-    <h1 className="text-3xl md:text-4xl font-thin tracking-tight">Effortless Work Begins</h1>
-    <h1 className="text-3xl md:text-4xl font-thin tracking-tight mt-7 max-w-lg">with</h1>
-    <h1 className="text-3xl md:text-4xl font-bold tracking-wider mt-4 text-yellow-300">Simplifying Tasks</h1>
-    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">Every tool you use can simplify your tasks and make work effortless.</p>
-    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">I&apos;m on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
-    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right">Because when we simplify the process, we make work effortless, one system at a time.</p>
+    <h1 className="text-3xl md:text-4xl font-thin tracking-tight text-hover-yellow">Effortless Work Begins</h1>
+    <h1 className="text-3xl md:text-4xl font-thin tracking-tight mt-7 max-w-lg text-hover-yellow">with</h1>
+    <h1 className="text-3xl md:text-4xl font-bold tracking-wider mt-4 text-yellow-300 text-hover-grow">Simplifying Tasks</h1>
+    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Every tool you use can simplify your tasks and make work effortless.</p>
+    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">I&apos;m on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
+    <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we simplify the process, we make work effortless, one system at a time.</p>
     <div className="mt-6 max-w-lg">
       <Link href="/about" className="btn-primary">Learn More</Link>
       <Link href="/contact" className="btn-secondary ml-4">Contact Me</Link>
     </div>
   </div>
 </section>
+
+
+{/* Statistics Section */}
+<section className="statistics h-70 py-8 bg-[#efe1ff]">
+  <div className="container mx-auto px-8">
+    <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-8 mt-[-10px]">
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">4+</h3>
+        <p className="mt-2 text-[#efe1ff]">Years in DM & SD</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Media Creations</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Digital Products</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Podcast Episodes</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Apps Developed</p>
+      </div>
+      <div className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
+        <h3 className="text-2xl text-[#fef74b] font-bold">0+</h3>
+        <p className="mt-2 text-[#efe1ff]">Books & Guides</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Introduction Section */}
       <section className="about-section py-16 text-center">
