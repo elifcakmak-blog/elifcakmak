@@ -38,7 +38,6 @@ export default function Home() {
           <Link href="/newsletter" className="newsletter-button" onClick={() => handleLinkClick('/newsletter')}>Newsletter</Link>
         </nav>
       </header>
-
       {/* Hero Section */}
       <section
         className="hero bg-cover bg-center text-center flex items-center justify-center h-screen relative"

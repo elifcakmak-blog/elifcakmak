@@ -80,6 +80,10 @@ body {
   color: #504081;
 }
 
+.newsletter-button.active::after {
+  display: none; /* No yellow dot for the newsletter button */
+}
+
 .logo-link {
   display: inline-block;
   margin: 10px;
@@ -121,6 +125,7 @@ body {
   align-items: center; /* Vertically center by default */
   justify-content: center;
   text-align: center;
+  height: 70vh;
 }
 
 .hero .relative.z-10 {
