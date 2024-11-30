@@ -31,7 +31,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
           <Link 
             href="https://www.effortlessworks.elifcakmak.blog/" 
             className="btn-primary"
-            target="_blank" // Optional: Opens the link in a new tab
+            target="_blank" // Opens the link in a new tab
             rel="noopener noreferrer" // Security best practice
           >
             Learn More
@@ -39,7 +39,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
           <Link 
             href="https://discord.com/invite/mr7K6eaC" 
             className="btn-secondary"
-            target="_blank" // Optional: Opens the link in a new tab
+            target="_blank" //Opens the link in a new tab
             rel="noopener noreferrer" // Security best practice
           >
             Join Discord

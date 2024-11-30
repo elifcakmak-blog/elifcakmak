@@ -1,5 +1,5 @@
 .about-section {
-    background-image: url('/images/aboutbackground.png'); /* Adjust the image path */
+    background-image: url('/images/aboutbackground.png');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents repeating the background */
@@ -21,7 +21,7 @@
   
   .about-content {
     max-width: 50%; /* Limits the content width to half of the screen */
-    text-align: left; /* Left-aligns the text */
+    text-align: left;
     padding: 0 20px;
     overflow: auto;
   }
@@ -34,8 +34,8 @@
   
   .about-section h1, .about-section p {
     display: block; /* Ensures it takes up space */
-    width: 100%; /* Full width of its parent */
-    padding: 20px; /* Add padding as needed */
+    width: 100%;
+    padding: 20px; 
     box-sizing: border-box; /* Include padding in width calculation */
     overflow: visible; /* Prevent scroll bars */
   }
@@ -49,8 +49,8 @@
     height: calc(100% + 16px); /* Make the card taller vertically */
     background-color: #504081; /* Dark purple background */
     z-index: -1; /* Place behind the text */
-    border-radius: 8px; /* Optional: Rounded corners */
-    transform: scale(0.9); /* Start slightly smaller for a subtle animation effect */
+    border-radius: 8px; /* Rounded corners */
+    transform: scale(0.9); /* subtle animation effect */
     opacity: 0; /* Initially hidden */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for appearance */
   }
@@ -82,7 +82,7 @@
       padding: 0 10px; /* Reduce padding for better fitting */
     }
   
-    /* Optional: Make sure content can wrap to a new line */
+    /* Make sure content can wrap to a new line */
   .about-content h1, .about-content p {
     word-wrap: break-word; /* Ensures long words break and don't overflow */
   }

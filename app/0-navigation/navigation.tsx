@@ -1,9 +1,8 @@
-"use client"; // Add this directive if you are using Next.js with client components
+"use client";
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation'; // Import to get the current path
-import './navigation.css';
+import { usePathname } from 'next/navigation';
 
 const Navigation = () => {
   const pathname = usePathname(); // Get current path

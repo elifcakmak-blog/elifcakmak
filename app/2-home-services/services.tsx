@@ -6,7 +6,7 @@ const ServicesSection: React.FC = () => {
   return (
     <section className="services bg-[#504081] py-16 relative opacity-80 overflow-hidden">
       <div className="rain">
-        {/* Adding multiple layers of rain for a stronger effect */}
+        {/*multiple layers of rain for a stronger effect */}
         {Array.from({ length: 20 }).map((_, index) => (
           <div
             key={index}
@@ -25,21 +25,21 @@ const ServicesSection: React.FC = () => {
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
             <h3 className="text-xl font-bold">Podcasts</h3>
             <p className="mt-2 text-gray-600">Simplified Insights on Data and Software</p>
-            <Link href="/podcast">
+            <Link href="/1-podcast">
               <button className="btn-primary mt-4">Listen</button>
             </Link>
           </div>
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
             <h3 className="text-xl font-bold">Apps</h3>
             <p className="mt-2 text-gray-600">Conquer Tasks and Learning Objectives</p>
-            <Link href="/apps">
+            <Link href="/1-apps">
               <button className="btn-primary mt-4">Download</button>
             </Link>
           </div>
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
             <h3 className="text-xl font-bold">Books</h3>
             <p className="mt-2 text-gray-600">Wise Wisdom To Aid Your Own Story</p>
-            <Link href="/books">
+            <Link href="/1-books">
               <button className="btn-primary mt-4">Read</button>
             </Link>
           </div>

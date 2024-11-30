@@ -1,6 +1,6 @@
-"use client"; // Add this directive to make this a client component
+"use client";
 
-import Navigation from '../0-navigation/navigation'; // Adjust the path as needed
+import Navigation from '../0-navigation/navigation';
 import './newsletter.css';
 
 export default function Home() {

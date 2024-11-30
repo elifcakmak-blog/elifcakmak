@@ -19,8 +19,7 @@
     border-color: #f9f234; /* Change border color to yellow on hover */
     transform: translateY(-8px); /* Lifts the section on hover */
   }
-  
-  
+
   .rain {
     position: absolute;
     top: 0;
@@ -63,7 +62,6 @@
   .rain-drop:nth-child(2) { animation-delay: 0.1s; }
   .rain-drop:nth-child(3) { animation-delay: 0.2s; }
   .rain-drop:nth-child(4) { animation-delay: 0.3s; }
-  /* Add more variations as needed */
   
   
   

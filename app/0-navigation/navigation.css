@@ -20,7 +20,7 @@
     color: #504081;
     font-weight: 500;
     transition: color 0.3s;
-    position: relative; /* For positioning the dot */
+    position: relative;
   }
   
   .nav-link:hover {
@@ -28,7 +28,6 @@
     transform: scale(1.12);
   }
   
-  /* Add styles for active links */
   .nav-link.active::after {
     content: '';
     display: block;

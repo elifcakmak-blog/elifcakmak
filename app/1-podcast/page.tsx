@@ -1,6 +1,6 @@
-"use client"; // Add this directive to make this a client component
+"use client";
 
-import UnderConstruction from '../3-UnderConstruction/UnderConstruction'; // Import the new component
+import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
 import Navigation from '../0-navigation/navigation';
 
 export default function Home() {
