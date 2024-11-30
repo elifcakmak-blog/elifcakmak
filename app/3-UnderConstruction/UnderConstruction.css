@@ -8,8 +8,8 @@
     text-align: center;
     margin: 0 auto;
     position: relative;
-    top: 150px; /* Adjust as needed */
-    margin-bottom: 410px; /* Add this line for more space before the footer */
+    top: 150px;
+    margin-bottom: 410px; /* more space before the footer */
   }
   
   .floating-card:hover {
