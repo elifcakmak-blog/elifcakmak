@@ -56,8 +56,22 @@ export default function Home() {
     <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">I&apos;m on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
     <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we simplify the process, we make work effortless, one system at a time.</p>
     <div className="mt-6 max-w-lg">
-      <Link href="/about" className="btn-primary">Learn More</Link>
-      <Link href="/contact" className="btn-secondary ml-4">Contact Me</Link>
+    <Link 
+        href="https://www.effortlessworks.elifcakmak.blog/" 
+        className="btn-primary"
+        target="_blank" // Optional: Opens the link in a new tab
+        rel="noopener noreferrer" // Security best practice
+      >
+        Learn More
+      </Link>
+      <Link 
+        href="https://discord.com/invite/mr7K6eaC" 
+        className="btn-secondary"
+        target="_blank" // Optional: Opens the link in a new tab
+        rel="noopener noreferrer" // Security best practice
+      >
+        Join Discord
+      </Link>
     </div>
   </div>
 </section>
@@ -129,42 +143,50 @@ export default function Home() {
         <h3 className="text-xl font-bold">Podcasts</h3>
         <p className="mt-2 text-gray-600">Simplified Insights on Data and Software</p>
         <Link href="/podcast">
-          <button className="btn-primary mt-4">Explore</button>
+          <button className="btn-primary mt-4">Listen</button>
         </Link>
       </div>
       <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
         <h3 className="text-xl font-bold">Apps</h3>
         <p className="mt-2 text-gray-600">Conquer Tasks and Learning Objectives</p>
         <Link href="/apps">
-          <button className="btn-primary mt-4">Explore</button>
+          <button className="btn-primary mt-4">Download</button>
         </Link>
       </div>
       <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
         <h3 className="text-xl font-bold">Books</h3>
         <p className="mt-2 text-gray-600">Wise Wisdom To Aid Your Own Story</p>
         <Link href="/books">
-          <button className="btn-primary mt-4">Explore</button>
+          <button className="btn-primary mt-4">Read</button>
         </Link>
       </div>
       <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
         <h3 className="text-xl font-bold">Courses</h3>
         <p className="mt-2 text-gray-600">Learn, Grow, and Achieve Mastery</p>
-        <Link href="/courses">
-          <button className="btn-primary mt-4">Explore</button>
+        <Link href="https://www.effortlessworks.elifcakmak.blog/courses"
+        target="_blank"
+        rel="noopener noreferrer">
+          <button className="btn-primary mt-4">Learn</button>
         </Link>
       </div>
       <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
-        <h3 className="text-xl font-bold">Contact</h3>
-        <p className="mt-2 text-gray-600">Get In Touch for More Information</p>
-        <Link href="/contact">
-          <button className="btn-primary mt-4">Reach Out</button>
+        <h3 className="text-xl font-bold">Discord</h3>
+        <p className="mt-2 text-gray-600">Join Our Productivity Community</p>
+        <Link href="https://discord.com/invite/mr7K6eaC"
+        target="_blank"
+        rel="noopener noreferrer">
+          <button className="btn-primary mt-4">Join</button>
+          
         </Link>
       </div>
       <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
         <h3 className="text-xl font-bold">Effortless Works</h3>
         <p className="mt-2 text-gray-600">Simplify Your Tasks Effortlessly</p>
-        <Link href="/contact">
-          <button className="btn-primary mt-4">Explore</button>
+        <Link href="https://www.effortlessworks.elifcakmak.blog/"
+        target="_blank"
+        rel="noopener noreferrer">
+          <button className="btn-primary mt-4">Simplify</button>
+          
         </Link>
       </div>
     </div>
@@ -178,7 +200,9 @@ export default function Home() {
       <section className="cta bg-[#504081] text-[#efe1ff] py-16 text-center">
         <h2 className="text-3xl font-bold text-[#4bfe5a]">Join My Newsletter</h2>
         <p className="mt-4 text-lg">Stay updated on my latest projects and insights.</p>
-        <button className="btn-primary mt-6">Subscribe Now</button>
+        <Link href="/newsletter">
+          <button className="btn-primary mt-6">Subscribe Now</button>
+        </Link>
       </section>
 
       {/* Footer */}
