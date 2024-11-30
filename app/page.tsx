@@ -9,7 +9,6 @@ import AboutSection from './2-home-about/about'; // About Section Import
 import ServicesSection from './2-home-services/services'; // Services Section Import
 import NewsletterSection from './2-home-newsletter/newsletter'; //Newsletter Import
 import Footer from './0-footer/footer'; // Import Footer
-import { usePathname } from 'next/navigation'; // For the current path
 import { useState, useEffect } from 'react'; // For tracking screen size
 
 
@@ -17,7 +16,6 @@ import { useState, useEffect } from 'react'; // For tracking screen size
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export default function Home() {
-  const pathname = usePathname(); // Get current path
   const [isMobile, setIsMobile] = useState(false); // State to track mobile view
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

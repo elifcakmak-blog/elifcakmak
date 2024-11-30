@@ -1,11 +1,9 @@
 "use client"; // Add this directive to make this a client component
 
-import { usePathname } from 'next/navigation'; // Import to get the current path
 import Navigation from '../0-navigation/navigation'; // Adjust the path as needed
 import './newsletter.css';
 
 export default function Home() {
-  const pathname = usePathname(); // Get current path
 
   return (
     <div className="home-container">
