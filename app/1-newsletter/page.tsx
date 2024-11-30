@@ -1,27 +1,17 @@
 "use client"; // Add this directive to make this a client component
 
-import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation'; // Import to get the current path
+import Navigation from '../0-navigation/navigation'; // Adjust the path as needed
+import './newsletter.css';
 
 export default function Home() {
   const pathname = usePathname(); // Get current path
 
   return (
     <div className="home-container">
-      <header className="header">
-        <Link href="/" className="logo-link">
-          <Image src="/elifcakmaklogo.svg" alt="Elif Cakmak Logo" width={100} height={100} className="logo" />
-        </Link>
-        <nav className="nav">
-          <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
-          <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
-          <Link href="/podcast" className={`nav-link ${pathname === '/podcast' ? 'active' : ''}`}>Podcast</Link>
-          <Link href="/apps" className={`nav-link ${pathname === '/apps' ? 'active' : ''}`}>Apps</Link>
-          <Link href="/books" className={`nav-link ${pathname === '/books' ? 'active' : ''}`}>Books</Link>
-          <Link href="/newsletter" className={`newsletter-button ${pathname === '/newsletter' ? 'active' : ''}`}>Newsletter</Link>
-        </nav>
-      </header>
+      {/* Import Navigation */}
+
+      <Navigation /> 
 
       {/* Embedded Newsletter Form with Frame */}
       <div className="iframe-container">
