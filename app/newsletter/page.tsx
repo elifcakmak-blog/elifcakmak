@@ -1,23 +1,11 @@
-"use client"; // Ensures this is a client component
+"use client"; // Add this directive to make this a client component
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation'; // For detecting current path
-import { useState, useEffect } from 'react'; // React hooks for state and lifecycle
+import { usePathname } from 'next/navigation'; // Import to get the current path
 
 export default function Home() {
   const pathname = usePathname(); // Get current path
-  const [isMobile, setIsMobile] = useState(false); // State to check if it's mobile view
-
-  // Hook to update screen size
-  useEffect(() => {
-    const updateScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    updateScreenSize();
-    window.addEventListener("resize", updateScreenSize);
-    return () => window.removeEventListener("resize", updateScreenSize);
-  }, []);
 
   return (
     <div className="home-container">

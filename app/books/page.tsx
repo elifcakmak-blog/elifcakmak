@@ -3,28 +3,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'; // Import to get the current path
-import { useState, useEffect } from 'react'; // Import hooks
 import UnderConstruction from '../components/UnderConstruction/UnderConstruction'; // Import the new component
 
 export default function Home() {
   const pathname = usePathname(); // Get current path
-  const [isMobile, setIsMobile] = useState(false); // State to track mobile view
-
-  // Effect to handle screen width
-  useEffect(() => {
-    const updateScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // Set to true if width is 768px or less
-    };
-    updateScreenSize(); // Run on mount
-    window.addEventListener("resize", updateScreenSize); // Listen for resize events
-    return () => window.removeEventListener("resize", updateScreenSize); // Cleanup
-  }, []);
 
   return (
     <div className="home-container">
       <header className="header">
         <Link href="/" className="logo-link">
-          <Image src="/elifcakmaklogo.svg" alt="Elif Cakmak Logo" width={100} height={100} className="logo"/>
+          <Image src="/elifcakmaklogo.svg" alt="Elif Cakmak Logo" width={100} height={100} className="logo" />
         </Link>
         <nav className="nav">
           <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
