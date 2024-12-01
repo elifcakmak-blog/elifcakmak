@@ -15,11 +15,11 @@ const Navigation = () => {
       </Link>
       <nav className="nav">
         <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
-        <Link href="/1-about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
-        <Link href="/1-podcast" className={`nav-link ${pathname === '/podcast' ? 'active' : ''}`}>Podcast</Link>
-        <Link href="/1-apps" className={`nav-link ${pathname === '/apps' ? 'active' : ''}`}>Apps</Link>
-        <Link href="/1-books" className={`nav-link ${pathname === '/books' ? 'active' : ''}`}>Books</Link>
-        <Link href="/1-newsletter" className={`newsletter-button ${pathname === '/newsletter' ? 'active' : ''}`}>Newsletter</Link>
+        <Link href="/1-about" className={`nav-link ${pathname === '/1-about' ? 'active' : ''}`}>About</Link>
+        <Link href="/1-podcast" className={`nav-link ${pathname === '/1-podcast' ? 'active' : ''}`}>Podcast</Link>
+        <Link href="/1-apps" className={`nav-link ${pathname === '/1-apps' ? 'active' : ''}`}>Apps</Link>
+        <Link href="/1-books" className={`nav-link ${pathname === '/1-books' ? 'active' : ''}`}>Books</Link>
+        <Link href="/1-newsletter" className={`newsletter-button ${pathname === '/1-newsletter' ? 'active' : ''}`}>Newsletter</Link>
       </nav>
     </header>
   );
