@@ -157,3 +157,30 @@
 .footer-links .footer-link:hover {
   color: #4bfe5a; /* Bright green on hover */
 }
+
+@media (max-width: 768px) {
+  .footer-card {
+    font-size: 0.9rem; /* Reduced font size for mobile */
+    line-height: 1.4; /* Ensure readability with adjusted line height */
+    word-wrap: break-word; /* Ensure long words break correctly */
+    padding: 15px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow the height to adjust for smaller content */
+  }
+
+  .footer-card h3 {
+    font-size: 1.05rem; /* Slightly smaller heading size for mobile */
+  }
+
+  .footer-card .footer-link {
+    font-size: 0.8rem; /* Smaller font size for links */
+  }
+
+  .footer-links {
+    gap: 10px; /* Reduce spacing between links for better fit */
+  }
+
+  .footer-links .footer-link {
+    font-size: 0.8rem; /* Match smaller font size for external links */
+  }
+  
+}

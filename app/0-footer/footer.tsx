@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Copyright */}
-          <div className="text-center mt-4">
+          <div className="text-center mt-4 footer-copyright">
             <p>&copy; 2024 Elif Çakmak, EasyFlow Media, Effortless Works. All rights reserved.</p>
           </div>
         </div>
