@@ -163,6 +163,9 @@
     font-size: 0.9rem; /* Reduced font size for mobile */
     line-height: 1.4; /* Ensure readability with adjusted line height */
     word-wrap: break-word; /* Ensure long words break correctly */
+    width: 110%; /* Wider cards on mobile */
+    max-width: 600px; /* Prevent cards from getting too wide */
+    margin: 10px auto; /* Center the cards */
     padding: 15px; /* Adjust padding for smaller screens */
     height: auto; /* Allow the height to adjust for smaller content */
   }
@@ -183,4 +186,10 @@
     font-size: 0.8rem; /* Match smaller font size for external links */
   }
   
+  .footer-copyright {
+    font-size: 0.7rem !important; /* Ensure this style overrides others */
+    line-height: 1.2; /* Adjusted line height */
+    margin-top: 20px; /* Reduce margin for better spacing */
+    text-align: center; /* Reaffirm center alignment */
+  }
 }
