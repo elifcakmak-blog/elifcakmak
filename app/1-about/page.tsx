@@ -1,22 +1,48 @@
-"use client"; 
+"use client";
 
-import UnderConstruction from '../3-UnderConstruction/UnderConstruction'; 
 import Navigation from '../0-navigation/navigation';
+import './about.css';
+import Footer from '../0-footer/footer';
+import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
 
-export default function Home() {
+export default function About() {
   return (
-    <div className="home-container">
+    <div className="about-container">
       {/* Import Navigation */}
-      <Navigation /> 
+      <Navigation />
 
       {/* Use the UnderConstruction component */}
       <UnderConstruction />
 
+      {/* About Page Content */}
+      <main className="about-main">
+        <section className="about-introduction">
+          <h1 className="about-title">About Me</h1>
+          <p className="about-description">
+            ...
+          </p>
+        </section>
+
+        <section className="about-details">
+          <h2 className="details-title">My Journey</h2>
+          <p>
+            ...
+          </p>
+        </section>
+
+        <section className="about-image-section">
+          <img 
+            src="[your-image-url]" 
+            alt="About Me" 
+            className="about-image"
+          />
+        </section>
+      </main> 
+
       {/* Footer */}
-      <footer className="footer bg-gray-800 text-white py-8 text-center">
-        <p>&copy; 2024 Elif Cakmak. All Rights Reserved.</p>
-      </footer>
+
+      <Footer />
+      
     </div>
   );
 }
-

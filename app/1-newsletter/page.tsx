@@ -2,6 +2,7 @@
 
 import Navigation from '../0-navigation/navigation';
 import './newsletter.css';
+import Footer from '../0-footer/footer';
 
 export default function Home() {
 
@@ -24,10 +25,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="footer bg-gray-800 text-white py-8 text-center">
-        <p>&copy; 2024 Elif Cakmak. All Rights Reserved.</p>
-      </footer>
+       {/* Footer */}
+
+       <Footer />
+
     </div>
   );
 }

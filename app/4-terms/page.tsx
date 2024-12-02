@@ -1,8 +1,9 @@
 "use client";
 
-import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
+import UnderConstruction from '../3-UnderConstruction/UnderConstruction'; 
 import Navigation from '../0-navigation/navigation';
 import Footer from '../0-footer/footer';
+//import './terms.css';
 
 export default function Home() {
   return (
@@ -16,8 +17,7 @@ export default function Home() {
       {/* Footer */}
 
       <Footer />
-      
+
     </div>
   );
 }
-
