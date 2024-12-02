@@ -8,6 +8,7 @@ import Footer from '../0-footer/footer';
 export default function Home() {
   return (
     <div className="home-container">
+
       {/* Import Navigation */}
       <Navigation /> 
 

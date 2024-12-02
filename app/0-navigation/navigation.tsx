@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import './navigation.css';
 
 const Navigation = () => {
-  const pathname = usePathname(); // Get current path
+  const pathname = usePathname(); 
 
   return (
     <header className="header">
