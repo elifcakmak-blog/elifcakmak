@@ -5,6 +5,19 @@ import './cursor.css'; // Import CSS for the custom cursor
 
 const CustomCursorPage = () => {
   useEffect(() => {
+    // Prevent right-click menu from appearing
+    document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+    });
+
+    // Prevent common keyboard shortcuts for viewing source and inspecting
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S' || e.key === 'i' || e.key === 'I' || e.key === 'c' || e.key === 'C')) {
+        e.preventDefault();
+      }
+    });
+
+    // Custom cursor logic
     const cursor = document.createElement('div');
     cursor.classList.add('custom-cursor');
   

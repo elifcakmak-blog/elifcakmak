@@ -1,5 +1,6 @@
 body {
   cursor: none; /* Hide the default cursor */
+  user-select: none; /* Prevents text selection */
 }
 
 .custom-cursor {
@@ -15,6 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: width 0.3s, height 0.3s; /* Smooth transition */
+  user-select: none; /* Prevents text from being selected */
 }
 
 a {
