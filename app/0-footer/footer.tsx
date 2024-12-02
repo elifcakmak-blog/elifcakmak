@@ -21,54 +21,54 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Effortless Works Links */}
-<div className="footer-card effortless-card p-6 shadow-md rounded-md text-center">
-  <h3 className="text-2xl font-bold">Effortless Works</h3>
-  <a 
-    href="https://www.effortlessworks.elifcakmak.blog/products" 
-    className="footer-link" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    onClick={(e) => e.stopPropagation()}
-  >
-    Products
-  </a>
-  <a 
-    href="https://www.effortlessworks.elifcakmak.blog/services" 
-    className="footer-link"
-    target="_blank" 
-    rel="noopener noreferrer"
-    onClick={(e) => e.stopPropagation()}
-  >
-    Services
-  </a>
-  <a 
-    href="https://www.effortlessworks.elifcakmak.blog/courses" 
-    className="footer-link"
-    target="_blank" 
-    rel="noopener noreferrer"
-    onClick={(e) => e.stopPropagation()}
-  >
-    Courses
-  </a>
-  <a 
-    href="https://www.effortlessworks.elifcakmak.blog/info" 
-    className="footer-link"
-    target="_blank" 
-    rel="noopener noreferrer"
-    onClick={(e) => e.stopPropagation()}
-  >
-    Info
-  </a>
-  <a 
-    href="https://www.effortlessworks.elifcakmak.blog/contact" 
-    className="footer-link"
-    target="_blank" 
-    rel="noopener noreferrer"
-    onClick={(e) => e.stopPropagation()}
-  >
-    Contact
-  </a>
-</div>
+            <div className="footer-card effortless-card p-6 shadow-md rounded-md text-center">
+              <h3 className="text-2xl font-bold">Effortless Works</h3>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/products" 
+                className="footer-link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Products
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/services" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Services
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/courses" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Courses
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/info" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Info
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/contact" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Contact
+              </a>
+            </div>
 
 
             {/* Social Media Links */}

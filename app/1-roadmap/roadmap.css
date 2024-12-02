@@ -1,0 +1,37 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .roadmap-container {
+    position: relative;
+    width: 200px; 
+    height: 200px; 
+    border: 2px solid transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bubble {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: move;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+  }
+  
+  .bubble p {
+    margin: 0; /* Remove default margin */
+    padding-top: -4px; /* Move the text up */
+  }
+  
