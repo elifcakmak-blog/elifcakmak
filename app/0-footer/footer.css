@@ -5,8 +5,8 @@
   padding: 40px 20px;
   margin-top: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
-  transition: transform 0.3s, border-color 0.3s; /* Smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
 .footer:hover {
@@ -14,76 +14,126 @@
   border: 8px solid #fef74b; /* Highlight border on hover */
 }
 
-/* Container for all cards */
+/* Individual Card Styling */
 .footer-card {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 15px; /* Slightly larger padding for spacing */
+  flex-direction: column; /* Set direction to column for vertical alignment */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center horizontally */
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: 4px solid transparent;
-  height: 300px; /* Slightly larger consistent height */
-  min-height: 300px;
-  transition: background-color 0.3s, border-color 0.3s;
+  border: 8px solid transparent;
+  height: 300px;
+  min-height: 300px; /* Ensures consistent card height */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Ensure content starts at the top */
-.footer-card > * {
-  flex-grow: 0;
+ /* Keyframes for the shake animation */
+ @keyframes spinShake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
 }
 
-/* Header Styling */
-.footer-card h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
+/* Elif Çakmak Card */
+.elif-card {
+  background-color: #efe1ff; /* Light purple background */
+  color: #1c0e45; /* Dark blue text color */
+  border: 7px solid transparent; /* Default border */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Link Styling */
-.footer-link {
-  display: block;
-  margin: 5px 0; /* Even spacing between links */
-  color: #fef74b;
+.elif-card:hover {
+  border-color: #fef74b; /* Dark blue border on hover */
+  animation: spinShake 0.5s ease-in-out;
+}
+
+.elif-card .footer-link {
+  color: #504081; /* Default link color */
+  margin: 5px 0; /* Space between links */
   text-decoration: none;
   font-size: 1rem;
+  font-weight: bold;
 }
 
-.footer-link:hover {
-  color: #efe1ff;
+.elif-card .footer-link:hover {
+  color: #fef74b; /* Link hover color */
 }
 
-/* Social Icons Container */
-.social-icons-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Three columns for better alignment */
-  gap: 10px;
-  justify-items: center;
+/* Effortless Works Card */
+.effortless-card {
+  background-color: #504081; /* Dark purple background */
+  color: #efe1ff; /* Light purple text color */
+  border: 7px solid transparent; /* Default border */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.effortless-card:hover {
+  border-color: #efe1ff; /* Light purple border on hover */
+  animation: spinShake 0.5s ease-in-out;
+}
+
+.effortless-card .footer-link {
+  color: #fef74b; /* Default link color (yellow) */
+  margin: 5px 0; /* Space between links */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.effortless-card .footer-link:hover {
+  color: #1c0e45; /* Link hover color */
+}
+
+/* EasyFlow Media Card */
+.easyflow-card {
+  background-color: #fef74b; /* Yellow background */
+  color: #1c0e45; /* Dark blue text color */
+  border: 7px solid transparent; /* Default border */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.easyflow-card:hover {
+  border-color: #4bfe5a; /* Dark purple border on hover */
+  animation: spinShake 0.5s ease-in-out;
+}
+
+.easyflow-card .footer-link {
+  color: #1c0e45; /* Default link color */
+  margin: 5px 0; /* Space between links */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.easyflow-card .footer-link:hover {
+  color: #504081; /* Link hover color */
 }
 
 /* Social Icon Styling */
 .social-icon {
-  width: 24px; /* Slightly larger size for better visibility */
+  width: 24px; /* Visible size */
   height: 24px;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-/* Hover Animation */
-.footer-card:hover {
-  animation: spinShake 0.5s ease-in-out;
-  border-color: #fef74b;
+.social-icon:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
 }
 
-@keyframes spinShake {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(-5deg); }
-  75% { transform: rotate(5deg); }
-  100% { transform: rotate(0deg); }
+/* Header Styling */
+.footer-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Copyright Text */
+/* Other Footer Elements */
 .footer-copyright {
   text-align: center;
   margin-top: 30px;
@@ -91,29 +141,19 @@
   color: #efe1ff;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-  .footer-card {
-    width: 100%; /* Make the cards stack on smaller screens */
-    margin-bottom: 20px;
-    height: auto; /* Flexible height for mobile */
-    padding: 15px;
-  }
+.footer-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-  .social-icons-container {
-    grid-template-columns: repeat(2, 1fr); /* Two icons per row */
-  }
+.footer-links .footer-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
 
-  .social-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .footer-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .footer-link {
-    font-size: 0.85rem;
-  }
+.footer-links .footer-link:hover {
+  color: #4bfe5a; /* Bright green on hover */
 }
