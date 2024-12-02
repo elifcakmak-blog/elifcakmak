@@ -19,15 +19,14 @@ export default function About() {
         <section className="about-introduction">
           <h1 className="about-title">About Me</h1>
           <p className="about-description">
-            Hi, I'm Elif Cakmak! Welcome to my website. Here, I share my journey, projects, and passions.
+            ...
           </p>
         </section>
 
         <section className="about-details">
           <h2 className="details-title">My Journey</h2>
           <p>
-            I'm passionate about coding, design, and sharing knowledge with others. 
-            On this site, you can explore my latest works and connect with me.
+            ...
           </p>
         </section>
 
