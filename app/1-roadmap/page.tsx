@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react';
 import Navigation from '../0-navigation/navigation';
+import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
 import Footer from '../0-footer/footer';
 import './roadmap.css';
 import CustomCursor from '../0-cursor/page'; // Cursor Import
@@ -64,6 +65,9 @@ export default function Home() {
 
       {/* Import Navigation */}
       <Navigation />
+
+      {/* Use the UnderConstruction component */}
+      <UnderConstruction />
 
       <div className="page-container">
         {/* Container for the circle */}
