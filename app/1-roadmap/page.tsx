@@ -25,8 +25,6 @@ const App: React.FC = () => {
     // Add more milestones up to 12
   ];
 
-  const logoSrc = 'https://via.placeholder.com/200x50'; // Replace with your actual logo URL
-
   return <MilestonePage milestones={milestones} />;
 };
 
