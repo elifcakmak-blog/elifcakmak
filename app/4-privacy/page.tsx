@@ -2,6 +2,7 @@
 
 import UnderConstruction from '../3-UnderConstruction/UnderConstruction'; 
 import TermsNav from '../0-termsnav/termsnav';
+import './privacy.css';
 import Footer from '../0-footer/footer';
 import CustomCursor from '../0-cursor/page'; // Cursor Import
 //import './privacy.css';
@@ -15,6 +16,8 @@ export default function Home() {
 
       {/* Import Navigation */}
       <TermsNav /> 
+
+      <img src={"../privacy.svg"} alt="Logo" className="privacy-image" />
 
       {/* Use the UnderConstruction component */}
       <UnderConstruction />

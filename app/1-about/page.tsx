@@ -16,6 +16,8 @@ export default function About() {
       {/* Import Navigation */}
       <Navigation />
 
+      <img src={"../about.svg"} alt="Logo" className="about-image" />
+
       {/* Use the UnderConstruction component */}
       <UnderConstruction />
 
