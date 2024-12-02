@@ -2,6 +2,7 @@
 
 import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
 import Navigation from '../0-navigation/navigation';
+import Footer from '../0-footer/footer';
 
 export default function Home() {
   return (
@@ -12,10 +13,10 @@ export default function Home() {
       {/* Use the UnderConstruction component */}
       <UnderConstruction />
 
-      {/* Footer */}
-      <footer className="footer bg-gray-800 text-white py-8 text-center">
-        <p>&copy; 2024 Elif Cakmak. All Rights Reserved.</p>
-      </footer>
+       {/* Footer */}
+
+       <Footer />
+
     </div>
   );
 }

@@ -1,0 +1,43 @@
+/* about.css */
+
+  
+  .about-main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .about-details {
+    margin-bottom: 40px;
+  }
+  
+  .details-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .about-image-section {
+    margin-top: 20px;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -19,6 +19,7 @@ const Navigation = () => {
         <Link href="/1-podcast" className={`nav-link ${pathname === '/1-podcast' ? 'active' : ''}`}>Podcast</Link>
         <Link href="/1-apps" className={`nav-link ${pathname === '/1-apps' ? 'active' : ''}`}>Apps</Link>
         <Link href="/1-books" className={`nav-link ${pathname === '/1-books' ? 'active' : ''}`}>Books</Link>
+        <Link href="/1-roadmap" className={`nav-link ${pathname === '/1-roadmap' ? 'active' : ''}`}>Road Map</Link>
         <Link href="/1-newsletter" className={`newsletter-button ${pathname === '/1-newsletter' ? 'active' : ''}`}>Newsletter</Link>
       </nav>
     </header>
