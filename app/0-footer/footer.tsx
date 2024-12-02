@@ -23,11 +23,46 @@ const Footer: React.FC = () => {
             {/* Effortless Works Links */}
             <div className="footer-card effortless-card p-6 shadow-md rounded-md text-center">
               <h3 className="text-2xl font-bold">Effortless Works</h3>
-              <a href="https://www.effortlessworks.elifcakmak.blog/products" className="footer-link">Products</a>
-              <a href="https://www.effortlessworks.elifcakmak.blog/services" className="footer-link">Services</a>
-              <a href="https://www.effortlessworks.elifcakmak.blog/courses" className="footer-link">Courses</a>
-              <a href="https://www.effortlessworks.elifcakmak.blog/info" className="footer-link">Info</a>
-              <a href="https://www.effortlessworks.elifcakmak.blog/contact" className="footer-link">Contact</a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/products" 
+                className="footer-link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              > 
+              Products
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/services" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+              Services
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/courses" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+              Courses
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/info" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+              Info
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/contact" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+              Contact
+              </a>
             </div>
 
             {/* Social Media Links */}
