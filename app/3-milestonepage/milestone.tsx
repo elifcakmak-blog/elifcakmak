@@ -10,6 +10,7 @@ import CustomCursor from '../0-cursor/page'; // Cursor Import
 type Circle = {
   id: number;
   description: string;
+  color: string; // Added color property
 };
 
 type Milestone = {
@@ -43,7 +44,7 @@ const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
                     <h3 className="milestone-title">{milestone.title}</h3>
                     <div className="circle-grid">
                         {milestone.circles.map((circle) => (
-                        <div key={circle.id} className="circle">
+                        <div key={circle.id} className="circle" style={{ backgroundColor: circle.color }}>
                             <div className="thought-bubble">{circle.description}</div>
                         </div>
                         ))}
