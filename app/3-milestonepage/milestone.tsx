@@ -1,9 +1,8 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './milestone.css';
 import Navigation from '../0-navigation/navigation';
-import UnderConstruction from '../3-UnderConstruction/UnderConstruction'; 
 import Footer from '../0-footer/footer';
 import CustomCursor from '../0-cursor/page'; // Cursor Import
 
@@ -24,38 +23,77 @@ interface MilestonePageProps {
   milestones: Milestone[];
 }
 
+const CircleComponent: React.FC<{ color: string; description: string }> = ({ color, description }) => {
+  const bubbleRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const adjustBubblePosition = () => {
+      if (bubbleRef.current) {
+        const bubbleRect = bubbleRef.current.getBoundingClientRect();
+        const windowWidth = window.innerWidth;
+        const margin = 0; // Margin to keep the bubble from going off the page
+
+        if (bubbleRect.right > windowWidth - margin) {
+          bubbleRef.current.style.left = `${windowWidth - bubbleRect.width - margin}px`;
+          bubbleRef.current.style.transform = 'translateX(0)';
+        } else if (bubbleRect.left < margin) {
+          bubbleRef.current.style.left = `${margin}px`;
+          bubbleRef.current.style.transform = 'translateX(0)';
+        }
+      }
+    };
+
+    if (isHovered) {
+      adjustBubblePosition();
+    }
+
+    // Add resize event listener to adjust bubble position on resize
+    window.addEventListener('resize', adjustBubblePosition);
+
+    return () => {
+      window.removeEventListener('resize', adjustBubblePosition);
+    };
+  }, [isHovered]);
+
+  return (
+    <div className="circle" style={{ backgroundColor: color }}
+         onMouseEnter={() => setIsHovered(true)}
+         onMouseLeave={() => setIsHovered(false)}>
+      <div ref={bubbleRef} className={`thought-bubble ${isHovered ? 'show' : ''}`}>
+        {description}
+      </div>
+    </div>
+  );
+};
+
 const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
   return (
     <div className="page-container">
-        {/* Import Cursor */}
-        <CustomCursor />
+      {/* Import Cursor */}
+      <CustomCursor />
 
-        {/* Import Navigation */}
-        <Navigation /> 
+      {/* Import Navigation */}
+      <Navigation />
 
-        <div className="milestone-container">
+      <div className="milestone-container">
         <img src={"../milestones.svg"} alt="Logo" className="milestone-image" />
-         {/* Use the UnderConstruction component */}
-      <UnderConstruction />
-            <div className="milestone-grid">
-                {milestones.map((milestone) => (
-                <div key={milestone.id} className="milestone-card">
-                    <img src={milestone.imageSrc} alt={milestone.title} className="milestone-image" />
-                    <h3 className="milestone-title">{milestone.title}</h3>
-                    <div className="circle-grid">
-                        {milestone.circles.map((circle) => (
-                        <div key={circle.id} className="circle" style={{ backgroundColor: circle.color }}>
-                            <div className="thought-bubble">{circle.description}</div>
-                        </div>
-                        ))}
-                    </div>
-                </div>
+        <div className="milestone-grid">
+          {milestones.map((milestone) => (
+            <div key={milestone.id} className="milestone-card">
+              <img src={milestone.imageSrc} alt={milestone.title} className="milestone-image" />
+              <h3 className="milestone-title">{milestone.title}</h3>
+              <div className="circle-grid">
+                {milestone.circles.map((circle) => (
+                  <CircleComponent key={circle.id} color={circle.color} description={circle.description} />
                 ))}
+              </div>
             </div>
+          ))}
         </div>
-        {/* Footer */}
-
-       <Footer />
+      </div>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

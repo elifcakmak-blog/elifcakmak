@@ -21,6 +21,8 @@
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    position: relative; /* Ensure thought bubble is positioned relative to this */
+
   }
   
   .milestone-card:hover {
@@ -61,40 +63,64 @@
     position: relative;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    cursor: none;
   }
   
   .circle:hover {
     background-color: #f5b700; /* Highlight on hover */
   }
   
-  /* Thought bubble styles */
-  .thought-bubble {
-    position: absolute;
-    top: -60px; /* Adjust to position above the circle */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    border: 2px solid #ccc;
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
-    z-index: 10;
-    display: none;
-    font-size: 12px;
-    line-height: 1.2;
-    text-align: center;
-  }
-  
-  .circle:hover .thought-bubble {
-    display: block;
-  }
-  
+ /* Thought bubble styles */
+.thought-bubble {
+  position: absolute;
+  top: -130px; /* Adjust to position above the circle */
+  left: 0%;
+  transform: translateX(-50%);
+  background-color: #504081;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: normal; /* Allows text to wrap */
+  z-index: 10;
+  display: none;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 170px; /* Limit bubble width */
+  overflow: visible; /* Ensures text isn't clipped */
+  word-wrap: break-word; /* Breaks long words to wrap to the next line */
+  color: #ffffff; /* Text color inside the thought bubble */
+}
+
+
+.circle:hover .thought-bubble {
+  display: block;
+}
+
+/* Adjust for edge cases */
+.thought-bubble.left-edge {
+  left: 0%; /* Move slightly to the left */
+  transform: translateX(0%); /* Remove the centering transform */
+}
+
+.thought-bubble.right-edge {
+  right: 0%; /* Move slightly to the right */
+  transform: translateX(0); /* Remove the centering transform */
+}
+
+/* Adjust the arrow direction if needed */
+
   /* Responsive behavior */
   @media (max-width: 768px) {
     .milestone-grid {
       grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
     }
+    .thought-bubble.left-edge {
+      left: 0%; /* Move slightly to the left */
+      transform: translateX(%); /* Remove the centering transform */
+    }
+    
   }
   
   @media (max-width: 480px) {
