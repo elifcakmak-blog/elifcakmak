@@ -4,12 +4,19 @@ import Navigation from '../0-navigation/navigation';
 import './about.css';
 import Footer from '../0-footer/footer';
 import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
+import CustomCursor from '../0-cursor/page'; // Cursor Import
 
 export default function About() {
   return (
     <div className="about-container">
+
+      {/* Import Cursor */}
+      <CustomCursor />
+      
       {/* Import Navigation */}
       <Navigation />
+
+      <img src={"../about.svg"} alt="Logo" className="about-image" />
 
       {/* Use the UnderConstruction component */}
       <UnderConstruction />

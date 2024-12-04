@@ -1,0 +1,155 @@
+/* General container styles */
+.milestone-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.milestone-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Card styles */
+.milestone-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  position: relative; /* Ensure thought bubble is positioned relative to this */
+  overflow: hidden; /* Ensures the shimmer stays within the card */
+}
+
+.milestone-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.milestone-card:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 223, 0, 0.4), rgba(255, 215, 0, 0.1), rgba(255, 223, 0, 0.4));
+  opacity: 0.5; /* Adjust opacity for a subtler shimmer */
+  transform: skewX(-25deg);
+  animation: shimmer 1.5s infinite linear;
+  pointer-events: none;
+}
+
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+/* Image at the top of the card */
+.milestone-image {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto; /* This will center the image */
+}
+
+/* Title of each milestone */
+.milestone-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Grid for circles inside each card */
+.circle-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 circles per row */
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Circle styles */
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  cursor: none;
+}
+
+.circle:hover {
+  background-color: #f5b700; /* Highlight on hover */
+}
+
+/* Thought bubble styles */
+.thought-bubble {
+  position: absolute;
+  top: -130px; /* Adjust to position above the circle */
+  left: 0%;
+  transform: translateX(-50%);
+  background-color: #504081;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: normal; /* Allows text to wrap */
+  z-index: 10;
+  display: none;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 170px; /* Limit bubble width */
+  overflow: visible; /* Ensures text isn't clipped */
+  word-wrap: break-word; /* Breaks long words to wrap to the next line */
+  color: #ffffff; /* Text color inside the thought bubble */
+}
+
+.circle:hover .thought-bubble {
+  display: block;
+}
+
+/* Adjust for edge cases */
+.thought-bubble.left-edge {
+  left: 0%; /* Move slightly to the left */
+  transform: translateX(0%); /* Remove the centering transform */
+}
+
+.thought-bubble.right-edge {
+  right: 0%; /* Move slightly to the right */
+  transform: translateX(0); /* Remove the centering transform */
+}
+
+/* Adjust the arrow direction if needed */
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .milestone-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+  .thought-bubble.left-edge {
+    left: 0%; /* Move slightly to the left */
+    transform: translateX(0%); /* Remove the centering transform */
+  }
+}
+
+@media (max-width: 480px) {
+  .milestone-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+}

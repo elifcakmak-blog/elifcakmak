@@ -9,7 +9,8 @@ import AboutSection from './2-home-about/about'; // About Section Import
 import ServicesSection from './2-home-services/services'; // Services Section Import
 import NewsletterSection from './2-home-newsletter/newsletter'; //Newsletter Import
 import Footer from './0-footer/footer'; // Import Footer
-import { useState, useEffect } from 'react'; // For tracking screen size
+import CustomCursor from './0-cursor/page'; // Cursor Import
+import { useState, useEffect } from 'react';
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37,12 +38,14 @@ export default function Home() {
 
   return (
     <div className="home-container">
+      {/* Import Cursor */}
+      <CustomCursor />
       
       {/* Import Navigation */}
 
       <Navigation /> 
 
-      {/* Import Navigation */}
+      {/* Import Hero Section */}
 
       <HeroSection isMobile={isMobile} />
 
