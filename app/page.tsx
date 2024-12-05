@@ -53,6 +53,7 @@ export default function Home() {
       <Navigation /> 
 
       {/* Import Hero Section */}
+      {/* Import Hero Section */}
 
       <HeroSection isMobile={isMobile} />
 
