@@ -6,7 +6,6 @@ import CustomCursor from '../0-cursor/page'; // Cursor Import
 import AbSection2 from '../5-about-about/page'; // about section Import
 import AbServices2 from '../5-about-services/page';
 import NewsletterSection from '../2-home-newsletter/newsletter';
-import Link from 'next/link'; // Import Link if you're using Next.js
 
 export default function About() {
   // Check if the screen is mobile
