@@ -13,8 +13,8 @@ const App: React.FC = () => {
         { id: 3, description: 'Make the Newsletter Page - completed: 11/30/24 3:13pm EST',color: '#4bfe5a' },
         { id: 4, description: 'Set Up Effortless Works Subdomain Structure - completed: 12/02/24 12:03am EST',color: '#4bfe5a' },
         { id: 5, description: 'Make the Road Maps Page - completed: 12/04/24 12:47am EST',color: '#4bfe5a' },
-        { id: 6, description: 'Make the About Page - currently building',color: '#e6df20' },
-        { id: 7, description: 'Make the Podcast Page',color: '#504081' },
+        { id: 6, description: 'Make the About Page - completed: 12/5/24 6:30pm',color: '#4bfe5a' },
+        { id: 7, description: 'Make the Podcast Page',color: '#e6df20' },
         { id: 8, description: 'Make the Apps Page',color: '#504081' },
         { id: 9, description: 'Make the Books Page',color: '#504081' },
         // Add up to 10 steps per milestone
