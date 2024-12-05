@@ -9,7 +9,6 @@ import NewsletterSection from '../2-home-newsletter/newsletter';
 
 export default function About() {
   // Check if the screen is mobile
-  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
   return (
     <div className="about-container">

@@ -39,7 +39,7 @@ const AbServices2 = () => {
           </div>
           <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[300px]">
             <h3 className="text-xl font-bold">Roadmap</h3>
-            <p className="mt-2 text-gray-600">See Upcoming Updates and Milestones I'm Completing</p>
+            <p className="mt-2 text-gray-600">See Upcoming Updates and Milestones I&apos;m Completing</p>
             <Link href="/1-roadmap">
               <button className="btn-primary mt-4">Observe</button>
             </Link>
