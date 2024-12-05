@@ -17,6 +17,12 @@
     overflow: hidden; /* Prevents overflow */
     position: relative;
   }
+
+  .btn-about {
+    display: block; /* Ensures the button is block-level */
+    text-align: left; /* Aligns the text within the button */
+    margin-left: 20px;
+  }  
   
   
   .about-content {

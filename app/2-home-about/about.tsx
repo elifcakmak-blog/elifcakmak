@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import './about.css';
 
 const AboutSection: React.FC = () => {
@@ -9,6 +10,12 @@ const AboutSection: React.FC = () => {
         <p className="mt-4 text-3lg text-hover-yellow">
           Elif Çakmak is a data management expert, software developer, and content creator. With a passion for simplifying complex processes, she provides practical solutions that help individuals and businesses achieve effortless productivity. Through her tools and insights, she empowers others to work smarter and live better.
         </p>
+        {/* Button to navigate to the About Me page */}
+        <Link href="/1-about">
+          <button className="btn-about mt-6 px-4 py-2 bg-[#fef74b] text-[#0b0228] font-semibold rounded hover:bg-[#504081] hover:text-[#fff] transition duration-300">
+            Read More
+          </button>
+        </Link>
       </div>
     </section>
   );
