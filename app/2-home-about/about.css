@@ -1,7 +1,7 @@
 .about-section {
     background-image: url('/images/aboutbackground.png');
     background-size: cover; 
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     border: 10px solid #504081;
     border-radius: 16px; /* Rounded corners */
@@ -21,7 +21,7 @@
   
   .about-content {
     max-width: 50%; /* Limits the content width to half of the screen */
-    text-align: left;
+    text-align: right;
     padding: 0 20px;
     overflow: auto;
   }
