@@ -1,14 +1,15 @@
 "use client";
 
-import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
 import Navigation from '../0-navigation/navigation';
-import './podcast.css';
+import PodcastHero from '../6-podcast-hero/page';
+import PodcastLinks from '../6-podcast-links/page';
+import PodcastEpisodes from '../6-podcast-episodes/page';
 import Footer from '../0-footer/footer';
 import CustomCursor from '../0-cursor/page'; // Cursor Import
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <div className="podcast-container">
       
       {/* Import Cursor */}
       <CustomCursor />
@@ -16,14 +17,19 @@ export default function Home() {
       {/* Import Navigation */}
       <Navigation /> 
 
-      <img src={"../podcast.svg"} alt="Logo" className="podcast-image" />
+      <img src={"../podcast.svg"}alt="Logo"className="podcast-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto'}}/>
 
-      {/* Use the UnderConstruction component */}
-      <UnderConstruction />
+      {/* Import PodcastHero */}
+      <PodcastHero />
 
-       {/* Footer */}
+      {/* Import Podcast Links */}
+      <PodcastLinks />
 
-       <Footer />
+      {/* Import Podcast Episodes */}
+      <PodcastEpisodes />  
+    
+      {/* Footer */}
+      <Footer />
 
     </div>
   );
