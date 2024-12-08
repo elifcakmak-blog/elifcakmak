@@ -11,6 +11,7 @@ import NewsletterSection from './2-home-newsletter/newsletter'; //Newsletter Imp
 import Footer from './0-footer/footer'; // Import Footer
 import CustomCursor from './0-cursor/page'; // Cursor Import
 import { useState, useEffect } from 'react';
+import Head from 'next/head'; // Import for adding elements to the <head>
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38,6 +39,12 @@ export default function Home() {
 
   return (
     <div className="home-container">
+      
+      {/* Add the font link */}
+      <Head>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+      </Head>
+
       {/* Import Cursor */}
       <CustomCursor />
       
@@ -45,6 +52,7 @@ export default function Home() {
 
       <Navigation /> 
 
+      {/* Import Hero Section */}
       {/* Import Hero Section */}
 
       <HeroSection isMobile={isMobile} />

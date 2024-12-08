@@ -14,10 +14,12 @@
   }
 }
 
+
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Nunito', sans-serif; /* Set 'Nunito' as the primary font */
   cursor: none; /* Hide the default cursor */
 }
 

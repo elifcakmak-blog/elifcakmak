@@ -1,0 +1,53 @@
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    text-align: left; /* Ensure text alignment is left */
+    height: 70vh;
+    border: 10px solid #504081;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    padding-left: 5%; /* Add padding for spacing from the left */
+    z-index: 1; /* Ensure the hero section stays on top */
+  }
+  
+  .hero:hover {
+    border-color: #fef74b; /* Change border color to yellow when hovered */
+    transform: translateY(-8px); /* Lifts the card on hover */
+    z-index: 2; /* Bring to the front when hovered */
+  }
+  
+  .hero .relative.z-10 {
+    max-width: 90%;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      background-position: left center;
+      align-items: flex-start;
+      padding-top: 20px;
+      padding-left: 10%; /* Adjust padding for smaller screens */
+    }
+  
+    .hero .relative.z-10 {
+      margin-top: 20px;
+    }
+  
+  }
+  
+  @media (min-width: 1024px) {
+    .hero .relative.z-10 {
+      position: static; /* Reset position for better alignment */
+      top: auto;
+      right: auto;
+      transform: none; /* No translation required */
+    }
+  }
+    

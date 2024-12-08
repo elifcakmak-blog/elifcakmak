@@ -1,53 +1,42 @@
 "use client";
 
 import Navigation from '../0-navigation/navigation';
-import './about.css';
 import Footer from '../0-footer/footer';
-import UnderConstruction from '../3-UnderConstruction/UnderConstruction';
 import CustomCursor from '../0-cursor/page'; // Cursor Import
+import AbSection2 from '../5-about-about/page'; // about section Import
+import AbServices2 from '../5-about-services/page';
+import NewsletterSection from '../2-home-newsletter/newsletter';
 
 export default function About() {
+  // Check if the screen is mobile
+
   return (
     <div className="about-container">
 
       {/* Import Cursor */}
       <CustomCursor />
-      
+
       {/* Import Navigation */}
       <Navigation />
 
-      <img src={"../about.svg"} alt="Logo" className="about-image" />
+      {/* Header Title Image */}
 
-      {/* Use the UnderConstruction component */}
-      <UnderConstruction />
+      <img src={"../about.svg"} alt="Logo" style={{width: "40%", objectFit: "cover", borderRadius: "8px",display: "block",margin: "0 auto",}}/>
 
-      {/* About Page Content */}
-      <main className="about-main">
-        <section className="about-introduction">
-          <h1 className="about-title">About Me</h1>
-          <p className="about-description">
-            ...
-          </p>
-        </section>
+      {/* Import About Section */}
+      <AbSection2 />
 
-        <section className="about-details">
-          <h2 className="details-title">My Journey</h2>
-          <p>
-            ...
-          </p>
-        </section>
+      {/* Services Section */}
+      <AbServices2 />
+      
+      {/* Hero Section */}
+      
+    
+      {/* Import Newsletter */}
 
-        <section className="about-image-section">
-          <img 
-            src="[your-image-url]" 
-            alt="About Me" 
-            className="about-image"
-          />
-        </section>
-      </main> 
-
+      <NewsletterSection />
+      
       {/* Footer */}
-
       <Footer />
       
     </div>
