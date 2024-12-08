@@ -37,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
             Learn More
           </Link>
           <Link 
-            href="https://discord.com/invite/mr7K6eaC" 
+            href="https://discord.gg/FkMknqsA8Y" 
             className="btn-secondary"
             target="_blank" //Opens the link in a new tab
             rel="noopener noreferrer" // Security best practice
