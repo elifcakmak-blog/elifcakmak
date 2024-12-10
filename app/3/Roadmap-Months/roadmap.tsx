@@ -7,7 +7,6 @@ import Footer from '../../0/0-footer/footer';
 type Roadmap = {
   id: number;
   imageSrc: string;
-  title: string;
   button: {
     label: string;
     link: string;
@@ -33,8 +32,7 @@ const RoadmapsPage: React.FC<RoadmapsPageProps> = ({ roadmaps }) => {
       <div className="roadmaps-container">
         {roadmaps.map((roadmap) => (
           <div key={roadmap.id} className="roadmap-card">
-            <img src={roadmap.imageSrc} alt={roadmap.title} className="roadmap-image" />
-            <h3 className="roadmap-title">{roadmap.title}</h3>
+            <img src={roadmap.imageSrc} className="roadmap-image" />
             <a
               href={roadmap.button.link}
               className="roadmap-button"
