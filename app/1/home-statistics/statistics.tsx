@@ -3,11 +3,11 @@ import './statistics.css';
 
 const statistics = [
   { label: 'Years Expertise', value: '4+', color: '#fef74b' },
-  { label: 'Media Creations', value: '0+', color: '#fef74b' },
+  { label: 'Videos Created', value: '0+', color: '#fef74b' },
   { label: 'Digital Products', value: '0+', color: '#fef74b' },
   { label: 'Podcast Episodes', value: '0+', color: '#fef74b' },
   { label: 'Apps Developed', value: '0+', color: '#fef74b' },
-  { label: 'Publications', value: '0+', color: '#fef74b' },
+  { label: 'Books Written', value: '0+', color: '#fef74b' },
 ];
 
 const StatisticsSection: React.FC = () => {

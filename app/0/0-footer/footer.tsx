@@ -13,6 +13,7 @@ const Footer: React.FC = () => {
             <div className="footer-card elif-card p-6 shadow-md rounded-md text-center">
               <h3 className="text-2xl font-bold">Elif Çakmak</h3>
               <a href="/2/about" className="footer-link">About</a>
+              <a href="/2/videos" className="footer-link">Videos</a>
               <a href="/2/podcast" className="footer-link">Podcast</a>
               <a href="/2/apps" className="footer-link">Apps</a>
               <a href="/2/books" className="footer-link">Books</a>

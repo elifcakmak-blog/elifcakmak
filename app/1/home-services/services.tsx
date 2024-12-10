@@ -51,10 +51,10 @@ const ServicesSection: React.FC = () => {
             </Link>
           </div>
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
-            <h3 className="text-xl font-bold">Discord</h3>
-            <p className="mt-2 text-gray-600">Join Our Productivity Community</p>
-            <Link href="https://discord.com/invite/FkMknqsA8Y" target="_blank" rel="noopener noreferrer">
-              <button className="btn-primary mt-4">Join</button>
+            <h3 className="text-xl font-bold">Videos</h3>
+            <p className="mt-2 text-gray-600">Tutorials That Upgrade Your Skill Set</p>
+            <Link href="/2/videos">
+              <button className="btn-primary mt-4">Watch</button>
             </Link>
           </div>
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">

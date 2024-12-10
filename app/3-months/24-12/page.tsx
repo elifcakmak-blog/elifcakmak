@@ -15,9 +15,9 @@ const App: React.FC = () => {
         { id: 5, description: 'Make the Road Maps Page - completed: 12/04/24 12:47am EST',color: '#4bfe5a' },
         { id: 6, description: 'Make the About Page - completed: 12/5/24 6:40pm',color: '#4bfe5a' },
         { id: 7, description: 'Make the Podcast Page',color: '#e6df20' },
-        { id: 8, description: 'Make the Apps Page',color: '#504081' },
-        { id: 9, description: 'Make the Books Page',color: '#504081' },
-        // Add up to 10 steps per milestone
+        { id: 8, description: 'Make the Videos Page',color: '#504081' },
+        { id: 9, description: 'Make the Apps Page',color: '#504081' },
+        { id: 10, description: 'Make the Books Page',color: '#504081' },
       ],
     },
     {

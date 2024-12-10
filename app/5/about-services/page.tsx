@@ -44,6 +44,20 @@ const AbServices2 = () => {
               <button className="btn-primary mt-4">Observe</button>
             </Link>
           </div>
+          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[300px]">
+            <h3 className="text-xl font-bold">Videos</h3>
+            <p className="mt-2 text-gray-600">Tutorials That Upgrade Your Skill Set</p>
+            <Link href="/2/videos">
+              <button className="btn-primary mt-4">Watch</button>
+            </Link>
+          </div>
+          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[300px]">
+            <h3 className="text-xl font-bold">Courses</h3>
+            <p className="mt-2 text-gray-600">Learn, Grow, and Achieve Mastery</p>
+            <Link href="https://www.effortlessworks.elifcakmak.blog/courses" target="_blank" rel="noopener noreferrer">
+              <button className="btn-primary mt-4">Learn</button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
