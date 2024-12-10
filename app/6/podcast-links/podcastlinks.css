@@ -1,0 +1,26 @@
+/* Subscribe links section */
+.subscribe-links {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .subscribe-links h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe-links a {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe-links a:hover {
+    background-color: #1abc9c;
+  }
