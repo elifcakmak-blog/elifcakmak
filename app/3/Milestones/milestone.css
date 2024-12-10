@@ -6,6 +6,10 @@
   margin: auto;
 }
 
+.page-container{
+  background: #504081;
+}
+
 .milestone-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */

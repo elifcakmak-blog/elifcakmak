@@ -20,7 +20,7 @@ interface RoadmapsPageProps {
 
 const RoadmapsPage: React.FC<RoadmapsPageProps> = ({ roadmaps }) => {
   return (
-    <div>
+    <div className="backgroundContainer">
       {/* Import Cursor */}
       <CustomCursor />
 
@@ -45,7 +45,7 @@ const RoadmapsPage: React.FC<RoadmapsPageProps> = ({ roadmaps }) => {
           </div>
         ))}
       </div>
-
+      
       
     </div>
     <Footer />

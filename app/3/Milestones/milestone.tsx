@@ -95,10 +95,10 @@ const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
           ))}
         </div>
       </div>
-      
-    </div>
-    {/* Footer */}
+       {/* Footer */}
     <Footer />
+    </div>
+   
     </div>
   );
 };

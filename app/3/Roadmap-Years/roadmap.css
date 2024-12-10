@@ -4,6 +4,9 @@
   align-items: center;
   padding: 20px;
 }
+.backgroundContainer{
+  background: #504081;
+}
 
 .years-image {
   width: 40%;
