@@ -1,10 +1,10 @@
 .services {
   position: relative;
   background-color: #504081; /* Purple background */
-  padding: 100px 0; /* Adjust as needed */
+  padding: 90px 0; /* Adjust as needed */
   overflow: hidden;
   width: 100%; /* Full width of the viewport */
-  max-width: 100%; /* Ensures it does not exceed the viewport width */
+  max-width: 90%; /* Ensures it does not exceed the viewport width */
   border: 10px solid #1c0e45; /* Border color */
   border-radius: 16px; /* Rounded corners */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15); /* Shadow effect */
@@ -151,12 +151,12 @@
 
 .services p {
   color: #efe1ff;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .services h3 {
   color: #4bfe5a;
   font-size: 1.75rem; /* Larger font size for headings */
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
