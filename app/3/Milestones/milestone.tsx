@@ -69,12 +69,14 @@ const CircleComponent: React.FC<{ color: string; description: string }> = ({ col
 
 const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
   return (
-    <div className="page-container">
+    <div>
       {/* Import Cursor */}
       <CustomCursor />
 
       {/* Import Navigation */}
       <Navigation />
+    <div className="page-container">
+      
 
       <img src={"../roadmap-tiles/milestones.svg"} alt="RoadMap Milestones Title Image" className="milestone-image" />
 
@@ -93,8 +95,10 @@ const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
           ))}
         </div>
       </div>
-      {/* Footer */}
-      <Footer />
+      
+    </div>
+    {/* Footer */}
+    <Footer />
     </div>
   );
 };

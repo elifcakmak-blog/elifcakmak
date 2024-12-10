@@ -20,12 +20,15 @@ interface RoadmapsPageProps {
 
 const RoadmapsPage: React.FC<RoadmapsPageProps> = ({ roadmaps }) => {
   return (
-    <div className="page-container">
+    <div>
       {/* Import Cursor */}
       <CustomCursor />
 
       {/* Import Navigation */}
       <Navigation />
+      
+    <div className="page-container">
+      
 
       <img src={"../roadmap-tiles/months.svg"} alt="RoadMap Months Title Image" className="months-image" />
 
@@ -44,7 +47,9 @@ const RoadmapsPage: React.FC<RoadmapsPageProps> = ({ roadmaps }) => {
         ))}
       </div>
 
-      <Footer />
+     
+    </div>
+    <Footer />
     </div>
   );
 };
