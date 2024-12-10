@@ -79,7 +79,6 @@ const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
       <img src={"../roadmap-tiles/milestones.svg"} alt="RoadMap Milestones Title Image" className="milestone-image" />
 
       <div className="milestone-container">
-        <img src={"../milestones.svg"} alt="Logo" className="milestone-image" />
         <div className="milestone-grid">
           {milestones.map((milestone) => (
             <div key={milestone.id} className="milestone-card">

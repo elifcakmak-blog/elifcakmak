@@ -16,6 +16,7 @@ const Navigation = () => {
       <nav className="nav">
         <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
         <Link href="/2/about" className={`nav-link ${pathname === '/2/about' ? 'active' : ''}`}>About</Link>
+        <Link href="/2/videos" className={`nav-link ${pathname === '/2/videos' ? 'active' : ''}`}>Videos</Link>
         <Link href="/2/podcast" className={`nav-link ${pathname === '/2/podcast' ? 'active' : ''}`}>Podcast</Link>
         <Link href="/2/apps" className={`nav-link ${pathname === '/2/apps' ? 'active' : ''}`}>Apps</Link>
         <Link href="/2/books" className={`nav-link ${pathname === '/2/books' ? 'active' : ''}`}>Books</Link>
