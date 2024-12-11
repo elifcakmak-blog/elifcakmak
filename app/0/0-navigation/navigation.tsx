@@ -6,10 +6,11 @@ import { usePathname } from 'next/navigation';
 import './navigation.css';
 
 const Navigation = () => {
-  const pathname = usePathname(); 
+  const pathname = usePathname();
+
 
   return (
-    <header className="header">
+    <header className={`header ${pathname === '/3' ? 'highlight' : ''}`}>
       <Link href="/" className="logo-link">
         <Image src="/elif-logo/elifcakmaklogo.svg" alt="Elif Çakmak Logo" width={100} height={100} className="logo" />
       </Link>

@@ -13,7 +13,8 @@
   object-fit: cover;
   border-radius: 8px;
   display: block;
-  margin: 0 auto; /* This will center the image */
+  margin: 0 auto;
+  margin-top: 20px;
   }
   
   .iframe-frame {
