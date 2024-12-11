@@ -20,6 +20,7 @@ export default function Home() {
 
       <img src={"../page-titles/podcast.svg"}alt="Podcast Title Image"className="podcast-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
 
+
       {/* Use the UnderConstruction component */}
       <UnderConstruction />
 

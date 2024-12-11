@@ -21,7 +21,9 @@ export default function About() {
 
       {/* Header Title Image */}
 
+
       <img src={"../page-titles/about.svg"} alt="about title image" style={{width: "40%", objectFit: "cover", borderRadius: "8px",display: "block",margin: "0 auto", marginTop: "20px",}}/>
+
 
       {/* Import About Section */}
       <AbSection2 />
