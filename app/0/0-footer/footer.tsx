@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Business 🏢
+                Business🏢
               </a>
               <a 
                 href="https://www.effortlessworks.elifcakmak.blog/2/individual" 
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Individuals 🏠
+                Individual🏠
               </a>
               <a 
                 href="https://www.effortlessworks.elifcakmak.blog/2/quest" 
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Quest ⚔️
+                Quest⚔️
               </a>
               <a 
                 href="https://www.effortlessworks.elifcakmak.blog/2/courses" 
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Courses 📚
+                Courses📚
               </a>
               <a 
                 href="https://www.effortlessworks.elifcakmak.blog/info" 
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Info ℹ️
+                Infoℹ️
               </a>
               <a 
                 href="https://www.effortlessworks.elifcakmak.blog/2/contact" 

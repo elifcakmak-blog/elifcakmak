@@ -6,7 +6,7 @@
     border: 10px solid #504081;
     border-radius: 16px;
     padding: 40px;
-    height: 750px;
+    height: 70vh50px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
@@ -114,8 +114,18 @@
     .ab-content2 {
       font-size: 16px; /* Adjust this value as needed */
     }
+
+    
   
     .ab-section2 p {
       font-size: 1rem; /* Adjust this value to control the paragraph text size */
     }
+  }
+
+  @media (min-width: 768px) {
+
+    .ab-section2 {
+      height: 950px;
+    }
+
   }
