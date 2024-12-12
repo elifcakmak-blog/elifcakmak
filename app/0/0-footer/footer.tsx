@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <div className="footer-card effortless-card p-6 shadow-md rounded-md text-center">
               <h3 className="text-2xl font-bold">Effortless Works</h3>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/2/business" 
+                href="https://www.effortlessworks.elifcakmak.blog/000002/business" 
                 className="footer-link" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                 Business🏢
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/2/individual" 
+                href="https://www.effortlessworks.elifcakmak.blog/000002/individual" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                 Individual🏠
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/2/quest" 
+                href="https://www.effortlessworks.elifcakmak.blog/000002/quest" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                 Quest⚔️
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/2/courses" 
+                href="https://www.effortlessworks.elifcakmak.blog/000002/courses" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
                 Courses📚
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/info" 
+                href="https://www.effortlessworks.elifcakmak.blog/000002/info" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                 Infoℹ️
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/2/contact" 
+                href="https://www.effortlessworks.elifcakmak.blog/000002/contact" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
