@@ -22,7 +22,7 @@
 
   .rain {
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -47,7 +47,7 @@
   
   @keyframes rainAnimation {
     0% {
-      top: -10px; /* Start just above the section */
+      top: 0px; /* Start just above the section */
       opacity: 1;
     }
     100% {
