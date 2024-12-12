@@ -43,6 +43,77 @@ export default function Home() {
       {/* Add the font link */}
       <Head>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://elifcakmak.blog"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://www.elifcakmak.blog/2/about"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Videos",
+                  "item": "https://www.elifcakmak.blog/2/videos"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Podcast",
+                  "item": "https://www.elifcakmak.blog/2/podcast"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Apps",
+                  "item": "https://www.elifcakmak.blog/2/apps"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "name": "Books",
+                  "item": "https://www.elifcakmak.blog/2/books"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "name": "Road Map",
+                  "item": "https://www.elifcakmak.blog/3"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 8,
+                  "name": "Newsletter",
+                  "item": "https://www.elifcakmak.blog/2/newsletter"
+                }
+              ]
+            })
+          }}
+        />
+        {/* Google Analytics Tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6V7P46JDCR"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-6V7P46JDCR');
+            `,
+          }}
+        />
       </Head>
 
       {/* Import Cursor */}
