@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Elif Çakmak",
   description: "I help people simplify tasks so they can work effortlessly ⭐️",
   openGraph: {
-    title: "Elif Çakmak - Simplify Tasks, Work Effortlessly",
+    title: "Simplify Tasks, Work Effortlessly | Elif Çakmak",
     description: "Discover podcasts, videos, apps, books and more on my personal brand site.",
     url: "https://elifcakmak.blog",
     siteName: "Elif Çakmak",
