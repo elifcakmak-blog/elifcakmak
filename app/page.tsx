@@ -42,7 +42,6 @@ export default function Home() {
       
       {/* Add the font link */}
       <Head>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
       <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

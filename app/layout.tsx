@@ -44,8 +44,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        {/* Google Analytics Tag */}
-        <Script 
+        []
+      </Head>
+      
+      {/* Google Analytics Tag */}
+      <Script 
           src={`https://www.googletagmanager.com/gtag/js?id=G-6V7P46JDCR`}
           strategy="afterInteractive"
         />
@@ -58,7 +61,7 @@ export default function RootLayout({
             gtag('config', 'G-6V7P46JDCR');
           `}
         </Script>
-      </Head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
