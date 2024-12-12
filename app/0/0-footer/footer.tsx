@@ -25,31 +25,40 @@ const Footer: React.FC = () => {
             <div className="footer-card effortless-card p-6 shadow-md rounded-md text-center">
               <h3 className="text-2xl font-bold">Effortless Works</h3>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/products" 
+                href="https://www.effortlessworks.elifcakmak.blog/2/business" 
                 className="footer-link" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Products
+                Business 🏢
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/services" 
+                href="https://www.effortlessworks.elifcakmak.blog/2/individual" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Services
+                Individuals 🏠
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/courses" 
+                href="https://www.effortlessworks.elifcakmak.blog/2/quest" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Courses
+                Quest ⚔️
+              </a>
+              <a 
+                href="https://www.effortlessworks.elifcakmak.blog/2/courses" 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Courses 📚
               </a>
               <a 
                 href="https://www.effortlessworks.elifcakmak.blog/info" 
@@ -58,10 +67,10 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                Info
+                Info ℹ️
               </a>
               <a 
-                href="https://www.effortlessworks.elifcakmak.blog/contact" 
+                href="https://www.effortlessworks.elifcakmak.blog/2/contact" 
                 className="footer-link"
                 target="_blank" 
                 rel="noopener noreferrer"
