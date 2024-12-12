@@ -139,9 +139,9 @@
     transform: translateY(0);
   }
   100% {
-    bottom: 100vh; /* Move to the top of the viewport */
+    bottom: 240vh; /* Move to the top of the viewport */
     opacity: 0;
-    transform: translateY(-100vh); /* Move up */
+    transform: translateY(-240vh); /* Move up */
   }
 }
 
