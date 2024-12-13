@@ -60,7 +60,7 @@ const ServicesSection: React.FC = () => {
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
             <h3 className="text-xl font-bold">Effortless Works</h3>
             <p className="mt-2 text-gray-600">Simplify Your Tasks Effortlessly</p>
-            <Link href="https://www.effortlessworks.elifcakmak.blog/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.effortlessworks.store/" target="_blank" rel="noopener noreferrer">
               <button className="btn-primary mt-4">Simplify</button>
             </Link>
           </div>

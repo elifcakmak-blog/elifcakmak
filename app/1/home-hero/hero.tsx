@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
         <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we simplify the process, we make work effortless, one system at a time.</p>
         <div className="mt-6 max-w-lg">
           <Link 
-            href="https://www.effortlessworks.elifcakmak.blog/" 
+            href="https://www.effortlessworks.store/" 
             className="btn-primary"
             target="_blank" // Opens the link in a new tab
             rel="noopener noreferrer" // Security best practice
