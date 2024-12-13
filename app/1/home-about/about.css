@@ -1,7 +1,7 @@
 .about-section {
     background-image: url('/backend-images/aboutbackground.png');
     background-size: cover; 
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     border: 10px solid #504081;
     border-radius: 16px; /* Rounded corners */
