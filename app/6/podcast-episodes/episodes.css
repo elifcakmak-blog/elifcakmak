@@ -1,59 +1,250 @@
-/* Featured episodes section */
-.featured-episodes {
-    margin-bottom: 40px;
-  }
-  
-  .featured-episodes h2 {
+/* General Resets */
+body, h1, h2, h3, p, ul, li, a, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+.section_podcast {
+  padding: 4rem 1.5rem;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Default text color */
+}
+
+.container-large {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Centered Podcast Section */
+.wrapper-podcast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* Header Section */
+.heading-style-h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #111;
+}
+
+.text-size-regular {
+  font-size: 1rem;
+  color: #555;
+}
+/* Filters Section */
+.wrapper-filter-podcast {
+  display: flex;
+  flex-direction: row; /* Align the items in a row */
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Optional spacing */
+  gap: 1rem;
+}
+
+.filter-dropdown,
+.search {
+  width: 300px; /* Adjust as needed */
+  margin-bottom: 0; /* Remove bottom margin for better alignment */
+}
+
+/* If you want the toggle to be more compact, adjust width */
+.toggle {
+  width: auto; /* Ensure the toggle button doesn't take up more space than needed */
+}
+
+/* Filter Dropdown Menu */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: none;
+}
+
+.toggle {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  transition: background-color 0.2s ease;
+  cursor: none;
+}
+
+.toggle:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-icon {
+  font-size: 1rem;
+  color: #777;
+  transition: transform 0.2s ease;
+}
+
+.toggle[aria-expanded="true"] .dropdown-icon {
+  transform: rotate(180deg); /* Rotate arrow when expanded */
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+  max-height: 200px; /* Add scroll for long lists */
+  overflow-y: auto;
+  cursor: none;
+}
+
+.filter-dropdown:hover .dropdown-list,
+.filter-dropdown .w-dropdown-toggle[aria-expanded="true"] ~ .dropdown-list {
+  display: block; /* Show dropdown on hover or expanded */
+  cursor: none;
+}
+
+.check-box-field {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+  cursor: none;
+}
+
+.check-box-field:hover {
+  background-color: #f5f5f5;
+  cursor: none;
+}
+
+.chk-box {
+  cursor: none;
+}
+
+.chk-box-label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.search {
+  flex: 1;
+  max-width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Reset Filters Button */
+.clear-filter {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.clear-filter:hover {
+  background-color: #e65b5b;
+}
+
+/* Podcast Card Grid */
+.wrapper-grid-podcast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-podcast {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.card-podcast:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.podcast-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.category-pill {
+  background-color: #ffc107;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.text-size-medium {
+  font-size: 1rem;
+  margin: 1rem 0.5rem;
+  color: #333;
+}
+
+.text-weight-bold {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading-style-h2 {
     font-size: 2rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    text-align: center;
   }
-  
-  .episode-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+
+  .wrapper-filter-podcast {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .episode {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
+
+  .filter-left-wrap {
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  
-  .episode h3 {
-    font-size: 1.5rem;
-    color: #2c3e50;
+  .filter-dropdown,
+  .search {
+    width: 100%; /* Ensure they take up full width on smaller screens */
+    margin-bottom: 10px; /* Optional margin for spacing */
   }
-  
-  .episode p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .heading-style-h2 {
+    font-size: 1.75rem;
   }
-  
-  .episode button {
-    background-color: #2c3e50;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+  .toggle {
+    width: 100%;
   }
-  
-  .episode button:hover {
-    background-color: #1abc9c;
+
+  .search {
+    width: 100%;
   }
-  
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .episode-list {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}
