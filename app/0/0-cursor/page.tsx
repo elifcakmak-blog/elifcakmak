@@ -68,7 +68,13 @@ const CustomCursorPage = () => {
     });
   
     document.addEventListener('mousemove', handleMouseMove);
-  
+
+    // Set the custom cursor globally, including over the scrollbar
+    document.body.style.cursor = 'none'; // Hide the default cursor
+
+    // Ensure the scrollbar doesn't show default system cursor
+    document.documentElement.style.cursor = 'none'; // Hide cursor on the entire page, including scrollbar
+
     // Cleanup function to remove event listeners and the cursor
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
@@ -81,6 +87,8 @@ const CustomCursorPage = () => {
         el.removeEventListener('dragend', handleDragEnd);
       });
       document.body.removeChild(cursor);
+      document.body.style.cursor = ''; // Restore default cursor on cleanup
+      document.documentElement.style.cursor = ''; // Restore cursor for the page
     };
   }, []);
   
