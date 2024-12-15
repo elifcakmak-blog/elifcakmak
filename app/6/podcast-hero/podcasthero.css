@@ -72,6 +72,16 @@
       margin-top: 20px;
       padding: 0 16px;
     }
+
+    .hero-content h1 {
+      font-size: 1.8rem; /* Smaller size on mobile */
+      margin-top: 50px;
+    }
+  
+    .hero-content p {
+      font-size: 1rem; /* Smaller size on mobile */
+      margin-bottom: 50px;
+    }
   }
   
   @media (min-width: 1024px) {
