@@ -14,15 +14,26 @@ interface Podcast {
 }
 
 const podcasts: Podcast[] = [
-  // Add podcasts here...
+  /*{
+    id: 1,
+    category: "Organization",
+    title: "Getting Things Done",
+    date: "2023-10-10",
+    imageSrc: "/path-to-image.jpg",
+    imageAlt: "Podcast cover for Getting Things Done",
+    link: "https://example.com/podcast1",
+  },*/
+  
 ];
 
 const PodcastSection: React.FC = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [sortOption, setSortOption] = useState<string>("name-asc"); // New state for sorting
-  const [extraInput, setExtraInput] = useState(""); // New state for extra input field
+  const [dropdownOpen, setDropdownOpen] = useState<{ [key: string]: boolean }>({
+    categories: false,
+    sort: false,
+  });
+  const [sortOption, setSortOption] = useState<string>("name-asc");
 
   const handleCheckboxChange = (category: string) => {
     setSelectedCategories((prev) =>
@@ -36,21 +47,22 @@ const PodcastSection: React.FC = () => {
     setSortOption(option);
   };
 
-  const handleExtraInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setExtraInput(event.target.value);
+  const clearFilters = () => {
+    setSelectedCategories([]);
+    setSearchTerm("");
+    setSortOption("name-asc");
   };
 
-  // Sort podcasts based on selected option
   const sortedPodcasts = [...podcasts].sort((a, b) => {
     switch (sortOption) {
       case "name-asc":
-        return a.title.localeCompare(b.title); // A-Z
+        return a.title.localeCompare(b.title);
       case "name-desc":
-        return b.title.localeCompare(a.title); // Z-A
+        return b.title.localeCompare(a.title);
       case "date-asc":
-        return new Date(a.date).getTime() - new Date(b.date).getTime(); // Date Ascending
+        return new Date(a.date).getTime() - new Date(b.date).getTime();
       case "date-desc":
-        return new Date(b.date).getTime() - new Date(a.date).getTime(); // Date Descending
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
       default:
         return 0;
     }
@@ -64,154 +76,154 @@ const PodcastSection: React.FC = () => {
   );
 
   return (
-    <section className="section_podcast">
-      <div className="container-large">
-        <div className="wrapper-podcast">
-          {/* Header */}
-          <div className="max-width-xlarge align-center">
-            <div className="margin-bottom margin-xxsmall">
-              <h2 className="heading-style-h2 text-align-center">
-                Simplify Your Tasks Effortlessly<br />
-                The #1 Podcast for Organization.
-              </h2>
+    <div className="floating-card-wrapper">
+      <section className="section_podcast">
+        <div className="container-large">
+          <div className="wrapper-podcast">
+            {/* Header */}
+            <div className="max-width-xlarge align-center">
+              <div className="margin-bottom margin-xxsmall">
+                <h2 className="heading-style-h2 text-align-center">
+                  Simplify Your Tasks Effortlessly<br />
+                  The #1 Podcast for Organization.
+                </h2>
+              </div>
+              <p className="text-size-regular text-align-center">
+                New episodes every week.
+              </p>
             </div>
-            <p className="text-size-regular text-align-center">
-              New episodes every week.
-            </p>
-          </div>
 
-          {/* Filter Section */}
-          <div className="wrapper-filter-podcast" style={{ cursor: 'none' }}>
-            {/* Categories Dropdown */}
-            <div className="filter-dropdown" style={{ cursor: 'none' }}>
-              <div
-                className="toggle"
-                aria-expanded={isDropdownOpen}
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                style={{ cursor: 'none' }}
-              >
-                Filter by Categories
-                <span
-                  className={`dropdown-icon ${isDropdownOpen ? "rotate" : ""}`}
+            {/* Filter and Sort Section */}
+            <div className="wrapper-filter-podcast">
+              {/* Categories Dropdown */}
+              <div className="filter-dropdown" style={{ cursor: 'none' }}>
+                <div
+                  className="toggle" style={{ cursor: 'none' }}
+                  aria-expanded={dropdownOpen.categories}
+                  onClick={() =>
+                    setDropdownOpen((prevState) => ({
+                      ...prevState,
+                      categories: !prevState.categories,
+                    }))}
+                >
+                  Filter by Categories
+                  <span
+                    className={`dropdown-icon ${dropdownOpen.categories ? "rotate" : ""}`} 
+                    style={{ cursor: 'none' }}
+                  >
+                    ▼
+                  </span>
+                </div>
+                <div
+                  className={`dropdown-list ${dropdownOpen.categories ? "active" : ""}`} 
                   style={{ cursor: 'none' }}
                 >
-                  ▼
-                </span>
+                  {["Software Development", "Data Management", "Organization"].map(
+                    (category, index) => (
+                      <div key={index} className="check-box-field" style={{ cursor: 'none' }}>
+                        <input
+                          type="checkbox"
+                          id={`category-${index}`}
+                          checked={selectedCategories.includes(category)}
+                          onChange={() => handleCheckboxChange(category)}
+                          className="chk-box" style={{ cursor: 'none' }}
+                        />
+                        <label htmlFor={`category-${index}`} className="chk-box-label" style={{ cursor: 'none' }}>
+                          {category}
+                        </label>
+                      </div>
+                    )
+                  )}
+                </div>
               </div>
-              <div
-                className={`dropdown-list ${isDropdownOpen ? "active" : ""}`}
-                style={{ cursor: 'none' }}
-              >
-                {[
-                  "Software Development",
-                  "Data Management",
-                  "Organization",
-                ].map((category, index) => (
-                  <div key={index} className="check-box-field" style={{ cursor: 'none' }}>
-                    <input
-                      type="checkbox"
-                      id={`category-${index}`}
-                      checked={selectedCategories.includes(category)}
-                      onChange={() => handleCheckboxChange(category)}
-                      className="chk-box"
-                      style={{ cursor: 'none' }}
-                    />
-                    <label
-                      htmlFor={`category-${index}`}
-                      className="chk-box-label"
-                      style={{ cursor: 'none' }}
-                    >
-                      {category}
-                    </label>
-                  </div>
-                ))}
-              </div>
-            </div>
 
-            {/* Sort Dropdown with Checkboxes */}
-            <div className="filter-dropdown" style={{ cursor: 'none' }}>
-              <div
-                className="toggle"
-                aria-expanded={isDropdownOpen}
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                style={{ cursor: 'none' }}
-              >
-                Sort Podcasts
-                <span
-                  className={`dropdown-icon ${isDropdownOpen ? "rotate" : ""}`}
-                  style={{ cursor: 'none' }}
+              {/* Sort Dropdown */}
+              <div className="filter-dropdown">
+                <div
+                  className="toggle"
+                  aria-expanded={dropdownOpen.sort}
+                  onClick={() =>
+                    setDropdownOpen((prevState) => ({
+                      ...prevState,
+                      sort: !prevState.sort,
+                    }))}
                 >
-                  ▼
-                </span>
+                  Sort Podcasts
+                  <span
+                    className={`dropdown-icon ${dropdownOpen.sort ? "rotate" : ""}`}
+                  >
+                    ▼
+                  </span>
+                </div>
+                <div className={`dropdown-list ${dropdownOpen.sort ? "active" : ""}`}>
+                  {[
+                    { label: "Name (A-Z)", value: "name-asc" },
+                    { label: "Name (Z-A)", value: "name-desc" },
+                    { label: "Date (Asc)", value: "date-asc" },
+                    { label: "Date (Desc)", value: "date-desc" },
+                  ].map((option) => (
+                    <div key={option.value} className="check-box-field">
+                      <input
+                        type="radio"
+                        id={`sort-${option.value}`}
+                        name="sortOption"
+                        checked={sortOption === option.value}
+                        onChange={() => handleSortChange(option.value)}
+                        className="chk-box" style={{ cursor: 'none' }}
+                      />
+                      <label htmlFor={`sort-${option.value}`} className="chk-box-label" style={{ cursor: 'none' }}>
+                        {option.label}
+                      </label>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div
-                className={`dropdown-list ${isDropdownOpen ? "active" : ""}`}
-                style={{ cursor: 'none' }}
-              >
-                {[
-                  { label: "Name (A-Z)", value: "name-asc" },
-                  { label: "Name (Z-A)", value: "name-desc" },
-                  { label: "Date (Asc)", value: "date-asc" },
-                  { label: "Date (Desc)", value: "date-desc" },
-                ].map((option, index) => (
-                  <div key={index} className="check-box-field" style={{ cursor: 'none' }}>
-                    <input
-                      type="radio"
-                      id={`sort-${option.value}`}
-                      name="sortOption"
-                      checked={sortOption === option.value}
-                      onChange={() => handleSortChange(option.value)}
-                      className="chk-box"
-                      style={{ cursor: 'none' }}
-                    />
-                    <label
-                      htmlFor={`sort-${option.value}`}
-                      className="chk-box-label"
-                      style={{ cursor: 'none' }}
-                    >
-                      {option.label}
-                    </label>
-                  </div>
-                ))}
-              </div>
-            </div>
 
-            {/* Search */}
-            <div>
-              <input
-                type="text"
-                placeholder="Search Podcasts..."
-                className="search w-input"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </div>
-          </div>
-
-          {/* Podcast List */}
-          <div className="cms-podcast wrapper-grid-podcast">
-            {filteredPodcasts.map((podcast) => (
-              <a
-                key={podcast.id}
-                href={podcast.link}
-                className="card-podcast w-inline-block"
-              >
-                <img
-                  src={podcast.imageSrc}
-                  alt={podcast.imageAlt}
-                  className="podcast-thumbnail"
+              {/* Search */}
+              <div>
+                <input
+                  type="text"
+                  placeholder="Search Podcasts..."
+                  className="search w-input"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
                 />
-                <div className="category-pill">{podcast.category}</div>
-                <p className="text-size-medium text-weight-bold">
-                  {podcast.title}
-                </p>
-                <div className="hide">{podcast.date}</div>
-              </a>
-            ))}
+              </div>
+
+              {/* Clear Filters Button */}
+              <button 
+                className="clear-filters-btn"
+                onClick={clearFilters}
+              >
+                Clear Filters
+              </button>
+            </div>
+
+            {/* Podcast List */}
+            <div className="cms-podcast wrapper-grid-podcast">
+              {filteredPodcasts.map((podcast) => (
+                <a
+                  key={podcast.id}
+                  href={podcast.link}
+                  className="card-podcast w-inline-block"
+                >
+                  <img
+                    src={podcast.imageSrc}
+                    alt={podcast.imageAlt}
+                    className="podcast-thumbnail"
+                  />
+                  <div className="category-pill">{podcast.category}</div>
+                  <p className="text-size-medium text-weight-bold">
+                    {podcast.title}
+                  </p>
+                  <div className="hide">{podcast.date}</div>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

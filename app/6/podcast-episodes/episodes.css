@@ -10,11 +10,41 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   padding: 4rem 1.5rem;
   background-color: #f9f9f9; /* Light background */
   color: #333; /* Default text color */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px; /* Rounded corners */
 }
 
 .container-large {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.floating-card-wrapper {
+  position: relative;
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.floating-card-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, #f9a8d4, #a3d5f9);
+  border-radius: 1.2rem;
+  z-index: -1;
+  filter: blur(20px);
 }
 
 /* Centered Podcast Section */
@@ -32,38 +62,40 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
-  color: #111;
+  color: #504081;
 }
 
 .text-size-regular {
   font-size: 1rem;
   color: #555;
 }
+
 /* Filters Section */
 .wrapper-filter-podcast {
   display: flex;
-  flex-direction: row; /* Align the items in a row */
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
   margin-top: 20px; /* Optional spacing */
-  gap: 1rem;
 }
 
 .filter-dropdown,
 .search {
   width: 300px; /* Adjust as needed */
   margin-bottom: 0; /* Remove bottom margin for better alignment */
+  cursor: none;
 }
 
 /* If you want the toggle to be more compact, adjust width */
 .toggle {
   width: auto; /* Ensure the toggle button doesn't take up more space than needed */
+  cursor: none;
 }
 
 /* Filter Dropdown Menu */
 .filter-dropdown {
-  position: relative;
-  display: inline-block;
+  flex: 1;
+  min-width: 200px;
   cursor: none;
 }
 
@@ -83,6 +115,7 @@ body, h1, h2, h3, p, ul, li, a, input, button {
 
 .toggle:hover {
   background-color: #f5f5f5;
+  cursor: none;
 }
 
 .dropdown-icon {
@@ -93,6 +126,7 @@ body, h1, h2, h3, p, ul, li, a, input, button {
 
 .toggle[aria-expanded="true"] .dropdown-icon {
   transform: rotate(180deg); /* Rotate arrow when expanded */
+  cursor: none;
 }
 
 .dropdown-list {
@@ -142,24 +176,27 @@ body, h1, h2, h3, p, ul, li, a, input, button {
 
 .search {
   flex: 1;
-  max-width: 300px;
+  max-width: 200px;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  cursor: none;
 }
 
 /* Reset Filters Button */
-.clear-filter {
+.clear-filters-btn {
   background-color: #ff6b6b;
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 5px;
   text-align: center;
+  cursor: none;
 }
 
-.clear-filter:hover {
+.clear-filters-btn:hover {
   background-color: #e65b5b;
+  cursor: none;
 }
 
 /* Podcast Card Grid */
@@ -213,15 +250,40 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   font-weight: bold;
 }
 
+/* Main podcast grid container */
+.cms-podcast.wrapper-grid-podcast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+  gap: 20px; /* Space between items */
+  justify-items: center; /* Center items horizontally */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 1200px) {
+  .cms-podcast.wrapper-grid-podcast {
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row on medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .cms-podcast.wrapper-grid-podcast {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row on tablets */
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .heading-style-h2 {
     font-size: 2rem;
   }
 
+  .cms-podcast.wrapper-grid-podcast {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+  }
+
   .wrapper-filter-podcast {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .filter-left-wrap {
@@ -247,4 +309,73 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   .search {
     width: 100%;
   }
+
+  .cms-podcast.wrapper-grid-podcast {
+    grid-template-columns: 1fr; /* 1 item per row on very small screens */
+  }
+}
+
+/* New filter dropdown styles */
+.filter-dropdown {
+  position: relative;
+  width: 100%;
+  cursor: none;
+}
+
+.toggle {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: none;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-list {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+  z-index: 10;
+  cursor: none;
+}
+
+.dropdown-list.active {
+  display: block; /* Visible when active */
+  cursor: none;
+}
+
+.check-box-field {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  cursor: none;
+}
+
+.check-box-field:last-child {
+  border-bottom: none;
+  cursor: none;
+}
+
+.chk-box-label {
+  margin-left: 10px;
+}
+
+.chk-box {
+  cursor: pointer;
 }

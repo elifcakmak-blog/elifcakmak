@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1c0e45;
+  background: linear-gradient(135deg,rgb(148, 87, 233),#1c0e45);
   color: #efe1ff;
   padding: 40px 20px;
   margin-top: 20px;
@@ -39,7 +39,7 @@
 
 /* Elif Çakmak Card */
 .elif-card {
-  background-color: #efe1ff; /* Light purple background */
+  background:linear-gradient(135deg,rgb(190, 156, 242),rgb(241, 234, 252));
   color: #1c0e45; /* Dark blue text color */
   border: 7px solid transparent; /* Default border */
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -64,7 +64,7 @@
 
 /* Effortless Works Card */
 .effortless-card {
-  background-color: #504081; /* Dark purple background */
+  background:linear-gradient(135deg,rgb(46, 26, 77),rgb(104, 79, 179));
   color: #efe1ff; /* Light purple text color */
   border: 7px solid transparent; /* Default border */
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -90,7 +90,7 @@
 
 /* EasyFlow Media Card */
 .easyflow-card {
-  background-color: #e6df20; /* Yellow background */
+  background:linear-gradient(135deg,rgb(230,223,32),rgb(250, 247, 216));
   color: #1c0e45; /* Dark blue text color */
   border: 7px solid transparent; /* Default border */
   transition: background-color 0.3s ease, border-color 0.3s ease;

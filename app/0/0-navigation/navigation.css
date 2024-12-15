@@ -1,5 +1,5 @@
 .header {
-    background-color: #efe1ff; 
+    background: linear-gradient(115deg, #efe1ff,rgb(172, 149, 231));
     display: flex;
     box-shadow: 0 3px 10px #504081;
     padding: 20px 40px;

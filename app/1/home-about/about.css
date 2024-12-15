@@ -53,7 +53,7 @@
     left: -12px; /* Align with the left of the text */
     width: calc(100% + 24px); /* Make the card wider horizontally */
     height: calc(100% + 16px); /* Make the card taller vertically */
-    background-color: #504081; /* Dark purple background */
+    background: linear-gradient(155deg,rgba(83, 22, 148, 0.66),rgba(248, 238, 93, 0.34));
     z-index: -1; /* Place behind the text */
     border-radius: 8px; /* Rounded corners */
     transform: scale(0.9); /* subtle animation effect */

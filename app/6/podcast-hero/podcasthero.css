@@ -1,22 +1,37 @@
-/* Hero Section */
-/* Hero Section */
 .hero {
-    position: relative;
-    /*background-image: url('path-to-your-background-image.jpg');*/ 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 70vh;
-    border: 10px solid #504081;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15);
-    transition: border-color 0.3s ease, transform 0.3s ease;
-    z-index: 1;
-  }
+  position: relative;
+  background-image: url('/backend-images/podcasthero.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  border: 10px solid #504081;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Default blur */
+  background: rgba(255, 255, 255, 0.1); /* Optional: add translucent color */
+  transition: backdrop-filter 0.3s ease; /* Smooth transition */
+  z-index: 0;
+}
+
+.hero:hover::after {
+  backdrop-filter: blur(15px); /* Increase blur on hover */
+}
+
+
   
   .hero:hover {
     border-color: #fef74b;
@@ -25,13 +40,26 @@
   }
   
   .hero-content {
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 16px;
-    z-index: 10; /* Explicit z-index for clarity */
-    position: relative; /* To layer correctly */
-  }
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: shadow for extra depth */
+    z-index: 2; /* Ensure content is above the background */
+    max-width: 80%; /* Optional: limit the width */
+    backdrop-filter: blur(5px); /* Optional: blur effect for transparency */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust font size for header */
+    margin-bottom: 15px;
+    color: #333; /* Text color */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Adjust font size for paragraph */
+    color: #666; /* Text color */
+    margin-top: 0;
+}
   
   @media (max-width: 768px) {
     .hero {

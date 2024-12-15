@@ -10,6 +10,7 @@
     margin: 0 auto; /* Centering */
     box-sizing: border-box; /* Includes padding in the width */
     margin-top: 40px;
+    background: linear-gradient(135deg,rgb(198, 165, 244),rgb(83, 22, 148));
   }
   
   /* Hover effect */

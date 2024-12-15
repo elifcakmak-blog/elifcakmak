@@ -1,6 +1,6 @@
 .services {
   position: relative;
-  background-color: #504081; /* Purple background */
+  background: linear-gradient(100deg,rgb(36, 21, 59),rgb(103, 20, 192));
   padding: 90px 0; /* Adjust as needed */
   overflow: hidden;
   width: 100%; /* Full width of the viewport */
@@ -159,4 +159,10 @@
   font-size: 1.75rem; /* Larger font size for headings */
   margin-top: 0px;
   margin-bottom: 20px;
+}
+
+.service-card {
+  position: relative;
+  animation: float 2s ease-in-out infinite;
+  background: linear-gradient(165deg,rgb(94, 20, 198),rgb(19, 186, 69));
 }

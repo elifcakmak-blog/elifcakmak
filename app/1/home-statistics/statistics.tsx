@@ -18,7 +18,7 @@ const StatisticsSection: React.FC = () => {
           {statistics.map((stat, index) => (
             <div key={index} className="stat-card p-6 bg-[#504081] shadow-md rounded-md text-center">
               <h3 className="text-2xl" style={{ color: stat.color }}>{stat.value}</h3>
-              <p className="mt-2 text-[#efe1ff]">{stat.label}</p>
+              <p className="mt-2 text-[#504081]">{stat.label}</p>
             </div>
           ))}
         </div>

@@ -21,6 +21,18 @@
   border-color: #fef74b; /* Change border color to yellow when hovered */
   transform: translateY(-8px); /* Lifts the card on hover */
   z-index: 2; /* Bring to the front when hovered */
+
+}
+
+.hero:hover::after {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg,rgba(254, 247, 145, 0.31),rgba(83, 22, 148, 0.57));
+  z-index: 1; /* Ensure overlay is above the image */
 }
 
 .hero .relative.z-10 {

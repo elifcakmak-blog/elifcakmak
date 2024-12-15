@@ -17,8 +17,8 @@ const ServicesSection: React.FC = () => {
       </div>
       <div className="container mx-auto px-4">
         <div className="services-content text-center mb-8">
-          <div className="bg-[#fef74b] p-6 rounded-lg shadow-lg inline-block animate-spinShake border-4 border-[#1c0e45] hover:transform hover:translateY(-8px) transition-transform">
-            <h2 className="text-3xl font-bold text-[#504081]">EasyFlow Media Presents</h2>
+          <div className="easyflow-title bg-[#fef74b] p-6 rounded-lg shadow-lg inline-block animate-spinShake border-4 border-[#1c0e45] hover:transform hover:translateY(-8px) transition-transform">
+            <h2 className="text-3xl font-bold text-[#efe1ff]">EasyFlow Media Presents</h2>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">

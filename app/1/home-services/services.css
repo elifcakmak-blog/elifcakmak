@@ -1,6 +1,6 @@
 .services {
     position: relative;
-    background-color: #504081; /* Purple background */
+    background: linear-gradient(100deg,rgb(36, 21, 59),rgb(124, 83, 168));
     padding: 16px 0; /* Adjust as needed */
     overflow: hidden;
     width: 100%; /* Full width of the viewport */
@@ -28,6 +28,10 @@
     height: 100%;
     overflow: hidden;
     z-index: -1; /* Set to -1 to be behind the content */
+  }
+
+  .easyflow-title {
+    background: linear-gradient(135deg,rgb(247, 212, 15),rgb(251, 251, 136));
   }
   
   .rain-drop {
@@ -68,7 +72,7 @@
   
   
   .services h2, .services a {
-    color: #0b0228;
+    color:rgba(83, 22, 148, 0.79);
   }
   
   .services p {
@@ -76,12 +80,13 @@
   }
   
   .services h3 {
-    color: #4bfe5a;
+    color:rgb(27, 244, 12);
   }
   
   .service-card {
     position: relative;
     animation: float 2s ease-in-out infinite;
+    background: linear-gradient(165deg,rgb(94, 20, 198),rgb(19, 186, 69));
   }
   
   @keyframes float {
