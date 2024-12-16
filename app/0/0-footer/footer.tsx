@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
                 <a href="https://www.youtube.com/@EasyFlow-Media" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/youtube.svg" alt="YouTube" className="social-icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/elif-cakmak/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/elif-%C3%A7akmak" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/linkedin.svg" alt="LinkedIn" className="social-icon" />
                 </a>
                 <a href="https://x.com/EasyFlow_Media" target="_blank" rel="noopener noreferrer">
