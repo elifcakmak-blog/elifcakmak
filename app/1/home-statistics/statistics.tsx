@@ -6,7 +6,7 @@ const statistics = [
   { label: 'Digital Products', value: '0+', color: '#fef74b' },
   { label: 'Videos Created', value: '0+', color: '#fef74b' },
   { label: 'Podcast Episodes', value: '0+', color: '#fef74b' },
-  { label: 'Apps Developed', value: '0+', color: '#fef74b' },
+  { label: 'Apps and Websites Developed', value: '3+', color: '#fef74b' },
   { label: 'Books Written', value: '0+', color: '#fef74b' },
 ];
 
