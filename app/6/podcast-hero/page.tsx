@@ -6,7 +6,7 @@ const PodcastHero: React.FC = () => {
   return (
     <section className="hero">
         <div className="hero-content">
-            <h1>Welcome to Effortless Works</h1>
+            <h1>Welcome to The Effortless Works Podcast</h1>
             <p>Your go-to podcast for mastering data management and staying organized effortlessly.</p>
         </div>
     </section>

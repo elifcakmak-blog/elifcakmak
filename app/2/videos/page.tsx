@@ -1,31 +1,41 @@
 "use client";
 
-import UnderConstruction from '../../0/0-UnderConstruction/UnderConstruction';
 import Navigation from '../../0/0-navigation/navigation';
-import './video.css';
+import VideoHero from '../../7/video-hero/page';
+import Videolinks from '../../7/video-links/page';
+import VideoEpisodes from '../../7/video-episodes/page';
+import EffortlessResources from "../../7/video-resources/newsletter"
 import Footer from '../../0/0-footer/footer';
 import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
 
+
 export default function Home() {
   return (
-    <div className="home-container">
-      
+    <div className="podcast-container">
+            
       {/* Import Cursor */}
       <CustomCursor />
-      
+
       {/* Import Navigation */}
       <Navigation /> 
 
-      <img src={"../page-titles/videos.svg"} alt="videos title image" className="video-image" />
+      <img src={"../page-titles/videos.svg"}alt="Podcast Title Image"className="podcast-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
 
-      {/* Use the UnderConstruction component */}
-      <UnderConstruction />
+      {/* Import Hero */}
+      <VideoHero />
 
-      {/* Footer */}
+      {/* Import Links */}
+      <Videolinks />
 
-      <Footer />
+      {/* Import  Episodes */}
+      <VideoEpisodes />  
       
+      {/* Import  Effortless Resources */}
+      <EffortlessResources />  
+    
+      {/* Footer */}
+      <Footer />
+
     </div>
   );
 }
-

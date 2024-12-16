@@ -1,0 +1,96 @@
+.herobooks {
+  position: relative;
+  background-image: url('/backend-images/bookshero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  border: 10px solid #504081;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.herobooks::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Default blur */
+  background: rgba(255, 255, 255, 0.1); /* Optional: add translucent color */
+  transition: backdrop-filter 0.3s ease; /* Smooth transition */
+  z-index: 0;
+}
+
+.herobooks:hover::after {
+  backdrop-filter: blur(15px); /* Increase blur on hover */
+}
+
+
+  
+  .herobooks:hover {
+    border-color: #fef74b;
+    transform: translateY(-8px);
+    z-index: 2;
+  }
+  
+  .herobooks-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: shadow for extra depth */
+    z-index: 2; /* Ensure content is above the background */
+    max-width: 80%; /* Optional: limit the width */
+    backdrop-filter: blur(5px); /* Optional: blur effect for transparency */
+}
+
+.herobooks h1 {
+    font-size: 3rem; /* Adjust font size for header */
+    margin-bottom: 15px;
+    color: #333; /* Text color */
+}
+
+.herobooks p {
+    font-size: 1.2rem; /* Adjust font size for paragraph */
+    color: #666; /* Text color */
+    margin-top: 0;
+}
+  
+  @media (max-width: 768px) {
+    .herobooks {
+      background-position: left center;
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+  
+    .herobooks-content {
+      margin-top: 20px;
+      padding: 0 16px;
+    }
+
+    .herobooks-content h1 {
+      font-size: 1.8rem; /* Smaller size on mobile */
+      margin-top: 50px;
+    }
+  
+    .herobooks-content p {
+      font-size: 1rem; /* Smaller size on mobile */
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .herobooks-content {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: right;
+    }
+  }
+  

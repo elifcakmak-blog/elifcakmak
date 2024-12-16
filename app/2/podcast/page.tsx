@@ -4,6 +4,7 @@ import Navigation from '../../0/0-navigation/navigation';
 import PodcastHero from '../../6/podcast-hero/page';
 import PodcastLinks from '../../6/podcast-links/page';
 import PodcastEpisodes from '../../6/podcast-episodes/page';
+import EffortlessResources from '../../6/podcast-resources/newsletter'
 import Footer from '../../0/0-footer/footer';
 import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
 
@@ -28,6 +29,9 @@ export default function Home() {
 
       {/* Import Podcast Episodes */}
       <PodcastEpisodes />  
+
+      {/* Import Effortless Resources */}
+      <EffortlessResources />  
     
       {/* Footer */}
       <Footer />

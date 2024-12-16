@@ -12,14 +12,14 @@ const PodcastLinks: React.FC = () => {
                 className="card is-social-link w-inline-block"
             >
                 <img 
-                    src="/easyflow-socials/spotify.png" 
+                    src="/easyflow-socials/github.png"
                     loading="lazy" 
-                    alt="Spotify icon" 
+                    alt="GitHub icon" 
                     className="icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Listen on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Spotify</p>
+                    <p className="text-size-tiny text-color-charcoal"><strong>Follow on</strong></p>
+                    <p className="text-size-medium text-color-charcoal text-weight-bold">GitHub</p>
                 </div>
             </a>
 
@@ -30,14 +30,14 @@ const PodcastLinks: React.FC = () => {
                 className="card is-social-link w-inline-block"
             >
                 <img 
-                    src="/easyflow-socials/applepodcasts.png"
+                    src="/easyflow-socials/linkedin.png"
                     loading="lazy" 
-                    alt="Apple podcast logo" 
+                    alt="LinkedIn logo" 
                     className="icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Listen on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Apple Podcasts</p>
+                    <p className="text-size-tiny text-color-charcoal"><strong>Follow on</strong></p>
+                    <p className="text-size-medium text-color-charcoal text-weight-bold">LinkedIn</p>
                 </div>
             </a>
 
@@ -48,14 +48,14 @@ const PodcastLinks: React.FC = () => {
                 className="card is-social-link w-inline-block"
             >
                 <img 
-                    src="/easyflow-socials/youtube.png"
+                    src="/easyflow-socials/instagram.jpg"
                     loading="lazy" 
-                    alt="Youtube icon" 
+                    alt="instagram icon" 
                     className="icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Watch and Listen on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">YouTube</p>
+                    <p className="text-size-tiny text-color-charcoal"><strong>Follow on</strong></p>
+                    <p className="text-size-medium text-color-charcoal text-weight-bold">Instagram</p>
                 </div>
             </a>
 
@@ -66,14 +66,14 @@ const PodcastLinks: React.FC = () => {
                 className="card is-social-link w-inline-block"
             >
                 <img 
-                    src="/easyflow-socials/audible.jpg"
+                    src="/easyflow-socials/facebook.png"
                     loading="lazy" 
-                    alt="Audible Logo" 
+                    alt="Facebook Logo" 
                     className="icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Listen On</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Audible</p>
+                    <p className="text-size-tiny text-color-charcoal"><strong>Follow On</strong></p>
+                    <p className="text-size-medium text-color-charcoal text-weight-bold">Facebook</p>
                 </div>
             </a>
 
@@ -84,14 +84,14 @@ const PodcastLinks: React.FC = () => {
                 className="card is-social-link w-inline-block"
             >
                 <img 
-                    src="/easyflow-socials/amazon.jpg"
+                    src="/easyflow-socials/twitter.png"
                     loading="lazy" 
-                    alt="Amazon Music logo" 
+                    alt="Twitter logo" 
                     className="icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Listen On</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Amazon</p>
+                    <p className="text-size-tiny text-color-charcoal"><strong>Follow On</strong></p>
+                    <p className="text-size-medium text-color-charcoal text-weight-bold">X</p>
                 </div>
             </a>
         </div>
