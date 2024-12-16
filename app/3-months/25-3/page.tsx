@@ -6,12 +6,13 @@ const App: React.FC = () => {
     {
       id: 1,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Services (Business) Product Line',
+      title: 'Make Effortless Build Your Own (Business) Product Line',
       circles: [
-        { id: 1, description: 'Make the Home Page',color: '#504081' },
-        { id: 2, description: 'Make the Custom System\'s Builder Page',color: '#504081'},
-        { id: 3, description: 'Make the Your System\'s Onboarding Course Page',color: '#504081'},
-        { id: 4, description: 'Make the Custom Website and App Builder Page',color: '#504081'},
+        { id: 1, description: 'Make the Website Builder Page',color: '#504081'},
+        { id: 2, description: 'Make the App Builder Page',color: '#504081'},
+        { id: 3, description: 'Make the Onboarding Course Builder Page',color: '#504081'},
+        { id: 4, description: 'Make the Sheets System Builder Page',color: '#504081'},
+        { id: 5, description: 'Make the Notion System Builder Page',color: '#504081'},
       ],
     },
     {

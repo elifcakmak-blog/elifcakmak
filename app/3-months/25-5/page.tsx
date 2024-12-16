@@ -6,7 +6,7 @@ const App: React.FC = () => {
     {
       id: 1,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Sheets (Individual) Product Line',
+      title: 'Make Effortless Personal Trackers Notions (Individual) Product Line',
       circles: [
         { id: 1, description: 'Make the Home Page',color: '#504081' },
         { id: 2, description: 'Make the Faith Milestones Page',color: '#504081'},

@@ -3,19 +3,7 @@ import MilestonePage from '../../3/Milestones/milestone';
 
 const App: React.FC = () => {
   const milestones = [
-    {
-      id: 1,
-      imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Works Life Tracker (Notion) Product Line',
-      circles: [
-        { id: 1, description: 'Make the Home Page',color: '#504081' },
-        { id: 2, description: 'Make the Goals Dashboard',color: '#504081' },
-        { id: 3, description: 'Make the Project Dashboard Page',color: '#504081'},
-        { id: 4, description: 'Make the Project Folder Set',color: '#504081'},
-        { id: 5, description: 'Make the Version Control Folder Set',color: '#504081'},
-        { id: 6, description: 'Make the Individual Branch Folder Set',color: '#504081'},
-      ],
-    },
+    
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',

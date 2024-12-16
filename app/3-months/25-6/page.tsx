@@ -6,18 +6,12 @@ const App: React.FC = () => {
     {
       id: 1,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Notions (Individual) Product Line',
+      title: 'Make Effortless Project Management Sheets (Business) Product Line',
       circles: [
-        { id: 1, description: 'Make the Home Page',color: '#504081' },
-        { id: 2, description: 'Make the Faith Milestones Page',color: '#504081'},
-        { id: 3, description: 'Make the Family Milestones Page',color: '#504081'},
-        { id: 4, description: 'Make the Self Care Milestones Page',color: '#504081'},
-        { id: 5, description: 'Make the Nutrition Milestones Page',color: '#504081'},
-        { id: 6, description: 'Make the Exercise Milestones Page',color: '#504081'},
-        { id: 7, description: 'Make the Skills Milestones Page',color: '#504081'},
-        { id: 8, description: 'Make the Business Milestones Page',color: '#504081'},
-        { id: 9, description: 'Make the Education Milestones Page',color: '#504081'},
-        { id: 10, description: 'Make the None of these? Services Page',color: '#504081'},
+        { id: 1, description: 'Make the Project Dashboard Page',color: '#504081'},
+        { id: 2, description: 'Make the Project Folder Set',color: '#504081'},
+        { id: 3, description: 'Make the Version Control Folder Set',color: '#504081'},
+        { id: 4, description: 'Make the Individual Branch Folder Set',color: '#504081'},
       ],
     },
     {
