@@ -23,7 +23,7 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/building.svg',
-      title: 'Write The Policies',
+      title: 'Write The Policies and Website Updates',
       circles: [
         { id: 1, description: 'Make the Privacy Policy Page',color: '#e6df20' },
         { id: 2, description: 'Make the Terms of Service Page',color: '#504081'},
