@@ -37,7 +37,7 @@ const App: React.FC = () => {
     {
       id: 3,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Works Business Brand Website',
+      title: 'Code Effortless Works Business Brand Website',
       circles: [
         { id: 1, description: 'Make the Home Page',color: '#504081' },
         { id: 2, description: 'Make the Business Home Page',color: '#504081'},

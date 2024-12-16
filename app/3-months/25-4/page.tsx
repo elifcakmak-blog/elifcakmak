@@ -22,6 +22,23 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Effortless Quest: My Team Center',
+      circles: [
+        { id: 1, description: 'My Business Team Dashboard: Connect Back Office Sheets',color: '#504081'},
+        { id: 2, description: 'My Business Team Dashboard: Connect Back Office Notion',color: '#504081'},
+        { id: 3, description: 'My Business Team Dashboard: Connect Project Management Sheets',color: '#504081'},
+        { id: 4, description: 'My Business Team Dashboard: Connect Project Management Notion',color: '#504081'},
+        { id: 5, description: 'My Business and Individuals Team Dashboard: Connect Website Builder',color: '#504081'},
+        { id: 6, description: 'My Business and Individuals Team Dashboard: Connect App Builder',color: '#504081'},
+        { id: 7, description: 'My Business and Individuals Team Dashboard: Connect Onboarding Course Builder',color: '#504081'},
+        { id: 8, description: 'My Individuals Team Dasbaord: Connect Personal Trackers Sheets and Notion',color: '#504081'},
+        { id: 9, description: 'My Individuals Team Dasbaord: Connect Personal Projects Sheets and Notion',color: '#504081'},
+        { id: 10, description: 'My Individuals Team Dasbaord: Connect Life Tracker Sheets and Notion',color: '#504081'},
+      ],
+    },
+    {
+      id: 3,
+      imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Podcast Episodes',
       circles: [
         { id: 1, description: 'Podcast Episode 1',color: '#504081' },
@@ -32,7 +49,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 3 New Youtube Videos',
       circles: [
@@ -42,7 +59,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 New Short Videos and Post to All Platforms',
       circles: [
@@ -59,7 +76,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
@@ -76,15 +93,15 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Quest Website',
+      title: 'Make 5 New Chapters for Book 2',
       circles: [
-        { id: 1, description: 'Coming Soon',color: '#504081' },
-        { id: 2, description: 'Coming Soon',color: '#504081'},
-        { id: 3, description: 'Coming Soon',color: '#504081'},
-        { id: 4, description: 'Coming Soon',color: '#504081'},
-        { id: 5, description: 'Coming Soon',color: '#504081'},
+        { id: 1, description: 'Chapter 1',color: '#504081' },
+        { id: 2, description: 'Chapter 2',color: '#504081'},
+        { id: 3, description: 'Chapter 3',color: '#504081'},
+        { id: 4, description: 'Chapter 4',color: '#504081'},
+        { id: 5, description: 'Chapter 5',color: '#504081'},
       ],
     },
   ];

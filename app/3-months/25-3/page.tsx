@@ -18,6 +18,21 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Effortless Quest: Leaderboards and Rewards Center',
+      circles: [
+        { id: 1, description: 'Effortless Quest Individuals Community Leaderboards and Rewards',color: '#504081'},
+        { id: 2, description: 'Business Community Leaderboards and Rewards',color: '#504081'},
+        { id: 3, description: 'Education Community Leaderboards and Rewards',color: '#504081'},
+        { id: 4, description: 'Team Community Leaderboards and Rewards',color: '#504081'},
+        { id: 5, description: 'Invention Community Leaderboards and Rewards',color: '#504081'},
+        { id: 6, description: 'Charity Community Leaderboards and Rewards',color: '#504081'},
+        { id: 7, description: 'Ai Companion: Leaderboards and Rewards Update',color: '#504081'},
+        { id: 8, description: 'Town Hall: Leaderboards and Rewards Update',color: '#504081'},
+      ],
+    },
+    {
+      id: 3,
+      imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Podcast Episodes',
       circles: [
         { id: 1, description: 'Podcast Episode 1',color: '#504081' },
@@ -28,7 +43,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 3 New Youtube Videos',
       circles: [
@@ -38,7 +53,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 New Short Videos and Post to All Platforms',
       circles: [
@@ -55,7 +70,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
@@ -72,9 +87,9 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make 5 New Chapters for Book',
+      title: 'Make 5 New Chapters for Book 1',
       circles: [
         { id: 1, description: 'Chapter 10',color: '#504081' },
         { id: 2, description: 'Chapter 11',color: '#504081'},

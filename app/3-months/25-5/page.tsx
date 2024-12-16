@@ -23,6 +23,22 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Effortless Quest: Invention Center',
+      circles: [
+        { id: 1, description: 'Ai Companion: My Team Center Update',color: '#504081'},
+        { id: 2, description: 'Town Hall: My Team Center Update',color: '#504081'},
+        { id: 3, description: 'Invention Center Dashboard: Move Command Center Backlog settings into here: Rename Rising Horizons ',color: '#504081'},
+        { id: 4, description: 'Invention Center Dashboard: Idea Room',color: '#504081'},
+        { id: 5, description: 'Invention Center Dashbaord: Ai Companion Brainstorm',color: '#504081'},
+        { id: 6, description: 'Invention Center Dashbaord: Idea Tester Room',color: '#504081'},
+        { id: 7, description: 'Update Rising Horizons Command Center: Backlog, Update roadmap, update goals',color: '#504081'},
+        { id: 8, description: 'Ai Companion: Invention Center Update',color: '#504081'},
+        { id: 9, description: 'Town Hall: Invention Center Update',color: '#504081'},
+      ],
+    },
+    {
+      id: 3,
+      imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Podcast Episodes',
       circles: [
         { id: 1, description: 'Podcast Episode 1',color: '#504081' },
@@ -33,7 +49,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 3 New Youtube Videos',
       circles: [
@@ -43,7 +59,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 New Short Videos and Post to All Platforms',
       circles: [
@@ -60,7 +76,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
@@ -77,15 +93,15 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Quest Website',
+      title: 'Make 5 New Chapters for Book 2',
       circles: [
-        { id: 1, description: 'Coming Soon',color: '#504081' },
-        { id: 2, description: 'Coming Soon',color: '#504081'},
-        { id: 3, description: 'Coming Soon',color: '#504081'},
-        { id: 4, description: 'Coming Soon',color: '#504081'},
-        { id: 5, description: 'Coming Soon',color: '#504081'},
+        { id: 1, description: 'Chapter 6',color: '#504081' },
+        { id: 2, description: 'Chapter 7',color: '#504081'},
+        { id: 3, description: 'Chapter 8',color: '#504081'},
+        { id: 4, description: 'Chapter 9',color: '#504081'},
+        { id: 5, description: 'Chapter 10',color: '#504081'},
       ],
     },
   ];

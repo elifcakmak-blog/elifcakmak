@@ -19,6 +19,23 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Effortless Quest: Charity Center',
+      circles: [
+        { id: 1, description: 'Charity Dashboard: Community Charity Projects',color: '#504081'},
+        { id: 2, description: 'Charity Dashboard: Free Business Resources',color: '#504081'},
+        { id: 3, description: 'Charity Dashboard: Free Individual Resources',color: '#504081'},
+        { id: 4, description: '',color: '#504081'},
+        { id: 5, description: '',color: '#504081'},
+        { id: 6, description: '',color: '#504081'},
+        { id: 7, description: '',color: '#504081'},
+        { id: 8, description: '',color: '#504081'},
+        { id: 9, description: '',color: '#504081'},
+        { id: 10, description: '',color: '#504081'},
+      ],
+    },
+    {
+      id: 3,
+      imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 4 New Podcast Episodes',
       circles: [
         { id: 1, description: 'Podcast Episode 1',color: '#504081' },
@@ -28,7 +45,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 2 New Youtube Videos',
       circles: [
@@ -37,7 +54,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 New Short Videos and Post to All Platforms',
       circles: [
@@ -54,7 +71,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
@@ -71,7 +88,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make Effortless Quest App',
       circles: [

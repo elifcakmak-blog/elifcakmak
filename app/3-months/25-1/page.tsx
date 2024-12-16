@@ -20,6 +20,23 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Code Effortless Quest: Website Structure Skeleton',
+      circles: [
+        { id: 1, description: 'Before Log-in: Home landing Page',color: '#504081'},
+        { id: 2, description: 'Before Log-in: About Page',color: '#504081'},
+        { id: 3, description: 'Before Log-in: How To Play Page',color: '#504081'},
+        { id: 4, description: 'Log-in:  TownHall Page (Home)',color: '#504081'},
+        { id: 5, description: 'Log-in:  TownHall: Business Center',color: '#504081'},
+        { id: 6, description: 'Log-in:  TownHall: Education Center',color: '#504081'},
+        { id: 7, description: 'Log-in:  TownHall: Leaderboards and Rewards',color: '#504081'},
+        { id: 8, description: 'Log-in:  TownHall: My Quest and My Team Centers',color: '#504081'},
+        { id: 9, description: 'Log-in:  TownHall: Invention Center',color: '#504081'},
+        { id: 10, description: 'Log-in:  TownHall: Charity Center',color: '#504081'},
+      ],
+    },
+    {
+      id: 3,
+      imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Podcast Episodes',
       circles: [
         { id: 1, description: 'Podcast Episode 1',color: '#504081' },
@@ -30,7 +47,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 3 New Youtube Videos',
       circles: [
@@ -40,7 +57,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 New Short Videos and Post to All Platforms',
       circles: [
@@ -57,7 +74,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
@@ -74,9 +91,9 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make 5 New Chapters for Book',
+      title: 'Make 5 New Chapters for Book 1',
       circles: [
         { id: 1, description: 'Chapter 1',color: '#504081' },
         { id: 2, description: 'Chapter 2',color: '#504081'},
