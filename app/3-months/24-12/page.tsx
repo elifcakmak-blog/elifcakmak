@@ -5,7 +5,7 @@ const App: React.FC = () => {
   const milestones = [
     {
       id: 1,
-      imageSrc: '/roadmap-tiles/building.svg', // Replace with your image URLs
+      imageSrc: '/roadmap-tiles/completed.svg', // Replace with your image URLs
       title: 'Code Elif Çakmak Personal Brand Website',
       circles: [
         { id: 1, description: 'Set Up Website Structure - completed: 11/28/24 7:26am EST',color: '#4bfe5a' },
@@ -15,17 +15,17 @@ const App: React.FC = () => {
         { id: 5, description: 'Make the Road Maps Page - completed: 12/04/24 12:47am EST',color: '#4bfe5a' },
         { id: 6, description: 'Make the About Page - completed: 12/5/24 6:40pm EST',color: '#4bfe5a' },
         { id: 7, description: 'Make the Podcast Page - completed: 12/15/24 7:17pm EST',color: '#4bfe5a' },
-        { id: 8, description: 'Make the Videos Page',color: '#e6df20' },
-        { id: 9, description: 'Make the Apps Page',color: '#504081' },
-        { id: 10, description: 'Make the Books Page',color: '#504081' },
+        { id: 8, description: 'Make the Videos Page - completed: 12/15/24 10:47pm EST',color: '#4bfe5a' },
+        { id: 9, description: 'Make the Apps Page - completed: 12/15/24 10:47pm EST',color: '#4bfe5a' },
+        { id: 10, description: 'Make the Books Page - completed: 12/15/24 10:47pm EST',color: '#4bfe5a' },
       ],
     },
     {
       id: 2,
-      imageSrc: '/roadmap-tiles/nextt.svg',
+      imageSrc: '/roadmap-tiles/building.svg',
       title: 'Write The Policies',
       circles: [
-        { id: 1, description: 'Make the Privacy Policy Page',color: '#504081' },
+        { id: 1, description: 'Make the Privacy Policy Page',color: '#e6df20' },
         { id: 2, description: 'Make the Terms of Service Page',color: '#504081'},
         { id: 3, description: 'Make the Return Policy Page',color: '#504081'},
         { id: 4, description: 'Make the Cookie Policy Page',color: '#504081'},
