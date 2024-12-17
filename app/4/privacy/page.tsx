@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
           <strong>Effective Date:</strong> 12/17/2024
         </p>
         <p>
-          At <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> (collectively referred to as "we," "our," or "us"), your privacy is our priority. This Privacy Policy outlines how we collect, use, and protect your personal information when you interact with our websites and services.
+          At <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> (collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), your privacy is our priority. This Privacy Policy outlines how we collect, use, and protect your personal information when you interact with our websites and services.
         </p>
 
         <h3>Information We Collect</h3>

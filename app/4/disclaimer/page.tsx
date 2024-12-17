@@ -23,10 +23,10 @@ export default function DisclaimerPolicy() {
         <p>
           <strong>Effective Date:</strong> 12/17/2024
         </p>
-        
+
         <h3>Intro</h3>
           <p>
-            <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as "we," "our," or "us".
+            <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
           </p>
 
 
