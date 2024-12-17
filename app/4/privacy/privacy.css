@@ -5,3 +5,65 @@
   display: block;
   margin: 0 auto; /* This will center the image */
   }
+
+  .privacy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .privacy-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .privacy-card h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .privacy-card h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 20px; /* Add space above <h4> */
+  }
+  
+  .privacy-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .privacy-card ul {
+    list-style-type: disc; /* Add bullet points */
+    margin-left: 20px; /* Indentation for the list */
+    padding-left: 20px; /* Add space before the bullets */
+  }
+  
+  .privacy-card ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px; /* Add spacing between each list item */
+  }
+  
+  .privacy-card p:first-of-type {
+    margin-bottom: 20px; /* Add space after the first paragraph (Effective Date) */
+  }
+  
+  .privacy-card a {
+    color: #007bff; /* Blue color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .privacy-card a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  

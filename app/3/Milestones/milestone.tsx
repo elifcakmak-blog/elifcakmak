@@ -34,6 +34,7 @@ const CircleComponent: React.FC<{ color: string; description: string }> = ({ col
         const windowWidth = window.innerWidth;
         const margin = 0; // Margin to keep the bubble from going off the page
 
+        // Adjust left position to avoid overflow
         if (bubbleRect.right > windowWidth - margin) {
           bubbleRef.current.style.left = `${windowWidth - bubbleRect.width - margin}px`;
           bubbleRef.current.style.transform = 'translateX(0)';
@@ -41,6 +42,9 @@ const CircleComponent: React.FC<{ color: string; description: string }> = ({ col
           bubbleRef.current.style.left = `${margin}px`;
           bubbleRef.current.style.transform = 'translateX(0)';
         }
+
+        // Move the bubble upwards on the y-axis by adjusting the top margin
+        bubbleRef.current.style.top = `${-180}px`;  // Adjust this value to move bubble up (negative value moves it up)
       }
     };
 
@@ -76,8 +80,6 @@ const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
       {/* Import Navigation */}
       <Navigation />
     <div className="page-container">
-      
-
       <img src={"../roadmap-tiles/milestones.svg"} alt="RoadMap Milestones Title Image" className="milestone-image" />
 
       <div className="milestone-container">
