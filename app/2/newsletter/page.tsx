@@ -2,41 +2,81 @@
 
 import Navigation from '../../0/0-navigation/navigation';
 import './newsletter.css';
+import React, { useState } from 'react';
 import Footer from '../../0/0-footer/footer';
 import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
 
+const NewsletterSection: React.FC = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
 
-export default function Home() {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      // Call your Next.js API route to create the campaign
+      const response = await fetch('/api/createCampaign', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email }),
+      });
+
+      if (response.ok) {
+        alert('Subscription successful!');
+        setName('');
+        setEmail('');
+      } else {
+        alert('There was an issue subscribing. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was an error submitting the form.');
+    }
+  };
 
   return (
-    <div className="home-container">
-            
-      {/* Import Cursor */}
-      <CustomCursor />
-
+    <div>
+      {/* Import Custom Cursor */}
+      < CustomCursor />
       {/* Import Navigation */}
-
-      <Navigation /> 
-
-      <img src={"../page-titles/newsletter.svg"} alt="Newsletter Title Image" className="newsletter-image" />
-
-      {/* Embedded Newsletter Form with Frame */}
-      <div className="iframe-container">
-        <div className="iframe-frame">
-          <iframe
-            title="Newsletter Signup"
-            src="https://d95b7f78.sibforms.com/serve/MUIFAA9dv9CnNJlSRLU5ULFASpdA27XZGdENCNut-jzU1PspSDZLwpgmyJAExxwepRjSpHRrkfuLFsk0w4YGzYLJcIeX6RZh_uZefU93ennll9j601D9SuXGafSlZXKGhQTukDX1bq7KCMZWoohrx87RRi8iqy0TaeoL5AA9NwKh1RqLA6fPyQs_RU98aRD25xMan1X-UcetvRCy"
-            scrolling="no"
-            allowFullScreen
-            className="iframe-element"
+      <Navigation />
+      <section className="cta bg-[#504081] text-[#0d0d0c] py-20 px-10 min-h-[400px] text-center cursor-none">
+        <h2 className="text-3xl font-bold text-[#4bfe5a]">Join My Newsletter</h2>
+        <p className="mt-4 text-lg">Stay updated on my latest projects and insights.</p>
+        <form onSubmit={handleSubmit} className="mt-6 newsletter-form cursor-none">
+          <label htmlFor="name" className="block mr-2 cursor-none">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            className="input-field cursor-none"
           />
-        </div>
-      </div>
 
-       {/* Footer */}
+          <label htmlFor="email" className="block mt-4 mb-2 cursor-none">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="input-field cursor-none"
+          />
 
-       <Footer />
-
+          <div className="mt-10">
+            <button type="submit" className="btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </section>
+      {/* Import Footer */}
+      <Footer />
     </div>
   );
-}
+};
+
+export default NewsletterSection;
