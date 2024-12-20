@@ -31,7 +31,7 @@ const App: React.FC = () => {
         { id: 4, description: 'Make the Cookie Policy Page - completed: 12/17/24 3:11pm EST',color: '#4bfe5a'},
         { id: 5, description: 'Make the Disclaimer Page - completed: 12/17/24 3:11pm EST',color: '#4bfe5a'},
         { id: 6, description: 'Make my own form for Newsletter Page - completed: 12/20/24 10:39am EST',color: '#4bfe5a'},
-        { id: 7, description: 'Update all EasyFlow Links',color: '#e6df20'},
+        { id: 7, description: 'Update all EasyFlow Links - completed: 12/20/24 11:57am EST',color: '#4bfe5a'},
       ],
     },
     {
@@ -39,7 +39,7 @@ const App: React.FC = () => {
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Code Effortless Works Business Brand Website',
       circles: [
-        { id: 1, description: 'Make the Home Page',color: '#504081' },
+        { id: 1, description: 'Make the Home Page',color: '#e6df20' },
         { id: 2, description: 'Make the Business Home Page',color: '#504081'},
         { id: 3, description: 'Make the Individuals Home Page',color: '#504081'},
         { id: 4, description: 'Make all Quest Pages',color: '#504081'},

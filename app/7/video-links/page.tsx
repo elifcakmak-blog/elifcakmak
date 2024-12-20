@@ -7,7 +7,7 @@ const PodcastLinks: React.FC = () => {
         <div className="wrapper-social-cards">
             <a 
                 id="1"
-                href=""
+                href="https://www.youtube.com/@EasyFlow-Media"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >
@@ -25,7 +25,7 @@ const PodcastLinks: React.FC = () => {
 
             <a 
                 id="2"
-                href=""
+                href="https://www.tiktok.com/@easyflow.media"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >
@@ -43,7 +43,7 @@ const PodcastLinks: React.FC = () => {
 
             <a 
                 id="3"
-                href=""
+                href="https://www.instagram.com/easyflow.media"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >
@@ -61,7 +61,7 @@ const PodcastLinks: React.FC = () => {
 
             <a 
                 id="4"
-                href=""
+                href="https://www.facebook.com/profile.php?id=61570464705667"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >
@@ -79,7 +79,7 @@ const PodcastLinks: React.FC = () => {
 
             <a 
                 id="5"
-                href=""
+                href="https://x.com/EasyFlow_Media"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >

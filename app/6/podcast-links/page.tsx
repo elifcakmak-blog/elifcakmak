@@ -7,7 +7,7 @@ const PodcastLinks: React.FC = () => {
         <div className="wrapper-social-cards">
             <a 
                 id="1"
-                href=""
+                href="https://open.spotify.com/show/elif823"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >
@@ -25,7 +25,7 @@ const PodcastLinks: React.FC = () => {
 
             <a 
                 id="2"
-                href=""
+                href="https://podcasts.apple.com/us/podcast/easyflow-media/idef145d4d-39e4-4c53-bd56-cdda4736cdeb"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >
@@ -43,7 +43,7 @@ const PodcastLinks: React.FC = () => {
 
             <a 
                 id="3"
-                href=""
+                href="https://www.youtube.com/@EasyFlow-Media"
                 target="_blank"
                 className="card is-social-link w-inline-block"
             >
