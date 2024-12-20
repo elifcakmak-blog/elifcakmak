@@ -22,7 +22,7 @@ const App: React.FC = () => {
     },
     {
       id: 2,
-      imageSrc: '/roadmap-tiles/building.svg',
+      imageSrc: '/roadmap-tiles/completed.svg',
       title: 'Write The Policies and Website Updates',
       circles: [
         { id: 1, description: 'Make the Privacy Policy Page - completed: 12/17/24 3:11pm EST',color: '#4bfe5a' },
@@ -36,7 +36,7 @@ const App: React.FC = () => {
     },
     {
       id: 3,
-      imageSrc: '/roadmap-tiles/nextt.svg',
+      imageSrc: '/roadmap-tiles/building.svg',
       title: 'Code Effortless Works Business Brand Website',
       circles: [
         { id: 1, description: 'Make the Home Page',color: '#e6df20' },
