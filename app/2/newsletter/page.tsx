@@ -43,6 +43,8 @@ export default function NewsletterForm() {
       {/* Import Navigation */}
       <Navigation />
 
+      <img src={"../page-titles/newsletter.svg"}alt="Newsletter Title Image"className="podcast-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
+
       <div className="floating-card">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-[#4bfe5a] mb-5">Join Our Newsletter</h1>

@@ -15,11 +15,13 @@
   box-shadow: 0px 0px 30px #fef74b;
   padding: 20px;
   border-radius: 8px;
-  max-width: 400px;
+  width: 100vw; /* Full width of the viewport */
+  max-width: 80%;
   margin: 50px auto;
   position: relative;
   z-index: 10;
   animation: float 3s ease-in-out infinite;
+  
 }
 
 .floating-card form {
@@ -45,7 +47,10 @@
   color: #504081;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  margin-left: auto; /* Align left margin to auto */
+  margin-right: auto; /* Align right margin to auto */
+  margin-top: 20px;
+  width: 40%;
 }
 
 .floating-card button:hover {
