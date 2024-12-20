@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import Navigation from "../../0/0-navigation/navigation";
 import CustomCursor from "../../0/0-cursor/page";
-import Footer from "../../0/0-footer/footer"
+import Footer from "../../0/0-footer/footer";
+import './newsletter.css';
 
 export default function NewsletterForm() {
   const [name, setName] = useState('');
@@ -36,40 +37,52 @@ export default function NewsletterForm() {
 
   return (
     <div>
-        {/* Import Cursor */}
-        <CustomCursor />
+      {/* Import Cursor */}
+      <CustomCursor />
 
-        {/* Import Navigation */}
-        <Navigation /> 
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        required
-      />
+      {/* Import Navigation */}
+      <Navigation />
 
-      <label htmlFor="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
+      <div className="floating-card">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold text-[#4bfe5a] mb-5">Join Our Newsletter</h1>
+          <p className="text-[#fef74b]">Resources to help you simplify your work effortlessly</p>
+        </div>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name" className="cursor-none">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            className="cursor-none"
+          />
 
-      <button type="submit">Subscribe</button>
+          <label htmlFor="email" className="cursor-none">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="cursor-none"
+          />
 
-      {status && <p>{status}</p>}
-    </form>
+          <button type="submit">Subscribe</button>
+        </form>
 
-    {/* Footer */}
-    <Footer />
+        {status && (
+          <p className={`mt-4 ${status.includes('Successfully') ? 'status-success' : status.includes('Failed') ? 'status-fail' : 'status-info'}`}>
+            {status}
+          </p>
+        )}
+      </div>
 
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
