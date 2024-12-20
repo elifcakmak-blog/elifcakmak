@@ -29,7 +29,7 @@ export default function NewsletterForm() {
       } else {
         setStatus(data.message || 'Something went wrong');
       }
-    } catch (error) {
+    } catch {
       setStatus('Failed to subscribe');
     }
   };

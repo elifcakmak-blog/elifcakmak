@@ -27,7 +27,7 @@ export default async function handler(req, res) {
         const errorData = await response.json();
         res.status(400).json({ message: errorData.message || 'Error subscribing' });
       }
-    } catch (error) {
+    } catch{
       res.status(500).json({ message: 'Server error, please try again later.' });
     }
   } else {
