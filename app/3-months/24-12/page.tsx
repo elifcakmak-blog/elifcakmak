@@ -30,8 +30,8 @@ const App: React.FC = () => {
         { id: 3, description: 'Make the Return Policy Page - completed: 12/17/24 3:11pm EST',color: '#4bfe5a'},
         { id: 4, description: 'Make the Cookie Policy Page - completed: 12/17/24 3:11pm EST',color: '#4bfe5a'},
         { id: 5, description: 'Make the Disclaimer Page - completed: 12/17/24 3:11pm EST',color: '#4bfe5a'},
-        { id: 6, description: 'Make my own form for Newsletter Page',color: '#e6df20'},
-        { id: 7, description: 'Update all EasyFlow Links',color: '#504081'},
+        { id: 6, description: 'Make my own form for Newsletter Page - completed: 12/20/24 10:39am EST',color: '#4bfe5a'},
+        { id: 7, description: 'Update all EasyFlow Links',color: '#e6df20'},
       ],
     },
     {
