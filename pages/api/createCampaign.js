@@ -11,24 +11,36 @@ export default async function handler(req, res) {
     try {
       const defaultClient = SibApiV3Sdk.ApiClient.instance;
       const apiKey = defaultClient.authentications['api-key'];
-      apiKey.apiKey = process.env.BREVO_API_KEY; // API key from Brevo
+      apiKey.apiKey = process.env.BREVO_API_KEY;
 
-      const apiInstance = new SibApiV3Sdk.ContactsApi();
-      const contact = new SibApiV3Sdk.CreateContact();
+      const apiInstance = new SibApiV3Sdk.EmailCampaignsApi();
+      const emailCampaigns = new SibApiV3Sdk.CreateEmailCampaign();
 
-      // Define the contact (subscriber)
-      contact.email = email;
-      contact.firstName = name;
+      emailCampaigns.name = `Campaign for ${name}`;
+      emailCampaigns.subject = `Welcome, ${name}`;
+      emailCampaigns.sender = {
+        name: "Elif Çakmak",
+        email: "newsletter@effortless.quest",
+      };
+      emailCampaigns.type = "classic";
+      emailCampaigns.htmlContent = `<p>Hi ${name},</p><p>Thanks for subscribing! We'll keep you updated with our latest content.</p>`;
+      emailCampaigns.recipients = {
+        listIds: [3],
+      };
+      emailCampaigns.scheduledAt = new Date(new Date().getTime() + 3600000).toISOString();
 
-      // Add contact to your Brevo list
-      await apiInstance.createContact(contact);
+      const data = await apiInstance.createEmailCampaign(emailCampaigns);
 
-      res.status(200).json({ message: 'Subscription successful' });
+      res.status(200).json({ message: 'Campaign created successfully', data });
     } catch (error) {
-      console.error('Error adding contact to Brevo:', error);
-      res.status(500).json({ error: 'Failed to subscribe' });
+      console.error('Error creating campaign:', error.response ? error.response.body : error.message);
+      res.status(500).json({
+        error: 'Failed to create campaign',
+        details: error.response ? error.response.body : error.message,
+      });
     }
   } else {
     res.status(405).json({ error: 'Method Not Allowed' });
   }
 }
+
