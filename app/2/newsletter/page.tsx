@@ -30,8 +30,8 @@ const NewsletterSection: React.FC = () => {
       } else {
         alert('There was an issue subscribing. Please try again later.');
       }
-    } catch (error) {
-      console.error('Error:', error);
+    } catch (error: any) {
+      console.error('Error creating campaign:', error.response ? error.response.body : error.message);
       alert('There was an error submitting the form.');
     }
   };
@@ -39,7 +39,7 @@ const NewsletterSection: React.FC = () => {
   return (
     <div>
       {/* Import Custom Cursor */}
-      < CustomCursor />
+      <CustomCursor />
       {/* Import Navigation */}
       <Navigation />
       <section className="cta bg-[#504081] text-[#0d0d0c] py-20 px-10 min-h-[400px] text-center cursor-none">
