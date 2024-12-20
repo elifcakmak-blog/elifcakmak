@@ -1,87 +1,102 @@
-"use client";
+"use client"; // Add this directive at the top
 
-import Navigation from '../../0/0-navigation/navigation';
-import './newsletter.css';
-import React, { useState } from 'react';
-import Footer from '../../0/0-footer/footer';
-import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
+import { useState, ChangeEvent, FormEvent } from "react";
+import Navigation from "../../0/0-navigation/navigation";
+import CustomCursor from "../../0/0-cursor/page"
+import Footer from '../../0/0-footer/footer'
 
-const NewsletterSection: React.FC = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+export default function Subscribe() {
+  const [formData, setFormData] = useState({ name: "", email: "" });
+  const [message, setMessage] = useState<string>("");
+  const [error, setError] = useState<string>("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    setMessage("");
+    setError("");
+
+    const { name, email } = formData;
+
+    if (!name || !email) {
+      setError("Both name and email are required.");
+      return;
+    }
+
     try {
-      // Call your Next.js API route to create the campaign
-      const response = await fetch('/api/createCampaign', {
-        method: 'POST',
+      const response = await fetch("/api/addContact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ name, email }),
       });
 
+      const data = await response.json();
+
       if (response.ok) {
-        alert('Subscription successful!');
-        setName('');
-        setEmail('');
+        setMessage(data.message || "Successfully subscribed!");
+        setFormData({ name: "", email: "" }); // Reset form
       } else {
-        alert('There was an issue subscribing. Please try again later.');
+        setError(data.error || "Something went wrong.");
       }
-    } catch (error: unknown) {
-      // Since the error can be anything, we check its type before using properties
-      if (error instanceof Error) {
-        console.error('Error creating campaign:', error.message);
-      } else {
-        console.error('An unknown error occurred.');
-      }
-      alert('There was an error submitting the form.');
+    } catch (err) {
+      setError("Failed to connect to the server.");
     }
   };
 
   return (
     <div>
-      {/* Import Custom Cursor */}
+      {/* Import Navigation */}
       <CustomCursor />
+
       {/* Import Navigation */}
       <Navigation />
-      <section className="cta bg-[#504081] text-[#0d0d0c] py-20 px-10 min-h-[400px] text-center cursor-none">
-        <h2 className="text-3xl font-bold text-[#4bfe5a]">Join My Newsletter</h2>
-        <p className="mt-4 text-lg">Stay updated on my latest projects and insights.</p>
-        <form onSubmit={handleSubmit} className="mt-6 newsletter-form cursor-none">
-          <label htmlFor="name" className="block mr-2 cursor-none">Name:</label>
+
+    <div style={{ maxWidth: "400px", margin: "auto", padding: "2rem" }}>
+      <h1>Subscribe to our Newsletter</h1>
+      <form onSubmit={handleSubmit}>
+        <div style={{ marginBottom: "1rem" }}>
+          <label htmlFor="name" style={{ display: "block", marginBottom: ".5rem" }}>
+            Name
+          </label>
           <input
             type="text"
             id="name"
             name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={formData.name}
+            onChange={handleChange}
             required
-            className="input-field cursor-none"
+            style={{ width: "100%", padding: ".5rem" }}
           />
-
-          <label htmlFor="email" className="block mt-4 mb-2 cursor-none">Email:</label>
+        </div>
+        <div style={{ marginBottom: "1rem" }}>
+          <label htmlFor="email" style={{ display: "block", marginBottom: ".5rem" }}>
+            Email
+          </label>
           <input
             type="email"
             id="email"
             name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={formData.email}
+            onChange={handleChange}
             required
-            className="input-field cursor-none"
+            style={{ width: "100%", padding: ".5rem" }}
           />
-
-          <div className="mt-10">
-            <button type="submit" className="btn-primary">Subscribe</button>
-          </div>
-        </form>
-      </section>
-      {/* Import Footer */}
-      <Footer />
+        </div>
+        <button type="submit" style={{ padding: ".5rem 1rem", background: "#0070f3", color: "#fff", border: "none", cursor: "pointer" }}>
+          Subscribe
+        </button>
+      </form>
+      {message && <p style={{ color: "green", marginTop: "1rem" }}>{message}</p>}
+      {error && <p style={{ color: "red", marginTop: "1rem" }}>{error}</p>}
+    </div>
+    <Footer />
     </div>
   );
-};
-
-export default NewsletterSection;
+}
