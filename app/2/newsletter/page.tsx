@@ -30,8 +30,13 @@ const NewsletterSection: React.FC = () => {
       } else {
         alert('There was an issue subscribing. Please try again later.');
       }
-    } catch (error: any) {
-      console.error('Error creating campaign:', error.response ? error.response.body : error.message);
+    } catch (error: unknown) {
+      // Since the error can be anything, we check its type before using properties
+      if (error instanceof Error) {
+        console.error('Error creating campaign:', error.message);
+      } else {
+        console.error('An unknown error occurred.');
+      }
       alert('There was an error submitting the form.');
     }
   };
