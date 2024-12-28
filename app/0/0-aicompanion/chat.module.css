@@ -1,0 +1,157 @@
+/* Styles for the entire chat feature */
+.chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  /* Speech bubble */
+  .speechBubble {
+    position: absolute;
+    bottom: 90px; /* Move it lower closer to the circle */
+    right: 10px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Small triangle for speech bubble pointer */
+  .speechBubble::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+  }
+  
+  /* Floating chat button with animation */
+  .chatButton {
+    background-color: transparent; /* No background color */
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: float 2s ease-in-out infinite; /* Floating animation */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 0 15px 5px #fef74b; /* Yellow glow */
+    z-index: 990;
+  }
+
+  .chatButton img {
+    width: 100%; /* Make image fill the button size */
+    height: 100%;
+    border-radius: 50%; /* Keep image circular */
+  }
+  
+  .chatButton:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Chat window */
+  .chatWindow {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Chat messages container */
+  .messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* User message style */
+  .userMsg {
+    text-align: right;
+    margin: 5px 0;
+    color: #333;
+    background-color: #e0f7fa;
+    padding: 8px 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin-left: auto;
+  }
+  
+  /* AI message style */
+  .aiMsg {
+    text-align: left;
+    margin: 5px 0;
+    color: #333;
+    background-color: #f3f3f3;
+    padding: 8px 10px;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+  
+  /* Input box */
+  .input {
+    border: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Send button */
+  .sendButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sendButton:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Floating animation */
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Animation for the speech bubble */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -5,6 +5,23 @@ const App: React.FC = () => {
   const milestones = [
     {
       id: 1,
+      imageSrc: '/roadmap-tiles/building.svg',
+      title: 'Code Effortless Works Business Brand Website',
+      circles: [
+        { id: 1, description: 'Make the Home Page',color: '#504081' },
+        { id: 2, description: 'Make the Business Home Page',color: '#504081'},
+        { id: 3, description: 'Make the Individuals Home Page',color: '#504081'},
+        { id: 4, description: 'Make all Quest Pages',color: '#504081'},
+        { id: 5, description: 'Make the Courses Home Page',color: '#504081'},
+        { id: 6, description: 'Make all Info Pages',color: '#504081'},
+        { id: 7, description: 'Make the Business Sub Home Pages',color: '#504081'},
+        { id: 8, description: 'Make the Individuals Sub Home Pages',color: '#504081'},
+        { id: 9, description: 'Make the Courses Sub Home Pages',color: '#504081'},
+        { id: 10, description: 'Make the Contact Page',color: '#504081'},
+      ],
+    },
+    {
+      id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make Effortless Back Office Sheets (Business) Product Line',
       circles: [
@@ -18,7 +35,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Code Effortless Quest: Website Structure Skeleton',
       circles: [
@@ -35,7 +52,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Podcast Episodes',
       circles: [
@@ -47,7 +64,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 3 New Youtube Videos',
       circles: [
@@ -57,7 +74,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 New Short Videos and Post to All Platforms',
       circles: [
@@ -74,7 +91,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
@@ -91,7 +108,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 7,
+      id: 8,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Chapters for Book 1',
       circles: [

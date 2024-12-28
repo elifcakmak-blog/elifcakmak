@@ -21,7 +21,7 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Effortless Quest: My Quest and Ai Companion',
+      title: 'Effortless Quest: Luma Ai Admin Upgrade',
       circles: [
         { id: 1, description: 'My Quest Dashboard: Ai Companion Chat',color: '#504081'},
         { id: 2, description: 'My Quest Dashboard: Meetings',color: '#504081'},

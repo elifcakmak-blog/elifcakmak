@@ -8,6 +8,7 @@ import StatisticsSection from './1/home-statistics/statistics'; // Statistics Im
 import AboutSection from './1/home-about/about'; // About Section Import
 import ServicesSection from './1/home-services/services'; // Services Section Import
 import NewsletterSection from './1/home-newsletter/newsletter'; //Newsletter Import
+import AiCompanion from './0/0-aicompanion/chat';
 import Footer from './0/0-footer/footer'; // Import Footer
 import CustomCursor from './0/0-cursor/page'; // Cursor Import
 import { useState, useEffect } from 'react';
@@ -111,7 +112,11 @@ export default function Home() {
 
       <Navigation /> 
 
-      {/* Import Hero Section */}
+      {/* Import Ai Companion */}
+
+      <AiCompanion /> 
+
+    
       {/* Import Hero Section */}
 
       <HeroSection isMobile={isMobile} />
