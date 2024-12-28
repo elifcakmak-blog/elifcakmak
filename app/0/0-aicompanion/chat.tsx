@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './Chat.module.css';
+import styles from './chat.module.css';
 
 const Chat = () => {
   const [isOpen, setIsOpen] = useState(false);
