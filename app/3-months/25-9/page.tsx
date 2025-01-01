@@ -71,18 +71,6 @@ const App: React.FC = () => {
         { id: 10, description: 'Newsletter 10',color: '#504081' },
       ],
     },
-    {
-      id: 6,
-      imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Quest App',
-      circles: [
-        { id: 1, description: 'Coming Soon',color: '#504081' },
-        { id: 2, description: 'Coming Soon',color: '#504081'},
-        { id: 3, description: 'Coming Soon',color: '#504081'},
-        { id: 4, description: 'Coming Soon',color: '#504081'},
-        { id: 5, description: 'Coming Soon',color: '#504081'},
-      ],
-    },
   ];
 
   return <MilestonePage milestones={milestones} />;

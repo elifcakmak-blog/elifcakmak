@@ -90,7 +90,7 @@ const App: React.FC = () => {
     {
       id: 7,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Quest App',
+      title: 'Make Luma MacOS App',
       circles: [
         { id: 1, description: 'Coming Soon',color: '#504081' },
         { id: 2, description: 'Coming Soon',color: '#504081'},

@@ -6,6 +6,16 @@ const App: React.FC = () => {
     {
       id: 1,
       imageSrc: '/roadmap-tiles/building.svg',
+      title: 'Code Luma App',
+      circles: [
+        { id: 1, description: 'Code Electron App and all page UI',color: '#e6df20'},
+        { id: 2, description: 'Code Luma Ai',color: '#504081'},
+        { id: 3, description: 'Code Back End Integrations',color: '#504081'},
+      ],
+    },
+    {
+      id: 2,
+      imageSrc: '/roadmap-tiles/building.svg',
       title: 'Code Effortless Works Business Brand Website',
       circles: [
         { id: 1, description: 'Make the Home Page',color: '#504081' },
@@ -21,7 +31,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make Effortless Back Office Sheets (Business) Product Line',
       circles: [
@@ -32,23 +42,6 @@ const App: React.FC = () => {
         { id: 5, description: 'Make the Payroll Tracking Page',color: '#504081'},
         { id: 6, description: 'Make the Recruitment Tracking Page',color: '#504081'},
         { id: 7, description: 'Make the None of these? Page',color: '#504081'},
-      ],
-    },
-    {
-      id: 3,
-      imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Code Effortless Quest: Website Structure Skeleton',
-      circles: [
-        { id: 1, description: 'Before Log-in: Home landing Page',color: '#504081'},
-        { id: 2, description: 'Before Log-in: About Page',color: '#504081'},
-        { id: 3, description: 'Before Log-in: How To Play Page',color: '#504081'},
-        { id: 4, description: 'Log-in:  TownHall Page (Home)',color: '#504081'},
-        { id: 5, description: 'Log-in:  TownHall: Business Center',color: '#504081'},
-        { id: 6, description: 'Log-in:  TownHall: Education Center',color: '#504081'},
-        { id: 7, description: 'Log-in:  TownHall: Leaderboards and Rewards',color: '#504081'},
-        { id: 8, description: 'Log-in:  TownHall: My Quest and My Team Centers',color: '#504081'},
-        { id: 9, description: 'Log-in:  TownHall: Invention Center',color: '#504081'},
-        { id: 10, description: 'Log-in:  TownHall: Charity Center',color: '#504081'},
       ],
     },
     {
@@ -66,33 +59,6 @@ const App: React.FC = () => {
     {
       id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make 3 New Youtube Videos',
-      circles: [
-        { id: 1, description: 'Youtube Video 1',color: '#504081' },
-        { id: 2, description: 'Youtube Video 2',color: '#504081'},
-        { id: 3, description: 'Youtube Video 3',color: '#504081'},
-      ],
-    },
-    {
-      id: 6,
-      imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make 10 New Short Videos and Post to All Platforms',
-      circles: [
-        { id: 1, description: 'Short Video 1',color: '#504081' },
-        { id: 2, description: 'Short Video 2',color: '#504081' },
-        { id: 3, description: 'Short Video 3',color: '#504081' },
-        { id: 4, description: 'Short Video 4',color: '#504081' },
-        { id: 5, description: 'Short Video 5',color: '#504081' },
-        { id: 6, description: 'Short Video 6',color: '#504081' },
-        { id: 7, description: 'Short Video 7',color: '#504081' },
-        { id: 8, description: 'Short Video 8',color: '#504081' },
-        { id: 9, description: 'Short Video 9',color: '#504081' },
-        { id: 10, description: 'Short Video 10',color: '#504081' },
-      ],
-    },
-    {
-      id: 7,
-      imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
         { id: 1, description: 'Newsletter 1',color: '#504081' },
@@ -108,7 +74,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 8,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Chapters for Book 1',
       circles: [
@@ -117,6 +83,23 @@ const App: React.FC = () => {
         { id: 3, description: 'Chapter 3',color: '#504081'},
         { id: 4, description: 'Chapter 4',color: '#504081'},
         { id: 5, description: 'Chapter 5',color: '#504081'},
+      ],
+    },
+    {
+      id: 7,
+      imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Code Effortless Quest: Website Structure Skeleton',
+      circles: [
+        { id: 1, description: 'Before Log-in: Home landing Page',color: '#504081'},
+        { id: 2, description: 'Before Log-in: About Page',color: '#504081'},
+        { id: 3, description: 'Before Log-in: How To Play Page',color: '#504081'},
+        { id: 4, description: 'Log-in:  TownHall Page (Home)',color: '#504081'},
+        { id: 5, description: 'Log-in:  TownHall: Business Center',color: '#504081'},
+        { id: 6, description: 'Log-in:  TownHall: Education Center',color: '#504081'},
+        { id: 7, description: 'Log-in:  TownHall: Leaderboards and Rewards',color: '#504081'},
+        { id: 8, description: 'Log-in:  TownHall: My Quest and My Team Centers',color: '#504081'},
+        { id: 9, description: 'Log-in:  TownHall: Invention Center',color: '#504081'},
+        { id: 10, description: 'Log-in:  TownHall: Charity Center',color: '#504081'},
       ],
     },
   ];

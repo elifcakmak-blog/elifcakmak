@@ -72,7 +72,7 @@ const App: React.FC = () => {
     {
       id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make 4 New Chapters for Book',
+      title: 'Make 4 New Chapters for Book 3',
       circles: [
         { id: 1, description: 'Chapter 6',color: '#504081' },
         { id: 2, description: 'Chapter 7',color: '#504081'},

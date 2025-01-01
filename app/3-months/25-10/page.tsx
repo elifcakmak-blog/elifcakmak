@@ -6,7 +6,7 @@ const App: React.FC = () => {
     {
       id: 1,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Life Tracker Sheets (Individauls) Product Line',
+      title: 'Make Effortless Life Tracker Sheets (Individuals) Product Line',
       circles: [
         { id: 1, description: 'Make the Goals Dashboard',color: '#504081' },
         { id: 2, description: 'Make the Project Dashboard Page',color: '#504081'},
@@ -74,7 +74,7 @@ const App: React.FC = () => {
     {
       id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make 5 New Chapters for Book',
+      title: 'Make 5 New Chapters for Book 3',
       circles: [
         { id: 1, description: 'Chapter 1',color: '#504081' },
         { id: 2, description: 'Chapter 2',color: '#504081'},

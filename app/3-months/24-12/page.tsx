@@ -37,15 +37,9 @@ const App: React.FC = () => {
     {
       id: 3,
       imageSrc: '/roadmap-tiles/building.svg',
-      title: 'Code Effortless Quest App',
+      title: 'Research Ai Models',
       circles: [
         { id: 1, description: 'Research Apps and Ai - Completed 12/28/24 2:26pm EST ',color: '#4bfe5a' },
-        { id: 2, description: 'Code Electron App and all page UI',color: '#e6df20'},
-        { id: 3, description: 'Code Luma Ai',color: '#504081'},
-        { id: 4, description: 'Fine tune Luma Ai',color: '#504081'},
-        { id: 5, description: 'Code Obsidian Back End',color: '#504081'},
-        { id: 6, description: 'Code Browser View',color: '#504081'},
-        { id: 7, description: 'Make Specified Luma Ais',color: '#504081'},
       ],
     },
   ];

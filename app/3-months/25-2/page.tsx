@@ -21,21 +21,6 @@ const App: React.FC = () => {
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Effortless Quest: Luma Ai Admin Upgrade',
-      circles: [
-        { id: 1, description: 'My Quest Dashboard: Ai Companion Chat',color: '#504081'},
-        { id: 2, description: 'My Quest Dashboard: Meetings',color: '#504081'},
-        { id: 3, description: 'My Quest Dashboard: Command Center: Backlog Settings',color: '#504081'},
-        { id: 4, description: 'My Quest Dashboard: Current Quest',color: '#504081'},
-        { id: 5, description: 'My Quest Dashboard: Habits',color: '#504081'},
-        { id: 6, description: 'My Quest Dashboard: Goals and RoadMap',color: '#504081'},
-        { id: 7, description: 'Ai Companion: My Quest Update',color: '#504081'},
-        { id: 8, description: 'Town Hall: My Quest Center Update',color: '#504081'},
-      ],
-    },
-    {
-      id: 3,
-      imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 4 New Podcast Episodes',
       circles: [
         { id: 1, description: 'Podcast Episode 1',color: '#504081' },
@@ -45,7 +30,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 3,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 2 New Youtube Videos',
       circles: [
@@ -54,7 +39,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 5,
+      id: 4,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 New Short Videos and Post to All Platforms',
       circles: [
@@ -71,7 +56,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 6,
+      id: 5,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 10 Newsletters',
       circles: [
@@ -88,7 +73,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      id: 7,
+      id: 6,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 4 New Chapters for Book 1',
       circles: [
