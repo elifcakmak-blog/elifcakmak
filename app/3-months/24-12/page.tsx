@@ -36,7 +36,7 @@ const App: React.FC = () => {
     },
     {
       id: 3,
-      imageSrc: '/roadmap-tiles/building.svg',
+      imageSrc: '/roadmap-tiles/completed.svg',
       title: 'Research Ai Models',
       circles: [
         { id: 1, description: 'Research Apps and Ai - Completed 12/28/24 2:26pm EST ',color: '#4bfe5a' },
