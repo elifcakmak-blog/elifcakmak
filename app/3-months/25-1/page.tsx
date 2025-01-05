@@ -8,8 +8,8 @@ const App: React.FC = () => {
       imageSrc: '/roadmap-tiles/building.svg',
       title: 'Code Luma App',
       circles: [
-        { id: 1, description: 'Code Electron App and all page UI',color: '#e6df20'},
-        { id: 2, description: 'Code Luma Ai',color: '#504081'},
+        { id: 1, description: 'Code Electron App and all page UI - completed 1/5/25 12:41pm EST',color: '#4bfe5a'},
+        { id: 2, description: 'Code Luma Ai',color: '#e6df20'},
         { id: 3, description: 'Code Back End Integrations',color: '#504081'},
       ],
     },
