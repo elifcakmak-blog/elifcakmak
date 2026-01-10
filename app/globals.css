@@ -95,5 +95,20 @@ a {
   color: #333;
 }
 
+.btn-3 {
+  padding: 12px 24px;
+  background-color: #fef74b;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid #ccc61f; /* Dark purple border */
+  margin-left: 10px; /* Add space to the right */
+}
 
+.btn-3:hover {
+  background-color: #504081;
+  color: #fef74b;
+}
 

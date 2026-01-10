@@ -21,28 +21,33 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
 
       {/* Content */}
       <div className="relative z-10 text-white max-w-xl">
-        <h1 className="text-3xl md:text-4xl font-thin tracking-tight text-hover-yellow">Effortless Work Begins</h1>
+        <h1 className="text-3xl md:text-4xl font-thin tracking-tight text-hover-yellow">Effortless Works Begins</h1>
         <h1 className="text-3xl md:text-4xl font-thin tracking-tight mt-7 max-w-lg text-hover-yellow">with</h1>
-        <h1 className="text-3xl md:text-4xl font-bold tracking-wider mt-4 text-yellow-300 text-hover-grow">Simplifying Tasks</h1>
-        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Every tool you use can simplify your tasks and make work effortless.</p>
-        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">I&apos;m on a mission to provide the resources that transform complexity into simplicity, so you can focus on what matters.</p>
-        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we simplify the process, we make work effortless, one system at a time.</p>
+        <h1 className="text-3xl md:text-3xl font-bold tracking-wider mt-4 text-yellow-300 text-hover-grow">Exploring, Learning, and Creating</h1>
+        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Every resource here can help you learn new skills, gain knowledge, or bring your ideas to life.</p>
+        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">I&apos;m on a mission to provide tutorials, creations, and inspiration—from crocheting and handcrafted items, to Islamic teachings and books, to tools that help you organize your life—so you can grow and create with ease.</p>
+        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we make learning, creating, and organizing effortless, life becomes simpler, richer, and more meaningful—one skill, one creation, and one system at a time.</p>
         <div className="mt-6 max-w-lg">
           <Link 
-            href="https://www.effortlessworks.store/" 
+            href="/2/crocheting" 
             className="btn-primary"
-            target="_blank" // Opens the link in a new tab
             rel="noopener noreferrer" // Security best practice
           >
-            Learn More
+            Crocheting
           </Link>
           <Link 
-            href="https://discord.gg/FkMknqsA8Y" 
+            href="/2/islam" 
             className="btn-secondary"
-            target="_blank" //Opens the link in a new tab
             rel="noopener noreferrer" // Security best practice
           >
-            Join Discord
+            Islam
+          </Link>
+          <Link 
+            href="/2/organization" 
+            className="btn-3"
+            rel="noopener noreferrer" // Security best practice
+          >
+            Organization
           </Link>
         </div>
       </div>

@@ -2,12 +2,13 @@ import React from 'react';
 import './statistics.css';
 
 const statistics = [
-  { label: 'Years Expertise', value: '4+', color: '#fef74b' },
-  { label: 'Digital Products', value: '0+', color: '#fef74b' },
+  { label: 'Crocheted Pieces', value: '0+', color: '#fef74b' },
+  { label: 'Books Written', value: '0+', color: '#fef74b' },
+  { label: 'Organizational Tools', value: '0+', color: '#fef74b' },
   { label: 'Videos Created', value: '0+', color: '#fef74b' },
   { label: 'Podcast Episodes', value: '0+', color: '#fef74b' },
   { label: 'Apps and Websites Developed', value: '3+', color: '#fef74b' },
-  { label: 'Books Written', value: '0+', color: '#fef74b' },
+  { label: 'Courses Created', value: '0+', color: '#fef74b' },
 ];
 
 const StatisticsSection: React.FC = () => {
