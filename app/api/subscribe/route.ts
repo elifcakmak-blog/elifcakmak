@@ -8,7 +8,7 @@ mailchimp.setConfig({
 
 export async function POST(req: Request) {
   try {
-    const { name, email } = await req.json();
+    const { firstName, lastName, email } = await req.json();
 
     if (!email) {
       return NextResponse.json(
@@ -17,13 +17,15 @@ export async function POST(req: Request) {
       );
     }
 
+    // Add subscriber to Mailchimp
     await mailchimp.lists.addListMember(
       process.env.MAILCHIMP_AUDIENCE_ID!,
       {
         email_address: email,
-        status: "pending", // recommended
+        status: "pending", // "pending" = double opt-in, "subscribed" = no confirmation
         merge_fields: {
-          FNAME: name,
+          FNAME: firstName || "",
+          LNAME: lastName || "",
         },
       }
     );
@@ -33,6 +35,15 @@ export async function POST(req: Request) {
       { status: 200 }
     );
   } catch (error: unknown) {
+    console.error("MAILCHIMP ERROR:", error);
+
+    // Optional: log detailed response body for debugging
+    if (typeof error === "object" && error !== null && "response" in error) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      console.error("MAILCHIMP RESPONSE BODY:", (error as any).response?.body);
+    }
+
+    // Handle already subscribed case
     if (
       typeof error === "object" &&
       error !== null &&
