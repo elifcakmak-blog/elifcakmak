@@ -1,0 +1,88 @@
+/* Full-width filter bar */
+.filter-bar {
+  width: 80%;
+  margin: 20px auto;       /* <-- centers it horizontally */
+  background-color: #edeebd;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* center all filter menus */
+}
+
+
+/* Gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container for the dropdown */
+.filter-menu {
+  position: relative;
+  display: inline-block;
+  width: 160px; /* Fixed width for all dropdowns */
+  text-align: center; /* Center text inside the container */
+}
+
+/* The dropdown button */
+.filter-menu button {
+  width: 100%; /* Full width of container */
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center; /* Center the text */
+  position: relative;
+}
+
+
+
+/* Dropdown content container */
+.filter-menu .dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%; /* Match the button width */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  max-height: 250px; /* Limit height for long lists */
+  overflow-y: auto; /* Scroll if too many options */
+  text-align: center; /* Center text and checkboxes inside */
+}
+
+/* Each checkbox item */
+.filter-menu .dropdown-content div {
+  margin-bottom: 5px;
+}
+
+/* Checkbox label spacing */
+.filter-menu .dropdown-content label {
+  margin-left: 0; /* Remove left margin */
+  font-weight: 400;
+  display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 90%;           /* slightly wider on smaller screens */
+  }
+}
+
