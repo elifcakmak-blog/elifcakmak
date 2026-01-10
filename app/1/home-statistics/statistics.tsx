@@ -26,7 +26,7 @@ const statistics: Statistic[] = [
     external: false,
   },
   {
-    label: 'Organizational Tools',
+    label: 'Organizing Tools',
     value: '0+',
     color: '#fef74b',
     href: '/2/organization',

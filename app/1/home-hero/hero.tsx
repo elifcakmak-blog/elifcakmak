@@ -27,26 +27,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
         <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Every resource here can help you learn new skills, gain knowledge, or bring your ideas to life.</p>
         <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">I&apos;m on a mission to provide learning resources, inspiration, and systems—from crocheting and handcrafted items, to Islamic teachings and books, to tools that help you organize your life—so you can grow and bulid with ease.</p>
         <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we make learning, building, and organizing effortless, life becomes simpler, more intentional, and more meaningful—one skill, one build, and one system at a time.</p>
-        <div className="mt-6 max-w-lg">
-          <Link 
-            href="/2/crocheting" 
-            className="btn-primary"
-            rel="noopener noreferrer" // Security best practice
-          >
+        <div className="mt-6 max-w-lg flex flex-wrap gap-3 justify-center md:justify-end">
+          <Link href="/2/crocheting" className="btn-primary">
             Crocheting
           </Link>
-          <Link 
-            href="/2/islam" 
-            className="btn-secondary"
-            rel="noopener noreferrer" // Security best practice
-          >
+          <Link href="/2/islam" className="btn-secondary">
             Islam
           </Link>
-          <Link 
-            href="/2/organization" 
-            className="btn-3"
-            rel="noopener noreferrer" // Security best practice
-          >
+          <Link href="/2/organization" className="btn-3">
             Organization
           </Link>
         </div>
