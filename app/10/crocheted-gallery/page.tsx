@@ -1,4 +1,5 @@
 // CrochetedGallery.tsx
+'use client';
 import React, { useState } from 'react';
 import CrochetedCard from '../crocheted-cards/page';
 import FilterMenu from '../filtermenu/page';
