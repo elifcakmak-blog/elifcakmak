@@ -18,22 +18,22 @@ const ServicesSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="services-content text-center mb-8">
           <div className="easyflow-title bg-[#fef74b] p-6 rounded-lg shadow-lg inline-block animate-spinShake border-4 border-[#1c0e45] hover:transform hover:translateY(-8px) transition-transform">
-            <h2 className="text-3xl font-bold text-[#efe1ff]">EasyFlow Media Presents</h2>
+            <h2 className="text-3xl font-bold text-[#efe1ff]">Explore the Muslim Success Path </h2>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
             <h3 className="text-xl font-bold">Podcasts</h3>
-            <p className="mt-2 text-gray-600">Simplified Insights on Data and Software</p>
+            <p className="mt-2 text-gray-600">Simplified Insights on Faith, Skills, & Organization</p>
             <Link href="/2/podcast">
               <button className="btn-primary mt-4">Listen</button>
             </Link>
           </div>
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
-            <h3 className="text-xl font-bold">Apps</h3>
-            <p className="mt-2 text-gray-600">Conquer Tasks and Learning Objectives</p>
+            <h3 className="text-xl font-bold">Websites & Apps</h3>
+            <p className="mt-2 text-gray-600">Learn, Build, and Organize Your Life</p>
             <Link href="/2/apps">
-              <button className="btn-primary mt-4">Download</button>
+              <button className="btn-primary mt-4">Explore</button>
             </Link>
           </div>
           <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">

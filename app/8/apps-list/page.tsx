@@ -84,8 +84,8 @@ const PodcastSection: React.FC = () => {
             <div className="max-width-xlarge align-center">
               <div className="margin-bottom margin-xxsmall">
                 <h2 className="heading-style-h2 text-align-center">
-                  Apps To Gamify<br />
-                  And Simplify Your Tasks
+                  Websites and Apps To Build<br />
+                  Your Muslim Success Path
                 </h2>
               </div>
               <p className="text-size-regular text-align-center">
@@ -148,7 +148,7 @@ const PodcastSection: React.FC = () => {
                       sort: !prevState.sort,
                     }))}
                 >
-                  Sort Apps
+                  Sort Sites
                   <span
                     className={`dropdown-icon ${dropdownOpen.sort ? "rotate" : ""}`}
                   >

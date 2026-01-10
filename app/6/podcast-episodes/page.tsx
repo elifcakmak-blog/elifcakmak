@@ -84,13 +84,13 @@ const PodcastSection: React.FC = () => {
             <div className="max-width-xlarge align-center">
               <div className="margin-bottom margin-xxsmall">
                 <h2 className="heading-style-h2 text-align-center">
-                  Simplify Your Tasks Effortlessly<br />
-                  The #1 Podcast for Organization.
+                  Simplify Faith, Life, and Learning<br />
+                  The #1 podcast for intentional Muslim living
                 </h2>
               </div>
-              <p className="text-size-regular text-align-center">
+              {/*<p className="text-size-regular text-align-center">
                 New episodes every week.
-              </p>
+              </p>*/}
             </div>
 
             {/* Filter and Sort Section */}

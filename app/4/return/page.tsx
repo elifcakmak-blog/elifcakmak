@@ -25,12 +25,12 @@ export default function ReturnPolicy() {
         </p>
 
         <p>
-          We strive to ensure your satisfaction with every purchase from <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong>. If you&apos;re not satisfied, we&apos;re here to help.
+          We strive to ensure your satisfaction with every purchase from <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong>. If you&apos;re not satisfied, we&apos;re here to help.
         </p>
 
         <h3>Intro</h3>
         <p>
-          <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
+          <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
         </p>
 
 
@@ -51,7 +51,7 @@ export default function ReturnPolicy() {
 
         <h3>Contact for Assistance</h3>
         <p>
-          If you have any questions, contact us at <a href="mailto:effortlessworks@effortless.quest">effortlessworks@effortless.quest</a>.
+          If you have any questions, contact us at <a href="mailto:effortlessworks@effortless.quest">support@effortless.quest</a>.
         </p>
       </div>
 

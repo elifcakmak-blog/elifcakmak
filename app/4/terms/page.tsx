@@ -23,12 +23,12 @@ export default function TermsOfService() {
           <strong>Effective Date:</strong> 12/17/2024
         </p>
         <p>
-          By accessing or using any services or websites under <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong>  you agree to the following Terms of Service:
+          By accessing or using any services or websites under <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong>  you agree to the following Terms of Service:
         </p>
 
         <h3> Intro </h3>
         <p>
-          <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
+          <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
         </p>
 
         <h3>Use of the Websites</h3>
@@ -54,7 +54,7 @@ export default function TermsOfService() {
 
         <h3>Limitation of Liability</h3>
         <p>
-          Effortless Works, Elif Cakmak, EasyFlow Media, and Effortless Quest are not liable for damages arising from the use of our sites, products, or services.
+          We are not liable for damages arising from the use of our sites, products, or services.
         </p>
 
         <h3>Changes to Terms</h3>

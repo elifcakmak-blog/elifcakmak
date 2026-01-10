@@ -48,7 +48,7 @@ export default function NewsletterForm() {
       <div className="floating-card">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-[#4bfe5a] mb-5">Join Our Newsletter</h1>
-          <p className="text-[#fef74b]">Resources to help you simplify your work effortlessly</p>
+          <p className="text-[#fef74b]">Resources to help you build your Muslim Success Path</p>
         </div>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name" className="cursor-none">Name</label>

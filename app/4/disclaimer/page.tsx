@@ -26,7 +26,7 @@ export default function DisclaimerPolicy() {
 
         <h3>Intro</h3>
           <p>
-            <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
+            <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success path</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
           </p>
 
 
@@ -42,12 +42,12 @@ export default function DisclaimerPolicy() {
 
         <h3>External Links</h3>
         <p>
-          We may link to third-party websites, but we are not responsible for their content or policies.
+          We may link to third-party websites, but we are not responsible for their content or policies. We are only responsible for our own posts and content on these platforms.
         </p>
 
         <h3>No Liability</h3>
         <p>
-          Effortless Works, Elif Cakmak, EasyFlow Media, and Effortless Quest are not liable for any losses or damages resulting from the use of our websites or services.
+          We are not liable for any losses or damages resulting from the use of our websites, services, or purchases of our products.
         </p>
       </div>
 

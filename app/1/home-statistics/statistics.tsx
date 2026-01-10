@@ -9,6 +9,8 @@ const statistics = [
   { label: 'Podcast Episodes', value: '0+', color: '#fef74b' },
   { label: 'Apps and Websites Developed', value: '3+', color: '#fef74b' },
   { label: 'Courses Created', value: '0+', color: '#fef74b' },
+  { label: 'Etsy Sales', value: '0+', color: '#fef74b' },
+  { label: 'Years Expertise', value: '6+', color: '#fef74b' },
 ];
 
 const StatisticsSection: React.FC = () => {

@@ -19,7 +19,7 @@ export default function Home() {
       {/* Import Navigation */}
       <Navigation /> 
 
-      <img src={"../page-titles/apps.svg"}alt="Apps Title Image"className="apps-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
+      <img src={"../page-titles/appswebsites.svg"}alt="Apps Title Image"className="apps-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
 
       {/* Import PodcastHero */}
       <AppsHero />

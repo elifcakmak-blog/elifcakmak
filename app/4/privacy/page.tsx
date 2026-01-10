@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
           <strong>Effective Date:</strong> 12/17/2024
         </p>
         <p>
-          At <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>EasyFlow Media</strong>, and <strong>Elif Çakmak</strong> (collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), your privacy is our priority. This Privacy Policy outlines how we collect, use, and protect your personal information when you interact with our websites and services.
+          At <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong> (collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), your privacy is our priority. This Privacy Policy outlines how we collect, use, and protect your personal information when you interact with our websites and services.
         </p>
 
         <h3>Information We Collect</h3>
@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
           <ul>
             <li>To facilitate transactions through Etsy and Notion for products and Fiverr for services.</li>
             <li>We do not directly use personal information to improve our websites or customer service. However, Etsy, Fiverr, and Notion may collect and use such data to enhance their own platforms, customer service, and marketing strategies.</li>
-            <li>To send updates, newsletters, or promotional materials from Effortless Works, Elif Cakmak, EasyFlow Media, or Effortless Quest (with your consent).</li>
+            <li>To send updates, newsletters, or promotional materials from Effortless Works, Elif Cakmak, Muslim Success Path, or Effortless Quest (with your consent).</li>
           </ul>
 
         <h3>Sharing Your Information</h3>
