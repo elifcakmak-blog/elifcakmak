@@ -2,7 +2,7 @@
 'use client';
 import React, { useState } from 'react';
 import CrochetedCard from '../crocheted-cards/CrochetedCard';
-import FilterMenu from '../filtermenu/page';
+import FilterMenu from '../filtermenu/FilterMenu';
 import './crocheted-gallery.css'; // Import the new CSS
 
 // Items with categories and tags
