@@ -1,7 +1,7 @@
 // CrochetedGallery.tsx
 'use client';
 import React, { useState } from 'react';
-import CrochetedCard from '../crocheted-cards/page';
+import CrochetedCard from '../crocheted-cards/CrochetedCard';
 import FilterMenu from '../filtermenu/page';
 import './crocheted-gallery.css'; // Import the new CSS
 
