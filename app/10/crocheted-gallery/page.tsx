@@ -15,7 +15,7 @@ const items = [
       '/crocheted-images/coming-soon/3.png',
     ],
     etsyLink: 'https://effortlessworks.etsy.com',
-    categories: ['skirt'],
+    categories: ['Skirt'],
     tags: ['Women', 'Adult'],
   },
   {
@@ -26,8 +26,8 @@ const items = [
       '/crocheted-images/coming-soon/3.png',
     ],
     etsyLink: 'https://effortlessworks.etsy.com',
-    categories: ['hat'],
-    tags: ['Men', 'Adult'],
+    categories: ['Hat'],
+    tags: ['Women', 'Men', 'Adult'],
   },
 ];
 
@@ -89,6 +89,8 @@ const CrochetedGallery: React.FC = () => {
             title={item.title}
             images={item.images}
             etsyLink={item.etsyLink}
+            categories={item.categories}
+            tags={item.tags}
           />
         ))}
       </section>

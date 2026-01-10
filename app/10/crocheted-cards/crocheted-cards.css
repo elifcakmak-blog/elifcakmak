@@ -58,3 +58,35 @@
     cursor: pointer;
     font-size: 16px;
 }
+
+/* --- NEW BADGE STYLES --- */
+
+/* Container for badges */
+.badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+    justify-content: center;  /* center badges under card */
+}
+
+/* Generic badge style */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Categories: blue background */
+.badge.category {
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    color: white;
+}
+
+/* Tags: green background */
+.badge.tag {
+    background-color: #10b981; /* Tailwind green-500 */
+    color: white;
+}
