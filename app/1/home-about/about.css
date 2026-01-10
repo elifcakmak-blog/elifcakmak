@@ -6,7 +6,8 @@
     border: 10px solid #504081;
     border-radius: 16px; /* Rounded corners */
     padding: 40px; /* Padding inside the section */
-    height: 500px; /* Adjust the height */
+    min-height: 500px;
+    height: auto;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15); /* Shadow effects */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
     z-index: 1; /* Ensures the section appears on top */
@@ -14,7 +15,6 @@
     display: flex;
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
-    overflow: hidden; /* Prevents overflow */
     position: relative;
   }
 

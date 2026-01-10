@@ -9,7 +9,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 70vh;
+  min-height: 700px;
+  max-height: 90vh;
   border: 10px solid #504081;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15);
