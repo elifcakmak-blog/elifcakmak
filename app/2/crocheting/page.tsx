@@ -3,7 +3,6 @@
 import Navigation from '../../0/0-navigation/navigation';
 import Footer from '../../0/0-footer/footer';
 import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
-import AbSection2 from '../../5/about-about/page'; // about section Import
 import AbServices2 from '../../5/about-services/page';
 import NewsletterSection from '../../1/home-newsletter/newsletter';
 
