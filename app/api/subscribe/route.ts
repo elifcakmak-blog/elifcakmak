@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       process.env.MAILCHIMP_AUDIENCE_ID!,
       {
         email_address: email,
-        status: "subscribed", // or "pending" for double opt-in
+        status: "pending", // recommended
         merge_fields: {
           FNAME: name,
         },
@@ -32,9 +32,13 @@ export async function POST(req: Request) {
       { message: "Successfully subscribed" },
       { status: 200 }
     );
-  } catch (error: any) {
-    // Already subscribed
-    if (error.status === 400) {
+  } catch (error: unknown) {
+    if (
+      typeof error === "object" &&
+      error !== null &&
+      "status" in error &&
+      (error as { status: number }).status === 400
+    ) {
       return NextResponse.json(
         { message: "You are already subscribed" },
         { status: 400 }
