@@ -1,0 +1,65 @@
+/* Container for the dropdown */
+.filter-menu {
+  position: relative;
+  display: inline-block;
+  cursor: none;
+}
+
+/* The dropdown button */
+.filter-menu button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-weight: 500;
+  cursor: none;
+}
+
+/* Dropdown content container */
+.filter-menu .dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto; /* Make width fit content */
+  min-width: 150px; /* Optional: minimum width */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  max-height: 250px; /* Optional: limit height for long lists */
+  overflow-y: auto; /* Scroll if too many options */
+  /* Remove text-align:center; to let checkboxes align left */
+  cursor: none;
+}
+
+/* Each checkbox item */
+.filter-menu .dropdown-content div {
+  margin-bottom: 5px;
+  text-align: left; /* Left-align checkboxes */
+  cursor: none;
+}
+
+.filter-menu .dropdown-content label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between checkbox and text */
+  font-weight: 400;
+  cursor: none;
+}
+.filter-menu .dropdown-content input[type="checkbox"] {
+  cursor: none !important; /* hides cursor for the checkbox */
+}
+
+/* Checkbox label containing input and text */
+.checkbox-label {
+  display: flex;       /* flex layout for input + text */
+  align-items: center; /* vertical alignment */
+  gap: 8px;            /* space between checkbox and text */
+  font-weight: 400;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px; /* ensures spacing between checkbox and text */
+}

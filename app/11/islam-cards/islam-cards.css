@@ -51,12 +51,19 @@
 
 .button {
     padding: 10px 16px;
-    background-color: #e5e778;
-    color: rgb(32, 87, 7);
+    background-color: #e5e778; /* original yellow-ish */
+    color: rgb(32, 87, 7);     /* original text color */
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
+    transition: all 0.3s ease; /* smooth hover transition */
+}
+
+.button:hover {
+    background-color: #504081;  /* changes button to purple */
+    border: 2px solid #fef74b;  /* adds yellow border */
+    color: white;              /* optional: better contrast on purple */
 }
 
 /* --- NEW BADGE STYLES --- */
