@@ -10,9 +10,9 @@ const items = [
   {
     title: 'Life Tracker - Google Sheets',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['Trackers'], 
@@ -23,9 +23,9 @@ const items = [
   {
     title: 'Life Tracker - Notion',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['Trackers'], 
@@ -36,9 +36,9 @@ const items = [
   {
     title: 'Personal Tracker - Google Sheets',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['Trackers'], 
@@ -49,9 +49,9 @@ const items = [
   {
     title: 'Personal Tracker - Notion',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['Trackers'], 
@@ -62,9 +62,9 @@ const items = [
   {
     title: 'Personal Projects - Google Sheets',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['Projects'], 
@@ -75,9 +75,9 @@ const items = [
   {
     title: 'Personal Projects - Notion',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['Projects'], 
@@ -88,9 +88,9 @@ const items = [
   {
     title: 'Product Videos- How Tos - Personal',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['How Tos'], 
@@ -101,9 +101,9 @@ const items = [
   {
     title: 'Self Paced Courses- How Tos - Personal',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
      categories: ['How Tos'], 
@@ -114,9 +114,9 @@ const items = [
   {
     title: 'Instructor Led Courses- How Tos - Personal',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: ['How Tos'], 
@@ -127,9 +127,9 @@ const items = [
   {
     title: 'Website Builder- Services',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -140,9 +140,9 @@ const items = [
   {
     title: 'App Builder- Services',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -153,9 +153,9 @@ const items = [
   {
     title: 'Onboarding Builder- Services',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -166,9 +166,9 @@ const items = [
   {
     title: 'Back Office- Google Sheets',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -179,9 +179,9 @@ const items = [
   {
     title: 'Back Office- Notion',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -192,9 +192,9 @@ const items = [
   {
     title: 'Project Management - Google Sheets',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -205,9 +205,9 @@ const items = [
   {
     title: 'Project Management - Notion',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -218,9 +218,9 @@ const items = [
   {
     title: 'Product Videos- How Tos - Business',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -231,9 +231,9 @@ const items = [
   {
     title: 'Self Paced Courses- How Tos - Business',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
@@ -244,9 +244,9 @@ const items = [
   {
     title: 'Instructor Led Courses- How Tos - Business',
     images: [
-      '/islam-images/coming-soon/4.png',
-      '/islam-images/coming-soon/5.png',
-      '/islam-images/coming-soon/6.png',
+      '/organization-images/coming-soon/7.svg',
+      '/organization-images/coming-soon/8.svg',
+      '/organization-images/coming-soon/9.svg',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
     categories: [], 
