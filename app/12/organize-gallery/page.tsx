@@ -8,6 +8,32 @@ import './organize-gallery.css';
 // Items with categories and tags
 const items = [
   {
+    title: 'Life Tracker - Google Sheets',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: ['Trackers'], 
+    businessCategories: [],       
+    types: ['Sheets'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Life Tracker - Notion',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: ['Trackers'], 
+    businessCategories: [],      
+    types: ['Notion'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
     title: 'Personal Tracker - Google Sheets',
     images: [
       '/islam-images/coming-soon/4.png',
@@ -15,55 +41,223 @@ const items = [
       '/islam-images/coming-soon/6.png',
     ],
     etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
-    categories: ['Life Tracker'], // from personalCategories
-    businessCategories: [],       // none for this one
-    types: ['Sheets'],            // from types
-    audience: ['Adults', 'Women', 'Men'], // from gendersAges
-    tags: ['Productivity', 'Planning'],   // optional extra tags
+    categories: ['Trackers'], 
+    businessCategories: [],       
+    types: ['Sheets'],            
+    audience: ['Adults', 'Women', 'Men'], 
   },
   {
-    title: 'Team Management Guide',
+    title: 'Personal Tracker - Notion',
     images: [
-      '/islam-images/coming-soon/7.png',
-      '/islam-images/coming-soon/8.png',
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
     ],
-    etsyLink: 'https://effortlessworks.etsy.com',
-    categories: ['How Tos'],              // from personalCategories
-    businessCategories: ['Management'],   // from businessCategories
-    types: ['Courses'],                   // from types
-    audience: ['Adults', 'Men'],          // from gendersAges
-    tags: ['Leadership', 'Business'],     // optional
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: ['Trackers'], 
+    businessCategories: [],       
+    types: ['Notion'],            
+    audience: ['Adults', 'Women', 'Men'], 
   },
   {
-    title: 'Notion Project Builder',
+    title: 'Personal Projects - Google Sheets',
     images: [
-      '/islam-images/coming-soon/9.png',
-      '/islam-images/coming-soon/10.png',
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
     ],
-    etsyLink: 'https://www.effortlessworks.store/000014/notion-project',
-    categories: ['Projects'],             // from personalCategories
-    businessCategories: ['Back Office'],  // from businessCategories
-    types: ['Notion'],                    // from types
-    audience: ['Adults', 'Women'],        // from gendersAges
-    tags: ['Organization'],               // optional
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: ['Projects'], 
+    businessCategories: [],       
+    types: ['Sheets'],            
+    audience: ['Adults', 'Women', 'Men'], 
   },
   {
-    title: 'Kids Learning Videos',
+    title: 'Personal Projects - Notion',
     images: [
-      '/islam-images/coming-soon/11.png',
-      '/islam-images/coming-soon/12.png',
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
     ],
-    etsyLink: 'https://www.effortlessworks.store/000015/kids-videos',
-    categories: ['How Tos'],              // personalCategories
-    businessCategories: ['Services'],     // businessCategories
-    types: ['Videos'],                    // types
-    audience: ['Kids', 'Boys', 'Girls'], // gendersAges
-    tags: ['Education', 'Fun'],           // optional
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: ['Projects'], 
+    businessCategories: [],       
+    types: ['Notion'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Product Videos- How Tos - Personal',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: ['How Tos'], 
+    businessCategories: [],       
+    types: ['Videos'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Self Paced Courses- How Tos - Personal',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+     categories: ['How Tos'], 
+    businessCategories: [],       
+    types: ['Courses'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Instructor Led Courses- How Tos - Personal',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: ['How Tos'], 
+    businessCategories: [],       
+    types: ['Courses'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Website Builder- Services',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['Services'],       
+    types: ['Builders'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'App Builder- Services',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['Services'],       
+    types: ['Builders'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Onboarding Builder- Services',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['Services'],       
+    types: ['Builders'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Back Office- Google Sheets',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['Back Office'],       
+    types: ['Sheets'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Back Office- Notion',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['Back Office'],       
+    types: ['Notion'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Project Management - Google Sheets',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['Management'],       
+    types: ['Sheets'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Project Management - Notion',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['Management'],       
+    types: ['Notion'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Product Videos- How Tos - Business',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['How Tos'],       
+    types: ['Videos'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Self Paced Courses- How Tos - Business',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['How Tos'],       
+    types: ['Courses'],            
+    audience: ['Adults', 'Women', 'Men'], 
+  },
+  {
+    title: 'Instructor Led Courses- How Tos - Business',
+    images: [
+      '/islam-images/coming-soon/4.png',
+      '/islam-images/coming-soon/5.png',
+      '/islam-images/coming-soon/6.png',
+    ],
+    etsyLink: 'https://www.effortlessworks.store/000013/pt-sheets',
+    categories: [], 
+    businessCategories: ['How Tos'],       
+    types: ['Courses'],            
+    audience: ['Adults', 'Women', 'Men'], 
   },
 ];
 
 // Filter options
-const personalCategories = ['Life Tracker', 'Trackers', 'Projects', 'How Tos'];
+const personalCategories = [ 'Trackers', 'Projects', 'How Tos'];
 const businessCategories = ['Services', 'Back Office', 'Management', 'How Tos'];
 const types = ['Sheets', 'Notion', 'Builders', 'Videos', 'Courses'];
 const gendersAges = ['Men', 'Women', 'Boys', 'Girls', 'Adults', 'Kids'];
@@ -89,7 +283,7 @@ const OrganizeGallery: React.FC = () => {
 
     const businessMatch =
       selectedBusiness.length === 0 ||
-      item.categories?.some(c => selectedBusiness.includes(c));
+      item.businessCategories?.some(c => selectedBusiness.includes(c));
 
     const typesMatch =
       selectedTypes.length === 0 ||
@@ -144,7 +338,6 @@ const OrganizeGallery: React.FC = () => {
             businessCategories={item.businessCategories}
             types={item.types}
             audience={item.audience}
-            tags={item.tags}
             />
         ))}
       </section>
