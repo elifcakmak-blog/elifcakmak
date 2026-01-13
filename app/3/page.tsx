@@ -15,10 +15,10 @@ const roadmaps = [
     },
     {
         id: 2,
-        imageSrc: '/roadmap-tiles/2025.svg',
+        imageSrc: '/roadmap-tiles/2026.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-years/2025',
+            link: '/3-years/2026',
             color: '#f5b700',
         },
     },

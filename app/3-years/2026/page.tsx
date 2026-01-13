@@ -9,7 +9,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/01.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-1',
+            link: '/3-months/26-1',
             color: '#f5b700',
         },
     },
@@ -18,7 +18,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/02.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-2',
+            link: '/3-months/26-2',
             color: '#f5b700',
         },
     },
@@ -27,7 +27,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/03.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-3',
+            link: '/3-months/26-3',
             color: '#f5b700',
         },
     },
@@ -36,7 +36,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/04.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-4',
+            link: '/3-months/26-4',
             color: '#f5b700',
         },
     },{
@@ -44,7 +44,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/05.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-5',
+            link: '/3-months/26-5',
             color: '#f5b700',
         },
     },{
@@ -52,7 +52,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/06.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-6',
+            link: '/3-months/26-6',
             color: '#f5b700',
         },
     },{
@@ -60,7 +60,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/07.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-7',
+            link: '/3-months/26-7',
             color: '#f5b700',
         },
     },{
@@ -68,7 +68,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/08.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-8',
+            link: '/3-months/26-8',
             color: '#f5b700',
         },
     },{
@@ -76,7 +76,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/09.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-9',
+            link: '/3-months/26-9',
             color: '#f5b700',
         },
     },{
@@ -84,7 +84,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/10.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-10',
+            link: '/3-months/26-10',
             color: '#f5b700',
         },
     },{
@@ -92,7 +92,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/11.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-11',
+            link: '/3-months/26-11',
             color: '#f5b700',
         },
     },
@@ -101,7 +101,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/12.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/25-12',
+            link: '/3-months/26-12',
             color: '#f5b700',
         },
     },
