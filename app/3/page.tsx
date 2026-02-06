@@ -9,7 +9,7 @@ const roadmaps = [
         imageSrc: '/roadmap-tiles/2024.svg',
         button: {
             label: 'Explore The Map',
-            link: '/3-months/24-12',
+            link: '3-months/M2024/24-12',
             color: '#f5b700',
         },
     },
@@ -19,6 +19,15 @@ const roadmaps = [
         button: {
             label: 'Explore The Map',
             link: '/3-years/2026',
+            color: '#f5b700',
+        },
+    },
+    {
+        id: 3,
+        imageSrc: '/roadmap-tiles/2027.svg',
+        button: {
+            label: 'Explore The Map',
+            link: '/3-years/2027',
             color: '#f5b700',
         },
     },

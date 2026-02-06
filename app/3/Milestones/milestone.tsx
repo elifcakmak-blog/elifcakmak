@@ -80,7 +80,7 @@ const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
       {/* Import Navigation */}
       <Navigation />
     <div className="page-container">
-      <img src={"../roadmap-tiles/milestones.svg"} alt="RoadMap Milestones Title Image" className="milestone-image" />
+      <img src={"../../roadmap-tiles/milestones.svg"} alt="RoadMap Milestones Title Image" className="milestone-image" />
 
       <div className="milestone-container">
         <div className="milestone-grid">
