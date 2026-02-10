@@ -16,19 +16,19 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Elif Çakmak",
-  description: "I help people simplify tasks so they can work effortlessly ⭐️",
+  title: "Muslim Success Path",
+  description: "Supporting your success path in Islam, every step of the way.🌙✨",
   openGraph: {
-    title: "Simplify Tasks, Work Effortlessly",
-    description: "Discover podcasts, videos, apps, books and more on my personal brand site.",
-    url: "https://elifcakmak.blog",
-    siteName: "Elif Çakmak",
+    title: "Your Path to Success in Islam",
+    description: "Discover podcasts, videos, apps, books and more on my peCurated Islamic knowledge, practical tools, and handmade pieces— all in one place.",
+    url: "https://www.muslimsuccesspath.com/",
+    siteName: "Muslim Success Path",
     images: [
       {
-        url: "/websitephoto.png", 
+        url: "/MuslimSuccessPath-Mobile.svg", 
         width: 1200,
         height: 630,
-        alt: "Elif Cakmak Preview Image",
+        alt: "Muslim Success Path Preview Image",
       },
     ],
     type: "website",

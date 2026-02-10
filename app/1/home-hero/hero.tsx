@@ -12,8 +12,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
       className="hero bg-cover bg-center text-center flex items-center justify-center h-screen relative"
       style={{
         backgroundImage: isMobile
-          ? "url('/backend-images/herobackground-mobile.png')" // Image for mobile view
-          : "url('/backend-images/herobackground.png')", // Image for desktop view
+          ? "url('/backend-images/herobackground-mobile.svg')" // Image for mobile view
+          : "url('/backend-images/herobackground.svg')", // Image for desktop view
       }}
     >
       {/* Overlay */}
@@ -21,12 +21,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
 
       {/* Content */}
       <div className="relative z-10 text-white max-w-xl">
-        <h1 className="text-3xl md:text-4xl font-thin tracking-tight text-hover-yellow">Effortless Works Begins</h1>
+        <h1 className="text-3xl md:text-4xl font-thin tracking-tight text-hover-yellow">Muslim Success Path Begins</h1>
         <h1 className="text-3xl md:text-4xl font-thin tracking-tight mt-7 max-w-lg text-hover-yellow">with</h1>
-        <h1 className="text-3xl md:text-3xl font-bold tracking-wider mt-4 text-yellow-300 text-hover-grow">Exploring, Learning, and Building</h1>
-        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Every resource here can help you learn new skills, gain knowledge, or bring your ideas to life.</p>
-        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">I&apos;m on a mission to provide learning resources, inspiration, and systems—from crocheting and handcrafted items, to Islamic teachings and books, to tools that help you organize your life—so you can grow and bulid with ease.</p>
-        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Because when we make learning, building, and organizing effortless, life becomes simpler, more intentional, and more meaningful—one skill, one build, and one system at a time.</p>
+        <h1 className="text-3xl md:text-3xl font-bold tracking-wider mt-4 text-yellow-300 text-hover-grow">Faith, Learning, & Intentional Living</h1>
+        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">Every resource here is designed to support your success path in Islam, every step of the way. 🌙✨</p>
+        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">We are on a mission to provide faith-centered learning resources, inspiration, and systems—from Islamic books, podcasts, courses, and videos, to handmade crochet items and practical organizational tools—all created to help you grow, stay organized, and live with intention through Islam.</p>
+        <p className="mt-5 text-sm md:text-xl max-w-lg mx-auto text-center lg:text-right text-hover-yellow">When learning, creating, and organizing in line with Islam is effortless, life becomes simpler. It becomes more intentional. And it becomes more meaningful—one habit, one system, and one step at a time.</p>
         <div className="mt-6 max-w-lg flex flex-wrap gap-3 justify-center md:justify-end">
           <Link href="/2/crocheting" className="btn-primary">
             Crocheting
