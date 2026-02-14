@@ -13,7 +13,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
       style={{
         backgroundImage: isMobile
           ? "url('/backend-images/herobackground-mobile.svg')" // Image for mobile view
-          : "url('/backend-images/herobackground.svg')", // Image for desktop view
+          : "url('/backend-images/herobackground-all.svg')", // Image for desktop view
       }}
     >
       {/* Overlay */}

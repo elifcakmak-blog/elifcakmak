@@ -6,8 +6,8 @@ const PodcastHero: React.FC = () => {
   return (
     <section className="herobooks">
         <div className="herobooks-content">
-            <h1>Elif Çakmak&apos;s Books</h1>
-            <p>Explore All Books and Guides in Elif&apos;s Portfolio</p>
+            <h1>Muslim Success Path Books</h1>
+            <p>Explore All Books and Guides in the Portfolio</p>
         </div>
     </section>
   );

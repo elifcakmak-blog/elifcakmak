@@ -6,7 +6,7 @@ const App: React.FC = () => {
     {
       id: 1,
       imageSrc: '/roadmap-tiles/completed.svg', // Replace with your image URLs
-      title: 'Code Elif Çakmak Personal Brand Website',
+      title: 'Code Personal Brand Website',
       circles: [
         { id: 1, description: 'Set Up Website Structure - completed: 11/28/24 7:26am EST',color: '#4bfe5a' },
         { id: 2, description: 'Make the Home Page - completed: 11/29/24 10:35pm EST',color: '#4bfe5a' },
