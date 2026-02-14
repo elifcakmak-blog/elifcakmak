@@ -26,7 +26,7 @@ export default function CookiePolicy() {
 
         <h3> Intro </h3>
         <p>
-          <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
+          <strong>Muslim Success Path</strong>, <strong>Effortless Works</strong>, and <strong>Effortless Quest</strong>  are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
         </p>
 
         <h3>What Are Cookies?</h3>

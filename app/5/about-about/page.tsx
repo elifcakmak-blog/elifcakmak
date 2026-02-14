@@ -1,22 +1,29 @@
 import React from 'react';
 import './absection2.css';
+import Image from 'next/image';
 
 const AbSection2 = () => {
   return (
     <section className="ab-section2 py-8 mb-8">
       <div className="ab-content2 px-8 ml-0">
-  <p className="mt-4 ab-content2 text-hover-yellow">
-  I&apos;m the founder of Muslim Success Path and Effortless Works, dedicated to helping Muslims learn, build, and live intentionally so they can grow in faith, skills, and purposeful living.
-  </p>
-  <p className="mt-4 ab-content2 text-hover-yellow">
-  In 2024, I began sharing insights on building intentional systems and providing resources that make faith, learning, and daily living more manageable. Drawing from my experience in operations and creating structured workflows, I&apos;ve honed my ability to build frameworks that foster clarity, growth, and purposeful living—only now, I do it even better.
-  </p>
-  <p className="mt-4 ab-content2 text-hover-yellow">
-  Today, I’m recognized as a trusted guide in intentional Muslim living. Through my learning resources, organizational systems, and handmade works, I empower Muslims to build faith, develop skills, and organize their lives so they can focus on what truly matters.
-  </p>
-  <p className="mt-4 ab-content2 text-hover-yellow">
-  I&apos;m here to help you simplify life, grow in faith, and achieve your goals—whether through my resources, tutorials, or creative projects.
+<p className="mt-4 ab-content2 text-hover-yellow">
+Muslim Success Path and Effortless Works are dedicated to helping Muslims on a journey of faith, growth, and purposeful living. Our mission is to help you strengthen your iman, develop your skills, and live intentionally in every aspect of life.
 </p>
+<p className="mt-4 ab-content2 text-hover-yellow">
+Since 2024, we’ve been sharing insights and practical resources to make learning, worship, and daily routines more meaningful and manageable. By combining experience, knowledge, and a focus on faith-centered growth, we help Muslims cultivate clarity, discipline, and purpose in their lives.
+</p>
+<p className="mt-4 ab-content2 text-hover-yellow">
+Today, we are recognized as a trusted companion on the path of intentional Muslim living. Through our educational resources, tools, and creative works, we empower Muslims to strengthen their faith, nurture their talents, and live in alignment with their values.
+</p>
+<p className="mt-4 ab-content2 text-hover-yellow">
+Our goal is to help you simplify your life, grow spiritually, and achieve your aspirations—whether through our learning resources, practical tools, or creative projects designed to inspire and uplift.
+</p>
+<Image
+    src="/elif-logo/MuslimSuccessPath-White.svg" // Replace with your image path
+    alt="Muslim Success Path"
+    width={600} 
+    height={400} 
+  />
 </div>
     </section>
   );

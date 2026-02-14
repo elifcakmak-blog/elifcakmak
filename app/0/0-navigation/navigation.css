@@ -47,14 +47,21 @@
   }
   
   .newsletter-button {
-    padding: 3px 10px;
-    background-color: #504081;
-    color: #fef74b;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+  display: flex;                  /* makes the button a flex container */
+  align-items: center;            /* vertically centers the text */
+  justify-content: center;        /* horizontally centers the text */
+  padding: 3px 10px;
+  background-color: #504081;
+  color: #fef74b;
+  border: none;
+  border-radius: 5px;
+  cursor: none;                /* changed from 'none' to pointer for usability */
+  height: 60px;
+  transition: background-color 0.3s;
+  font-weight: bold;              /* optional: make text bolder for visibility */
+  text-align: center;             /* ensures multi-line text is centered */
+}
+
   
   .newsletter-button:hover {
     background-color: #f3ef98;

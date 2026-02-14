@@ -23,12 +23,12 @@ export default function TermsOfService() {
           <strong>Effective Date:</strong> 12/17/2024
         </p>
         <p>
-          By accessing or using any services or websites under <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong>  you agree to the following Terms of Service:
+          By accessing or using any services or websites under <strong>Muslim Success Path</strong>, <strong>Effortless Works</strong>, and <strong>Effortless Quest</strong>  you agree to the following Terms of Service:
         </p>
 
         <h3> Intro </h3>
         <p>
-          <strong>Effortless Quest</strong>, <strong>Effortless Works</strong>, <strong>Muslim Success Path</strong>, and <strong>Elif Çakmak</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
+           <strong>Muslim Success Path</strong>, <strong>Effortless Works</strong>, and <strong>Effortless Quest</strong> are collectively referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;.
         </p>
 
         <h3>Use of the Websites</h3>

@@ -11,7 +11,7 @@ const TermsNav = () => {
   return (
     <header className="header">
       <Link href="/" className="logo-link">
-        <Image src="/elif-logo/elifcakmaklogowhite.svg" alt="Elif Çakmak Logo" width={100} height={100} className="logo" />
+        <Image src="/elif-logo/MuslimSuccessPath-White.svg" alt="Muslim Success Path Logo" width={100} height={100} className="logo" />
       </Link>
       <nav className="nav">
         <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>

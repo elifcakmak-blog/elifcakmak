@@ -1,63 +1,101 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import './abservices2.css';
 
-const AbServices2 = () => {
-  // Create a number of lanterns to spread evenly across the bottom
-  const lanternCount = 30; // Adjust as needed for more/less lanterns
+const AbServices2: React.FC = () => {
+  const lanternCount = 30;
 
   return (
     <section className="services bg-[#504081] py-16 relative opacity-80 overflow-hidden">
+      {/* Lantern animation */}
       <div className="lanterns">
-        {/* Render lanterns */}
         {Array.from({ length: lanternCount }).map((_, index) => (
-          <div key={index} className="lantern" style={{ animationDelay: `${(index * 0.2) % 8}s` }}></div>
+          <div
+            key={index}
+            className="lantern"
+            style={{ animationDelay: `${(index * 0.2) % 8}s` }}
+          ></div>
         ))}
       </div>
+
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[210px]">
-            <h3 className="text-lg font-bold">Podcasts</h3>
-            <p className="mt-2 text-gray-600">Simplified Insights on Faith, Skills, & Organization</p>
+        <div className="services-content text-center mb-8">
+          <div className="easyflow-title bg-[#fef74b] p-6 rounded-lg shadow-lg inline-block animate-spinShake border-4 border-[#1c0e45] hover:transform hover:translateY(-8px) transition-transform">
+            <h2 className="text-3xl font-bold text-[#efe1ff]">
+              Join The Muslim Success Path
+            </h2>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          
+          {/* Podcasts */}
+          <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+            <div className="flex justify-center mb-2">
+              <Image src="/logos/podcast-logo.svg" alt="Podcasts" width={200} height={50} className="object-contain transition-transform hover:scale-110" />
+            </div>
+            <p className="mt-[-40px] text-gray-300 font-bold text-2xl">Podcasts</p>
             <Link href="/2/podcast">
-              <button className="btn-primary mt-4">Listen</button>
+              <button className="mt-[50px] btn-secondary">Listen</button>
             </Link>
           </div>
-          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[210px]">
-            <h3 className="text-lg font-bold">Websites & Apps</h3>
-            <p className="mt-2 text-gray-600">Learn, Build, and Organize Your Life</p>
+
+          {/* Websites & Apps */}
+          <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+            <div className="flex justify-center mb-2">
+              <Image src="/logos/apps-logo.svg" alt="Apps" width={200} height={70} className="object-contain transition-transform hover:scale-110" />
+            </div>
+            <p className="mt-[-40px] text-gray-300 font-bold text-2xl">Websites & Apps</p>
             <Link href="/2/apps">
-              <button className="btn-primary mt-4">Explore</button>
+              <button className="mt-[50px] btn-secondary">Explore</button>
             </Link>
           </div>
-          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[210px]">
-            <h3 className="text-lg font-bold">GitHub</h3>
-            <p className="mt-2 text-gray-600">Explore my Current Software Development Projects</p>
-            <Link href="https://github.com/elifcakmak-blog">
-              <button className="btn-primary mt-4">Explore</button>
+
+          {/* GitHub */}
+          <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+            <div className="flex justify-center mb-2">
+              <Image src="/logos/github-logo.svg" alt="GitHub" width={200} height={70} className="object-contain transition-transform hover:scale-110" />
+            </div>
+            <p className="mt-[-40px] text-gray-300 font-bold text-2xl">GitHub</p>
+            <Link href="https://github.com/elifcakmak-blog" target="_blank" rel="noopener noreferrer">
+              <button className="mt-[50px] btn-secondary">Explore</button>
             </Link>
           </div>
-          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[210px]">
-            <h3 className="text-lg font-bold">Roadmap</h3>
-            <p className="mt-2 text-gray-600">See Upcoming Updates and Milestones I&apos;m Completing</p>
+
+          {/* Roadmap */}
+          <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+            <div className="flex justify-center mb-2">
+              <Image src="/logos/roadmap-logo.svg" alt="Roadmap" width={200} height={70} className="object-contain transition-transform hover:scale-110" />
+            </div>
+            <p className="mt-[-40px] text-gray-300 font-bold text-2xl">Roadmap</p>
             <Link href="/3">
-              <button className="btn-primary mt-4">Observe</button>
+              <button className="mt-[50px] btn-secondary">Observe</button>
             </Link>
           </div>
-          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[210px]">
-            <h3 className="text-lg font-bold">Videos</h3>
-            <p className="mt-2 text-gray-600">Tutorials That Upgrade Your Skill Set</p>
+
+          {/* Videos */}
+          <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+            <div className="flex justify-center mb-2">
+              <Image src="/logos/videos-logo.svg" alt="Videos" width={200} height={70} className="object-contain transition-transform hover:scale-110" />
+            </div>
+            <p className="mt-[-40px] text-gray-300 font-bold text-2xl">Videos</p>
             <Link href="/2/videos">
-              <button className="btn-primary mt-4">Watch</button>
+              <button className="mt-[50px] btn-secondary">Watch</button>
             </Link>
           </div>
-          <div className="service-card p-8 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform h-[210px]">
-            <h3 className="text-lg font-bold">Courses</h3>
-            <p className="mt-2 text-gray-600">Learn, Grow, and Achieve Mastery</p>
+
+          {/* Courses */}
+          <div className="service-card p-6 bg-[#1c0e45] shadow-md rounded-md text-center hover:shadow-lg transform hover:translateY(-4px) transition-transform">
+            <div className="flex justify-center mb-2">
+              <Image src="/logos/courses-logo.svg" alt="Courses" width={200} height={70} className="object-contain transition-transform hover:scale-110" />
+            </div>
+            <p className="mt-[-40px] text-gray-300 font-bold text-2xl">Courses</p>
             <Link href="https://www.effortlessworks.store/000002/courses" target="_blank" rel="noopener noreferrer">
-              <button className="btn-primary mt-4">Learn</button>
+              <button className="mt-[50px] btn-secondary">Learn</button>
             </Link>
           </div>
+
         </div>
       </div>
     </section>

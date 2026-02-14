@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
       <div className="footer h-70 py-8 rounded-lg shadow-lg">
         <div className="container mx-auto px-8">
           <div className="grid grid-cols-3 gap-8 mt-[-10px]">
-            {/* Elif Çakmak Links */}
+            {/* Muslim Success Path Links */}
             <div className="footer-card elif-card p-6 shadow-md rounded-md text-center">
-              <h3 className="text-2xl font-bold">Elif Çakmak</h3>
+              <h3 className="text-2xl font-bold">Muslim Success Path</h3>
               <a href="/2/about" className="footer-link">About</a>
               <a href="/2/videos" className="footer-link">Videos</a>
               <a href="/2/podcast" className="footer-link">Podcast</a>
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
 
             {/* Social Media Links */}
             <div className="footer-card easyflow-card p-6 shadow-md rounded-md text-center">
-              <h3 className="text-2xl font-bold">Muslim Success Path</h3>
+              <h3 className="text-2xl font-bold">Socials</h3>
               <div className="social-icons-container">
                 <a href="https://www.facebook.com/profile.php?id=61569395896969" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/facebook.svg" alt="Facebook" className="social-icon" />
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
 
           {/* Copyright */}
           <div className="text-center mt-4 footer-copyright">
-            <p>&copy; 2024 Elif Çakmak, Muslim Success Path, Effortless Works, Effortless Quest. All rights reserved.</p>
+            <p>&copy; 2024 Muslim Success Path, Effortless Works, Effortless Quest. All rights reserved.</p>
           </div>
         </div>
       </div>
