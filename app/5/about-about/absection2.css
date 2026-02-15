@@ -6,54 +6,58 @@
   border: 10px solid #504081;
   border-radius: 16px;
   padding: 40px;
-  height: 100vh;
+
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   z-index: 1;
   color: #333;
+
   display: flex;
-  overflow: hidden;
-  position: relative; /* Ensure relative positioning for pseudo-element */
+  flex-direction: column; /* Stack content vertically */
+  position: relative; /* For pseudo-element */
   margin-top: 40px;
+
+  min-height: 100vh; /* Optional: ensures full viewport minimum */
+  overflow: visible; /* Let content expand */
 }
 
 .ab-section2::before {
-  content: ""; /* Create an empty pseudo-element */
-  position: absolute; /* Position relative to the parent */
-  top: -8px; /* Expand slightly beyond the section */
-  left: -8px; /* Expand slightly beyond the section */
-  width: calc(100% + 16px); /* Cover the entire section horizontally */
-  height: calc(100% + 16px); /* Cover the entire section vertically */
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
   background: linear-gradient(155deg, rgba(83, 22, 148, 0.66), rgba(248, 238, 93, 0.34));
-  z-index: -1; /* Place behind the section content */
-  border-radius: 16px; /* Match the border radius of the section */
-  transform: scale(0.9); /* Subtle animation effect */
-  opacity: 0; /* Initially hidden */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for appearance */
+  z-index: -1;
+  border-radius: 16px;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .ab-section2:hover::before {
-  transform: scale(1); /* Expand to full size */
-  opacity: 1; /* Make visible */
+  transform: scale(1);
+  opacity: 1;
 }
 
 .ab-content2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  width: 48%;
-  margin-left: 140px;
-  margin-top: -45px;
+  width: 100%; /* Use full width, can also set max-width: 800px */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 0 20px;
 }
 
 .text-section {
-  max-width: 50%;
+  max-width: 100%;
   padding-right: 20px;
 }
 
 .image-section {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .image-section img {
@@ -62,14 +66,14 @@
   object-fit: cover;
 }
 
-/* Hover effects for the section */
 .ab-section2:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3), 0 -8px 24px rgba(0, 0, 0, 0.25);
   border-color: #fef74b;
 }
 
-.ab-section2 h1, .ab-section2 p {
+.ab-section2 h1,
+.ab-section2 p {
   color: #fff;
   text-align: left;
 }
@@ -82,33 +86,20 @@
   margin-top: 1rem;
 }
 
-/* Responsive styles... */
-
-
 /* Mobile styles (up to 768px) */
 @media (max-width: 768px) {
-  .ab-section2 {
-    height: 775px;
-  }
-
   .ab-content2 {
-    width: 100%; /* Make sure the content stretches across the full width */
-    padding: 0 20px; /* Add some padding on both sides */
-    margin: 0; /* Remove all margin to avoid unwanted gaps */
-    margin-top: -40px;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column; /* Ensure the content flows vertically */
-    justify-content: flex-start; /* Align items to the top */
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .ab-section2 p {
-    font-size: 1rem; /* Adjust font size for mobile */
-    line-height: 1.25; /* Add line-height for better readability */
-  }
-
-  /* Ensure wrapping of text */
-  .ab-content2 h1, .ab-content2 p {
+    font-size: 1rem;
+    line-height: 1.4;
     word-wrap: break-word;
   }
 
@@ -117,40 +108,30 @@
   }
 }
 
-/* Tablet/Small Desktop styles (768px - 1024px) */
+/* Tablet / small desktop (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .ab-content2 {
-    width: 80%; /* Adjust content width */
-    padding: 0 20px; /* Add padding */
-    margin: 0; /* Remove margin */
-    margin-top: -20px;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column; /* Ensure vertical flow */
-    justify-content: flex-start;
+    width: 85%;
+    padding: 0 20px;
+    margin: 0;
   }
 
   .ab-section2 p {
-    font-size: 1.1rem; /* Slightly larger text */
-    line-height: 1.7; /* Add line height */
+    font-size: 1.15rem;
+    line-height: 1.6;
   }
 }
 
-/* Large Desktop styles (1024px and up) */
+/* Large desktop (1024px+) */
 @media (min-width: 1024px) {
   .ab-content2 {
-    width: 75%; /* Adjust content width */
-    padding: 0 20px; /* Add padding */
-    margin: 0; /* Remove margin */
-    margin-top: 10px;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 75%;
+    padding: 0 20px;
+    margin: 0;
   }
 
   .ab-section2 p {
-    font-size: 1.25rem; /* Larger text */
+    font-size: 1.25rem;
     margin-bottom: 15px;
   }
 }

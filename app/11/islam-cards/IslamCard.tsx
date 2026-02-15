@@ -22,13 +22,11 @@ const IslamCard: React.FC<IslamCardProps> = ({ title, images, etsyLink, categori
     setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  // Merge categories and tags into a single array for display
   const allTags = [...(categories || []), ...(tags || [])];
 
   return (
     <div className="card">
       <div className="image-row">
-        <button onClick={prevImage} className="arrow">◀</button>
         <div className="image-container">
           <img
             src={images[currentIndex]}
@@ -36,12 +34,15 @@ const IslamCard: React.FC<IslamCardProps> = ({ title, images, etsyLink, categori
             className="image"
           />
         </div>
-        <button onClick={nextImage} className="arrow">▶</button>
+
+        <div className="arrows-container">
+          <button onClick={prevImage} className="arrow">◀</button>
+          <button onClick={nextImage} className="arrow">▶</button>
+        </div>
       </div>
 
       <h3 className="title">{title}</h3>
 
-      {/* Display all tags in one line */}
       {allTags.length > 0 && (
         <div className="badges-container">
           {allTags.map((tag, index) => (

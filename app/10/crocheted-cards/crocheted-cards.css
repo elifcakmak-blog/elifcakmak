@@ -1,8 +1,9 @@
 .card {
-    width: 500px;          /* bigger square card */
-    height: 500px;
+    width: 90%;               /* responsive width */
+    max-width: 500px;         /* keeps card from growing too large on desktop */
+    height: auto;             /* let height grow based on content */
     padding: 15px;
-    margin: 20px;
+    margin: 20px auto;        /* center on small screens */
     border: 1px solid #ccc;
     border-radius: 12px;
     text-align: center;
@@ -10,14 +11,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color:#d4f7cf ;
+    background-color:#d4f7cf;
+    box-sizing: border-box;
 }
 
 .image-row {
     display: flex;
+    flex-direction: column;       /* stack image and arrows vertically */
     align-items: center;
     justify-content: center;
-    flex: 1;
+    gap: 10px;                    /* space between image and arrows */
+    margin-bottom: 10px;
+}
+
+.arrows-container {
+    display: flex;
+    gap: 10px;                    /* space between the two arrows */
+    justify-content: center;
+    width: 100%;
 }
 
 .arrow {
@@ -27,20 +38,20 @@
     cursor: pointer;
     padding: 10px 14px;
     border-radius: 20px;
-    margin: 0 5px;
+    flex-shrink: 0;               /* prevent arrows from shrinking */
 }
 
 .image-container {
     width: 100%;
-    max-width: 330px;  /* image width */
-    height: 330px;     /* image height, same for square */
+    max-width: 330px;             /* responsive max size */
+    aspect-ratio: 1 / 1;          /* keep square ratio automatically */
     flex-shrink: 0;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* keeps image square and fills container */
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -51,33 +62,32 @@
 
 .button {
     padding: 10px 16px;
-    background-color: #e5e778; /* original yellow-ish */
-    color: rgb(32, 87, 7);     /* original text color */
+    background-color: #e5e778;
+    color: rgb(32, 87, 7);
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-    transition: all 0.3s ease; /* smooth hover transition */
+    transition: all 0.3s ease;
+    width: 100%;               /* full-width on mobile */
+    max-width: 300px;          /* optional max width */
+    margin: 0 auto;            /* center button */
 }
 
 .button:hover {
-    background-color: #504081;  /* changes button to purple */
-    border: 2px solid #fef74b;  /* adds yellow border */
-    color: white;              /* optional: better contrast on purple */
+    background-color: #504081;
+    border: 2px solid #fef74b;
+    color: white;
 }
 
-/* --- NEW BADGE STYLES --- */
-
-/* Container for badges */
 .badges-container {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin: 8px 0;
-    justify-content: center;  /* center badges under card */
+    justify-content: center;
 }
 
-/* Generic badge style */
 .badge {
     padding: 4px 10px;
     border-radius: 12px;
@@ -86,14 +96,12 @@
     display: inline-block;
 }
 
-/* Categories: blue background */
 .badge.category {
-    background-color: #3b82f6; /* Tailwind blue-500 */
+    background-color: #3b82f6;
     color: white;
 }
 
-/* Tags: green background */
 .badge.tag {
-    background-color: #10b981; /* Tailwind green-500 */
+    background-color: #10b981;
     color: white;
 }

@@ -81,28 +81,32 @@
     margin-top: 1rem; /* Adds top margin */
   }
 
-  /* Adjustments for smaller screens */
+  /* Mobile adjustments */
 @media (max-width: 768px) {
-    .about-content {
-      max-width: 90%; /* Adjust width for smaller screens */
-      padding: 0 10px; /* Reduce padding for better fitting */
-    }
-  
-    /* Make sure content can wrap to a new line */
-  .about-content h1, .about-content p {
-    word-wrap: break-word; /* Ensures long words break and don't overflow */
+  .about-content {
+    max-width: 95%; /* Almost full width */
+    padding: 0 15px; /* Small padding */
+    text-align: center; /* Optional: center text for mobile */
   }
-  
-  .about-section h1, .about-section p {
-    color: #333;
-  }
-  
+
+  .about-section h1,
   .about-section p {
-    margin-top: 1rem;
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Smaller padding */
+    box-sizing: border-box;
+    word-break: break-word; /* Ensure no overflow */
+    overflow-wrap: break-word;
+  }
+
+  .about-section h1::before,
+  .about-section p::before {
+    width: 100%; /* Don't exceed container */
+    height: auto; /* Let it wrap naturally */
+    transform: scale(1); /* Keep visible but not overflowing */
   }
 
   .about-section {
-    height: 800px;
+    min-height: auto; /* Let height adjust to content */
+    padding: 20px 10px;
   }
-  
-  }
+}

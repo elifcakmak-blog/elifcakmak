@@ -41,7 +41,6 @@ const OrganizeCard: React.FC<OrganizeCardProps> = ({
   return (
     <div className="card">
       <div className="image-row">
-        <button onClick={prevImage} className="arrow">◀</button>
         <div className="image-container">
           <img
             src={images[currentIndex]}
@@ -49,12 +48,15 @@ const OrganizeCard: React.FC<OrganizeCardProps> = ({
             className="image"
           />
         </div>
-        <button onClick={nextImage} className="arrow">▶</button>
+
+        <div className="arrows-container">
+          <button onClick={prevImage} className="arrow">◀</button>
+          <button onClick={nextImage} className="arrow">▶</button>
+        </div>
       </div>
 
       <h3 className="title">{title}</h3>
 
-      {/* Display all badges */}
       {allTags.length > 0 && (
         <div className="badges-container">
           {allTags.map((tag, index) => (
