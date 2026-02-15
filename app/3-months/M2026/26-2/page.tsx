@@ -8,9 +8,9 @@ const App: React.FC = () => {
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Personal Website Rebrand',
       circles: [
-        { id: 1, description: 'Remove Personal Info and Rebrand',color: '#504081' },
-        { id: 2, description: 'Define goals for all 3 websites ',color: '#504081'},
-        { id: 3, description: 'Completly finish coding structure',color: '#504081'},
+        { id: 1, description: 'Remove Personal Info and Rebrand - completed: 2/14/26 9:18pm EST',color: '#4bfe5a' },
+        { id: 2, description: 'Define goals for all 3 websites - completed: 2/10/26 3:30pm EST',color: '#4bfe5a'},
+        { id: 3, description: 'Completly finish coding structure - completed: 2/14/26 9:18pm EST',color: '#4bfe5a' },
       ],
     },
     {
