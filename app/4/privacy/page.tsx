@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
           <ul>
             <li>To facilitate transactions through Etsy and Notion for products and Fiverr for services.</li>
             <li>We do not directly use personal information to improve our websites or customer service. However, Etsy, Fiverr, and Notion may collect and use such data to enhance their own platforms, customer service, and marketing strategies.</li>
-            <li>To send updates, newsletters, or promotional materials from Effortless Works, Elif Cakmak, Muslim Success Path, or Effortless Quest (with your consent).</li>
+            <li>To send updates, newsletters, or promotional materials from Muslim Success Path, Effortless Works, or Effortless Quest (with your consent).</li>
           </ul>
 
         <h3>Sharing Your Information</h3>
