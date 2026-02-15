@@ -85,9 +85,6 @@ const Footer: React.FC = () => {
             <div className="footer-card easyflow-card p-6 shadow-md rounded-md text-center">
               <h3 className="text-2xl font-bold">Socials</h3>
               <div className="social-icons-container">
-                <a href="https://www.facebook.com/profile.php?id=61569395896969" target="_blank" rel="noopener noreferrer">
-                  <img src="/social-media-logos/facebook.svg" alt="Facebook" className="social-icon" />
-                </a>
                 <a href="https://www.instagram.com/easyflow.media" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/instagram.svg" alt="Instagram" className="social-icon" />
                 </a>
