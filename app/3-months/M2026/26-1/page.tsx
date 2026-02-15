@@ -5,7 +5,7 @@ const App: React.FC = () => {
   const milestones = [
     {
       id: 2,
-      imageSrc: '/roadmap-tiles/nextt.svg',
+      imageSrc: '/roadmap-tiles/completed.svg',
       title: 'Restructure Personal Brand Site',
       circles: [
         { id: 1, description: 'Update the Home Page - completed: 1/9/26 8:30pm EST',color: '#4bfe5a' },
