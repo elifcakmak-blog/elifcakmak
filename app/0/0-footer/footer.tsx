@@ -85,19 +85,19 @@ const Footer: React.FC = () => {
             <div className="footer-card easyflow-card p-6 shadow-md rounded-md text-center">
               <h3 className="text-2xl font-bold">Socials</h3>
               <div className="social-icons-container">
-                <a href="https://www.instagram.com/easyflow.media" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/muslim.success.path" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/instagram.svg" alt="Instagram" className="social-icon" />
                 </a>
-                <a href="https://www.tiktok.com/@easyflow.media" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.tiktok.com/@muslim.success.path" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/tiktok.svg" alt="TikTok" className="social-icon" />
                 </a>
-                <a href="https://www.youtube.com/@EasyFlow-Media" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@MuslimSuccessPath" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/youtube.svg" alt="YouTube" className="social-icon" />
                 </a>
-                <a href="https://www.linkedin.com/company/elif-%C3%A7akmak" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/muslim-success-path/about" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/linkedin.svg" alt="LinkedIn" className="social-icon" />
                 </a>
-                <a href="https://x.com/EasyFlow_Media" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/muslimsuccess_" target="_blank" rel="noopener noreferrer">
                   <img src="/social-media-logos/twitter.svg" alt="Twitter" className="social-icon" />
                 </a>
               </div>

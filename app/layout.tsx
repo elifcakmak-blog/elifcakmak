@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "Supporting your success path in Islam, every step of the way.🌙✨",
   openGraph: {
     title: "Your Path to Success in Islam",
-    description: "Discover podcasts, videos, apps, books and more on my peCurated Islamic knowledge, practical tools, and handmade pieces— all in one place.",
+    description: "",
     url: "https://www.muslimsuccesspath.com/",
     siteName: "Muslim Success Path",
     images: [
