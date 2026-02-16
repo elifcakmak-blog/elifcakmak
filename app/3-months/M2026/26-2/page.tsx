@@ -15,19 +15,19 @@ const App: React.FC = () => {
     },
     {
       id: 2,
-      imageSrc: '/roadmap-tiles/building.svg',
+      imageSrc: '/roadmap-tiles/completed.svg',
       title: 'Create Product Making and Posting Structure',
       circles: [
-        { id: 1, description: 'Understand and write down all aspects of business',color: '#504081' },
-        { id: 2, description: 'Create a Designing Product Routine',color: '#504081'},
-        { id: 3, description: 'Create a Product Making Schedule',color: '#504081'},
-        { id: 3, description: 'Create a Product to Social System',color: '#504081'},
-        { id: 4, description: 'Create an editing and posting routine',color: '#504081'},
+        { id: 1, description: 'Understand and write down all aspects of business - completed: 2/16/26 1:00pm EST',color: '#4bfe5a' },
+        { id: 2, description: 'Create a Designing Product Routine - completed: 2/16/26 1:57pm EST',color: '#4bfe5a'},
+        { id: 3, description: 'Create a Product Making Schedule - completed: 2/16/26 4:35pm EST',color: '#4bfe5a'},
+        { id: 3, description: 'Create a Product to Social System - completed: 2/16/26 4:35pm EST',color: '#4bfe5a'},
+        { id: 4, description: 'Create an editing and posting routine - completed: 2/16/26 4:35pm EST',color: '#4bfe5a'},
       ],
     },
     {
       id: 3,
-      imageSrc: '/roadmap-tiles/nextt.svg',
+      imageSrc: '/roadmap-tiles/building.svg',
       title: 'Code Effortless Works Business Brand Website',
       circles: [
         { id: 1, description: 'Make the Home Page',color: '#504081' },
