@@ -46,3 +46,4 @@ The website is built using **Next.js** with TypeScript and styled with **Tailwin
 ## LICENSE
 - This repository is licensed under the "No License" condition.
 - All rights reserved. You may not use, distribute, or modify this code without explicit permission from the author.
+...
