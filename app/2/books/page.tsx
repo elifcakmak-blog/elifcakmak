@@ -1,6 +1,6 @@
 "use client";
 
-import Navigation from '../../0/0-navigation/navigation';
+import PageNavigation from '../../0/0-pages-nav/pages-nav';
 import BooksHero from '../../9/books-hero/page';
 import BooksLinks from '../../9/books-links/page';
 import BooksList from '../../9/books-list/page';
@@ -17,7 +17,7 @@ export default function Home() {
       <CustomCursor />
 
       {/* Import Navigation */}
-      <Navigation /> 
+      <PageNavigation /> 
 
       <img src={"../page-titles/books.svg"}alt="Podcast Title Image"className="podcast-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
 

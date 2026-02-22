@@ -1,0 +1,115 @@
+.roadmap-section {
+    background-image: url('/backend-images/roadmapbackground.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid #504081;
+    border-radius: 16px; /* Rounded corners */
+    padding: 40px; /* Padding inside the section */
+    min-height: 500px;
+    height: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.15); /* Shadow effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+    z-index: 1; /* Ensures the section appears on top */
+    color: #333; /* Dark text color */
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    position: relative;
+  }
+
+  .btn-roadmap {
+    display: block; /* Ensures the button is block-level */
+    text-align: left; /* Aligns the text within the button */
+    margin-left: 20px;
+    margin-bottom: 2rem; /* Adds space under the button */
+  }  
+  
+  
+  .roadmap-content {
+  max-width: 50%;
+  text-align: right;
+  padding: 20px; /* Add some padding inside the background */
+  overflow: auto;
+  background-color: rgba(17, 3, 29, 0.8); /* White with 80% opacity */
+  border-radius: 12px; /* Rounded corners for a softer look */
+}
+  
+  .roadmap-section:hover {
+    transform: translateY(-8px); /* Lifts the card on hover */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3), 0 -8px 24px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover with top shadow */
+    border-color: #fef74b;
+  }
+  
+  .roadmap-section h1, .roadmap-section p {
+    display: block; /* Ensures it takes up space */
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: visible; /* Prevent scroll bars */
+  }
+  
+  .roadmap-section h1::before, .roadmap-section p::before {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute;
+    top: -8px; /* Align with the top of the text */
+    left: -12px; /* Align with the left of the text */
+    width: calc(100% + 24px); /* Make the card wider horizontally */
+    height: calc(100% + 16px); /* Make the card taller vertically */
+    background: linear-gradient(155deg,rgba(83, 22, 148, 0.66),rgba(248, 238, 93, 0.34));
+    z-index: -1; /* Place behind the text */
+    border-radius: 8px; /* Rounded corners */
+    transform: scale(0.9); /* subtle animation effect */
+    opacity: 0; /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for appearance */
+  }
+  
+  .roadmap-section h1:hover::before, .roadmap-section p:hover::before {
+    transform: scale(1); /* Expand to full size */
+    opacity: 1; /* Make visible */
+  }
+  
+  .roadmap-section h1:hover, .roadmap-section p:hover {
+    color: #fef74b; /* Change text color to yellow */
+  }
+  
+  .roadmap-section h1 {
+    color: #ffffff; /* Darker color for the heading */
+    text-align: left; /* Left-aligns the heading */
+  }
+  
+  .roadmap-section p {
+    color: #ffffff; /* Darker color for the paragraph */
+    text-align: left; /* Left-aligns the paragraph */
+    margin-top: 1rem; /* Adds top margin */
+  }
+
+  /* Mobile adjustments */
+@media (max-width: 768px) {
+  .roadmap-content {
+    max-width: 95%; /* Almost full width */
+    padding: 0 15px; /* Small padding */
+    text-align: center; /* Optional: center text for mobile */
+  }
+
+  .roadmap-section h1,
+  .roadmap-section p {
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Smaller padding */
+    box-sizing: border-box;
+    word-break: break-word; /* Ensure no overflow */
+    overflow-wrap: break-word;
+  }
+
+  .roadmap-section h1::before,
+  .roadmap-section p::before {
+    width: 100%; /* Don't exceed container */
+    height: auto; /* Let it wrap naturally */
+    transform: scale(1); /* Keep visible but not overflowing */
+  }
+
+  .roadmap-section {
+    min-height: auto; /* Let height adjust to content */
+    padding: 20px 10px;
+  }
+}

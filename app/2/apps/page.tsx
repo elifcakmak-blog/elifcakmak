@@ -1,6 +1,6 @@
 "use client";
 
-import Navigation from '../../0/0-navigation/navigation';
+import PageNavigation from '../../0/0-pages-nav/pages-nav';
 import AppsHero from '../../8/apps-hero/page';
 import AppsLinks from '../../8/apps-links/page';
 import AppsList from '../../8/apps-list/page';
@@ -17,7 +17,7 @@ export default function Home() {
       <CustomCursor />
 
       {/* Import Navigation */}
-      <Navigation /> 
+      <PageNavigation /> 
 
       <img src={"../page-titles/appswebsites.svg"}alt="Apps Title Image"className="apps-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
 

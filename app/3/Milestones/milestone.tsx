@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import './milestone.css';
-import Navigation from '../../0/0-navigation/navigation';
+import PageNavigation from '../../0/0-pages-nav/pages-nav';
 import Footer from '../../0/0-footer/footer';
 import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
 
@@ -78,7 +78,7 @@ const MilestonePage: React.FC<MilestonePageProps> = ({ milestones }) => {
       <CustomCursor />
 
       {/* Import Navigation */}
-      <Navigation />
+      <PageNavigation />
     <div className="page-container">
       <img src={"../../roadmap-tiles/milestones.svg"} alt="RoadMap Milestones Title Image" className="milestone-image" />
 

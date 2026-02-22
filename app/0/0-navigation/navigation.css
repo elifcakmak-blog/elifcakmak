@@ -1,95 +1,115 @@
 .header {
-    background: linear-gradient(115deg, #efe1ff,rgb(172, 149, 231));
-    display: flex;
-    box-shadow: 0 3px 10px #504081;
-    padding: 20px 40px;
-    justify-content: space-between;
-    align-items: center; 
-    flex-wrap: wrap;
-  }
+  background: linear-gradient(115deg, #efe1ff, rgb(172, 149, 231));
+  display: flex;
+  box-shadow: 0 3px 10px #504081;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
 
-  .header.highlight {
-    box-shadow: 0 3px 10px #fef74b; /* Change the shadow when active */
-  }
-  
-  .nav {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #504081;
-    font-weight: 500;
-    transition: color 0.3s;
-    position: relative;
-  }
-  
-  .nav-link:hover {
-    color: #fef74b;
-    transform: scale(1.12);
-  }
-  
-  .nav-link.active::after {
-    content: '';
-    display: block;
-    width: 6px; /* Adjust size of the dot */
-    height: 6px; /* Adjust size of the dot */
-    background-color: #fef74b; /* Dot color */
-    border: 1px solid #939851; /* Border around the dot */
-    border-radius: 50%; /* Make it circular */
-    position: absolute;
-    right: -8px; /* Adjust spacing from the link */
-    top: 70%; /* Adjust this value to move the dot lower or higher */
-    transform: translateY(-50%);
-  }
-  
-  .newsletter-button {
-  display: flex;                  /* makes the button a flex container */
-  align-items: center;            /* vertically centers the text */
-  justify-content: center;        /* horizontally centers the text */
+  /* Sticky and transition for scroll shrink */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Shrink state on scroll */
+.header.shrink {
+  padding: 10px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.header.highlight {
+  box-shadow: 0 3px 10px #fef74b; /* Optional: highlight shadow */
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #504081;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #fef74b;
+  transform: scale(1.12);
+}
+
+.nav-link.active::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #fef74b;
+  border: 1px solid #939851;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+  top: 70%;
+  transform: translateY(-50%);
+}
+
+.newsletter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 3px 10px;
   background-color: #504081;
   color: #fef74b;
   border: none;
   border-radius: 5px;
-  cursor: none;                /* changed from 'none' to pointer for usability */
+  cursor: pointer; /* fixed from 'none' */
   height: 60px;
-  transition: background-color 0.3s;
-  font-weight: bold;              /* optional: make text bolder for visibility */
-  text-align: center;             /* ensures multi-line text is centered */
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  text-align: center;
 }
 
-  
-  .newsletter-button:hover {
-    background-color: #f3ef98;
-    color: #504081;
-  }
-  
-  .newsletter-button.active::after {
-    display: none; /* No yellow dot for the newsletter button */
-  }
-  
-  .logo-link {
-    display: inline-block;
-    margin: 10px;
-    cursor: pointer;
-    transition: transform 0.3s, filter 0.3s;
-  }
-  
-  .logo-link:hover {
-    transform: scale(1.1); 
-    filter: brightness(1.2);
-  }
-  
-  .logo {
-    width: 350px;
-    height: auto;
-  }
+.newsletter-button:hover {
+  background-color: #f3ef98;
+  color: #504081;
+  transform: scale(1.05);
+}
 
-  /* Adjustments for smaller screens */
+.newsletter-button.active::after {
+  display: none;
+}
+
+.logo-link {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.logo-link:hover {
+  transform: scale(1.1); 
+  filter: brightness(1.2);
+}
+
+/* Logo resizing on scroll */
+.logo {
+  width: 350px;
+  height: auto;
+  transition: width 0.3s ease;
+}
+
+.header.shrink .logo {
+  width: 250px; /* shrink logo on scroll */
+}
+
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -101,6 +121,10 @@
   }
 
   .logo {
-    width: 160px; /* Resize logo for smaller screens */
+    width: 160px;
+  }
+
+  .header.shrink .logo {
+    width: 130px;
   }
 }

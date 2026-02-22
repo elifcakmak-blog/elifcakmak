@@ -1,7 +1,7 @@
 import React from 'react';
 import './roadmap.css';
 import CustomCursor from '../../0/0-cursor/page';
-import Navigation from '../../0/0-navigation/navigation';
+import PageNavigation from '../../0/0-pages-nav/pages-nav';
 import Footer from '../../0/0-footer/footer';
 
 type Roadmap = {
@@ -25,7 +25,7 @@ const RoadmapsPage: React.FC<RoadmapsPageProps> = ({ roadmaps }) => {
       <CustomCursor />
 
       {/* Import Navigation */}
-      <Navigation />
+      <PageNavigation />
       
     <div className="page-container">
       

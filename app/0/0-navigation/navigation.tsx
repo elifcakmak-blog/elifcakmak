@@ -1,84 +1,142 @@
 "use client";
 
-import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { useEffect, useState } from "react";
 import './navigation.css';
 
 const Navigation = () => {
-  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+
+  // Shrink navbar on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Scroll to a section smoothly
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const navbar = document.querySelector('.header') as HTMLElement | null;
+      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+      const extraOffset = 15;
+      const elementTop = element.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: elementTop - navbarHeight - extraOffset,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
-    <header className="header">
-      {/* Logo */}
-      <Link href="/" className="logo-link">
-        <Image
-          src="/elif-logo/MuslimSuccessPath-Logo.svg"
-          alt="Muslim Success Path Logo"
-          width={100}
-          height={100}
-          className="logo"
-        />
-      </Link>
-
-      <nav className="nav">
-        {/* Home */}
-        <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>
+    <>
+      <header className={`header ${scrolled ? "shrink" : ""}`}>
+        {/* Logo */}
+        <button onClick={() => scrollToSection("hero")} className="logo-link">
           <Image
-            src="/logos/homebutton.svg"
-            alt="Home"
-            width={70}
-            height={40}
-            className="nav-icon newsletter-button"
+            src="/elif-logo/MuslimSuccessPath-Logo.svg"
+            alt="Muslim Success Path Logo"
+            width={100}
+            height={100}
+            className="logo"
           />
-        </Link>
+        </button>
 
-        {/* Crocheting */}
-        <Link href="/2/crocheting" className={`nav-link ${pathname === '/2/crocheting' ? 'active' : ''}`}>
-          <Image
-            src="/logos/crocheting.svg"
-            alt="Crocheting"
-            width={70}
-            height={40}
-            className="nav-icon newsletter-button"
-          />
-        </Link>
+        <nav className="nav">
+          {/* Hero Section */}
+          <button onClick={() => scrollToSection("hero")} className="newsletter-button">
+            <Image
+              src="/logos/homebutton.svg"
+              alt="Hero"
+              width={70}
+              height={40}
+            />
+          </button>
 
-        {/* Islam */}
-        <Link href="/2/islam" className={`nav-link ${pathname === '/2/islam' ? 'active' : ''}`}>
-          <Image
-            src="/logos/Islam.svg"
-            alt="Islam"
-            width={70}
-            height={40}
-            className="nav-icon newsletter-button"
-          />
-        </Link>
+          {/* Statistics Section */}
+          <button onClick={() => scrollToSection("statistics")} className="newsletter-button">
+            <Image
+              src="/logos/statistics.svg"
+              alt="Statistics"
+              width={70}
+              height={40}
+            />
+          </button>
 
-        {/* Organization */}
-        <Link href="/2/organization" className={`nav-link ${pathname === '/2/organization' ? 'active' : ''}`}>
-          <Image
-            src="/logos/organizing.svg"
-            alt="Organization"
-            width={70}
-            height={40}
-            className="nav-icon newsletter-button"
-          />
-        </Link>
+          {/* About Section */}
+          <button onClick={() => scrollToSection("about")} className="newsletter-button">
+            <Image
+              src="/logos/about.svg"
+              alt="About"
+              width={70}
+              height={40}
+            />
+          </button>
 
-        {/* Road Map */}
-        <Link href="/3" className={`nav-link ${pathname === '/3' ? 'active' : ''}`}>
-          <Image
-            src="/logos/roadmap.svg"
-            alt="Road Map"
-            width={70}
-            height={40}
-            className="nav-icon newsletter-button"
-          />
-        </Link>
-        <Link href="/2/newsletter" className={`newsletter-button ${pathname === '/2/newsletter' ? 'active' : ''}`}>Newsletter</Link>
-      </nav>
-    </header>
+          {/* Services Section */}
+          <button onClick={() => scrollToSection("services")} className="newsletter-button">
+            <Image
+              src="/logos/services.svg"
+              alt="Services"
+              width={70}
+              height={40}
+            />
+          </button>
+
+          {/* Crocheting Section */}
+          <button onClick={() => scrollToSection("crocheting")} className="newsletter-button">
+            <Image
+              src="/logos/crocheting.svg"
+              alt="Crocheting"
+              width={70}
+              height={40}
+            />
+          </button>
+
+          {/* Islam Section */}
+          <button onClick={() => scrollToSection("islam")} className="newsletter-button">
+            <Image
+              src="/logos/Islam.svg"
+              alt="Islam"
+              width={70}
+              height={40}
+            />
+          </button>
+
+          {/* Organization Section */}
+          <button onClick={() => scrollToSection("organization")} className="newsletter-button">
+            <Image
+              src="/logos/organizing.svg"
+              alt="Organization"
+              width={70}
+              height={40}
+            />
+          </button>
+
+          {/* Roadmap Section */}
+          <button onClick={() => scrollToSection("roadmap")} className="newsletter-button">
+            <Image
+              src="/logos/roadmap.svg"
+              alt="Roadmap"
+              width={70}
+              height={40}
+            />
+          </button>
+
+          {/* Newsletter Section */}
+          <button onClick={() => scrollToSection("newsletter")} className="newsletter-button">
+            Newsletter
+          </button>
+        </nav>
+      </header>
+
+      {/* Spacer div as a separate element */}
+      <div style={{ height: '300px' }} /> {/* matches header height */}
+    </>
   );
 };
 

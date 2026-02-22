@@ -58,7 +58,7 @@ const AbServices2: React.FC = () => {
               <Image src="/logos/github-logo.svg" alt="GitHub" width={200} height={70} className="object-contain transition-transform hover:scale-110" />
             </div>
             <p className="mt-[-40px] text-gray-300 font-bold text-2xl">GitHub</p>
-            <Link href="https://github.com/elifcakmak-blog" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/Muslim-Success-Path" target="_blank" rel="noopener noreferrer">
               <button className="mt-[50px] btn-secondary">Explore</button>
             </Link>
           </div>

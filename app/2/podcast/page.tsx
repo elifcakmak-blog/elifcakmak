@@ -1,6 +1,6 @@
 "use client";
 
-import Navigation from '../../0/0-navigation/navigation';
+import PageNavigation from '../../0/0-pages-nav/pages-nav';
 import PodcastHero from '../../6/podcast-hero/page';
 import PodcastLinks from '../../6/podcast-links/page';
 import PodcastEpisodes from '../../6/podcast-episodes/page';
@@ -17,7 +17,7 @@ export default function Home() {
       <CustomCursor />
 
       {/* Import Navigation */}
-      <Navigation /> 
+      <PageNavigation /> 
 
       <img src={"../page-titles/podcast.svg"}alt="Podcast Title Image"className="podcast-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
 
