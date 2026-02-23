@@ -1,97 +1,79 @@
 import React from 'react';
-import './podcastlinks.css'; // Import your CSS file
+import './apps-links.css'; // Import your CSS file
 
-const PodcastLinks: React.FC = () => {
+const AppsLinks: React.FC = () => {
   return (
-    <section className="subscribe-links">
-        <div className="wrapper-social-cards">
+    <section className="apps_subscribe-links">
+        <div className="apps_wrapper-social-cards">
             <a 
                 id="1"
-                href="https://github.com/elifcakmak-blog"
+                href="https://github.com/Muslim-Success-Path"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="apps_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/github.png"
                     loading="lazy" 
                     alt="GitHub icon" 
-                    className="icon-1x1-xlarge"
+                    className="apps_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Follow on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">GitHub</p>
+                    <p className="apps_text-size-tiny apps_text-color-charcoal"><strong>Follow on</strong></p>
+                    <p className="apps_text-size-medium apps_text-color-charcoal apps_text-weight-bold">GitHub</p>
                 </div>
             </a>
 
             <a 
                 id="2"
-                href="https://www.linkedin.com/company/elif-%C3%A7akmak"
+                href="https://www.linkedin.com/company/muslim-success-path/about"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="apps_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/linkedin.png"
                     loading="lazy" 
                     alt="LinkedIn logo" 
-                    className="icon-1x1-xlarge"
+                    className="apps_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Follow on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">LinkedIn</p>
+                    <p className="apps_text-size-tiny apps_text-color-charcoal"><strong>Follow on</strong></p>
+                    <p className="apps_text-size-medium apps_text-color-charcoal apps_text-weight-bold">LinkedIn</p>
                 </div>
             </a>
 
             <a 
                 id="3"
-                href="https://www.instagram.com/easyflow.media/"
+                href="https://www.instagram.com/muslim.success.path"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="apps_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/instagram.jpg"
                     loading="lazy" 
-                    alt="instagram icon" 
-                    className="icon-1x1-xlarge"
+                    alt="Instagram icon" 
+                    className="apps_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Follow on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Instagram</p>
-                </div>
-            </a>
-
-            <a 
-                id="4"
-                href="https://www.facebook.com/profile.php?id=61570464705667"
-                target="_blank"
-                className="card is-social-link w-inline-block"
-            >
-                <img 
-                    src="/easyflow-socials/facebook.png"
-                    loading="lazy" 
-                    alt="Facebook Logo" 
-                    className="icon-1x1-xlarge"
-                />
-                <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Follow On</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Facebook</p>
+                    <p className="apps_text-size-tiny apps_text-color-charcoal"><strong>Follow on</strong></p>
+                    <p className="apps_text-size-medium apps_text-color-charcoal apps_text-weight-bold">Instagram</p>
                 </div>
             </a>
 
             <a 
                 id="5"
-                href="https://x.com/EasyFlow_Media"
+                href="https://x.com/muslimsuccess_"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="apps_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/twitter.png"
                     loading="lazy" 
-                    alt="Twitter logo" 
-                    className="icon-1x1-xlarge"
+                    alt="X logo" 
+                    className="apps_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Follow On</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">X</p>
+                    <p className="apps_text-size-tiny apps_text-color-charcoal"><strong>Follow on</strong></p>
+                    <p className="apps_text-size-medium apps_text-color-charcoal apps_text-weight-bold">X</p>
                 </div>
             </a>
         </div>
@@ -99,4 +81,4 @@ const PodcastLinks: React.FC = () => {
   );
 };
 
-export default PodcastLinks;
+export default AppsLinks;

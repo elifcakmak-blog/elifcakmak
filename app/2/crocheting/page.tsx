@@ -11,7 +11,7 @@ export default function About() {
   // Check if the screen is mobile
 
   return (
-    <div className="about-container">
+    <div className="crocheting-container">
 
       {/* Import Cursor */}
       <CustomCursor />
@@ -20,7 +20,7 @@ export default function About() {
       <PageNavigation />
 
       {/* Header Title Image */}
-      <img src={"../page-titles/crocheting.svg"} alt="about title image" style={{width: "40%", objectFit: "cover", borderRadius: "8px",display: "block",margin: "0 auto", marginTop: "20px",}}/>
+      <img src={"../page-titles/crocheting.svg"} alt="Crocheting Title Image" style={{width: "40%", objectFit: "cover", borderRadius: "8px",display: "block",margin: "0 auto", marginTop: "20px",}}/>
 
       {/* Crocheted Pieces */}
       <CrochetedGallery />

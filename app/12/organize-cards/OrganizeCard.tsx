@@ -26,8 +26,10 @@ const OrganizeCard: React.FC<OrganizeCardProps> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevImage = () => setCurrentIndex(prev => (prev === 0 ? images.length - 1 : prev - 1));
-  const nextImage = () => setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
+  const prevImage = () =>
+    setCurrentIndex(prev => (prev === 0 ? images.length - 1 : prev - 1));
+  const nextImage = () =>
+    setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
 
   // Merge all fields for display
   const allTags = [
@@ -39,34 +41,40 @@ const OrganizeCard: React.FC<OrganizeCardProps> = ({
   ];
 
   return (
-    <div className="card">
-      <div className="image-row">
-        <div className="image-container">
+    <div className="organize-card">
+      <div className="organize-image-row">
+        <div className="organize-image-container">
           <img
             src={images[currentIndex]}
             alt={`${title} ${currentIndex + 1}`}
-            className="image"
+            className="organize-image"
           />
         </div>
 
-        <div className="arrows-container">
-          <button onClick={prevImage} className="arrow">◀</button>
-          <button onClick={nextImage} className="arrow">▶</button>
+        <div className="organize-arrows-container">
+          <button onClick={prevImage} className="organize-arrow">
+            ◀
+          </button>
+          <button onClick={nextImage} className="organize-arrow">
+            ▶
+          </button>
         </div>
       </div>
 
-      <h3 className="title">{title}</h3>
+      <h3 className="organize-title">{title}</h3>
 
       {allTags.length > 0 && (
-        <div className="badges-container">
+        <div className="organize-badges-container">
           {allTags.map((tag, index) => (
-            <span key={index} className="badge tag">{tag}</span>
+            <span key={index} className="organize-badge tag">
+              {tag}
+            </span>
           ))}
         </div>
       )}
 
       <a href={etsyLink} target="_blank" rel="noopener noreferrer">
-        <button className="button">Visit Effortless Works</button>
+        <button className="organize-button">Visit Effortless Works</button>
       </a>
     </div>
   );

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "./books.css";
 
-interface Podcast {
+interface Book {
   id: number;
   category: string;
   title: string;
@@ -13,20 +13,21 @@ interface Podcast {
   link: string;
 }
 
-const podcasts: Podcast[] = [
-  /*{
+const books: Book[] = [
+  /* Example book:
+  {
     id: 1,
-    category: "Organization",
+    category: "Self-Help",
     title: "Getting Things Done",
     date: "2023-10-10",
     imageSrc: "/path-to-image.jpg",
-    imageAlt: "Podcast cover for Getting Things Done",
-    link: "https://example.com/podcast1",
-  },*/
-  
+    imageAlt: "Book cover for Getting Things Done",
+    link: "https://example.com/book1",
+  },
+  */
 ];
 
-const PodcastSection: React.FC = () => {
+const BooksSection: React.FC = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState<{ [key: string]: boolean }>({
@@ -53,7 +54,7 @@ const PodcastSection: React.FC = () => {
     setSortOption("name-asc");
   };
 
-  const sortedPodcasts = [...podcasts].sort((a, b) => {
+  const sortedBooks = [...books].sort((a, b) => {
     switch (sortOption) {
       case "name-asc":
         return a.title.localeCompare(b.title);
@@ -68,110 +69,121 @@ const PodcastSection: React.FC = () => {
     }
   });
 
-  const filteredPodcasts = sortedPodcasts.filter(
-    (podcast) =>
+  const filteredBooks = sortedBooks.filter(
+    (book) =>
       (selectedCategories.length === 0 ||
-        selectedCategories.includes(podcast.category)) &&
-      podcast.title.toLowerCase().includes(searchTerm.toLowerCase())
+        selectedCategories.includes(book.category)) &&
+      book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div className="floating-books-wrapper">
-      <section className="section_books">
-        <div className="container-large">
-          <div className="wrapper-podcast">
+    <div className="books_floating-wrapper">
+      <section className="books_section_books">
+        <div className="books_container-large">
+          <div className="books_wrapper-section">
             {/* Header */}
-            <div className="max-width-xlarge align-center">
-              <div className="margin-bottom margin-xxsmall">
-                <h2 className="heading-style-h2 text-align-center">
-                  Books That Help Muslims  <br />
+            <div className="books_max-width-xlarge books_align-center">
+              <div className="books_margin-bottom books_margin-xxsmall">
+                <h2 className="books_heading-style-h2 books_text-align-center">
+                  Books That Help Muslims<br />
                   Learn, Create, and Grow
                 </h2>
               </div>
-              {/*<p className="text-size-regular text-align-center">
-                New books and guides every quarter.
-              </p>*/}
             </div>
 
             {/* Filter and Sort Section */}
-            <div className="wrapper-filter-podcast">
+            <div className="books_wrapper-filter">
               {/* Categories Dropdown */}
-              <div className="filter-dropdown" style={{ cursor: 'none' }}>
+              <div className="books_filter-dropdown">
                 <div
-                  className="toggle" style={{ cursor: 'none' }}
+                  className="books_toggle"
                   aria-expanded={dropdownOpen.categories}
                   onClick={() =>
                     setDropdownOpen((prevState) => ({
                       ...prevState,
                       categories: !prevState.categories,
-                    }))}
+                    }))
+                  }
                 >
                   Filter by Categories
                   <span
-                    className={`dropdown-icon ${dropdownOpen.categories ? "rotate" : ""}`} 
-                    style={{ cursor: 'none' }}
+                    className={`books_dropdown-icon ${
+                      dropdownOpen.categories ? "books_rotate" : ""
+                    }`}
                   >
                     ▼
                   </span>
                 </div>
                 <div
-                  className={`dropdown-list ${dropdownOpen.categories ? "active" : ""}`} 
-                  style={{ cursor: 'none' }}
+                  className={`books_dropdown-list ${
+                    dropdownOpen.categories ? "active" : ""
+                  }`}
                 >
-                  {["",].map(
-                    (category, index) => (
-                      <div key={index} className="check-box-field" style={{ cursor: 'none' }}>
-                        <input
-                          type="checkbox"
-                          id={`category-${index}`}
-                          checked={selectedCategories.includes(category)}
-                          onChange={() => handleCheckboxChange(category)}
-                          className="chk-box" style={{ cursor: 'none' }}
-                        />
-                        <label htmlFor={`category-${index}`} className="chk-box-label" style={{ cursor: 'none' }}>
-                          {category}
-                        </label>
-                      </div>
-                    )
-                  )}
+                  {[""].map((category, index) => (
+                    <div key={index} className="books_check-box-field">
+                      <input
+                        type="checkbox"
+                        id={`books-category-${index}`}
+                        checked={selectedCategories.includes(category)}
+                        onChange={() => handleCheckboxChange(category)}
+                        className="books_chk-box"
+                      />
+                      <label
+                        htmlFor={`books-category-${index}`}
+                        className="books_chk-box-label"
+                      >
+                        {category}
+                      </label>
+                    </div>
+                  ))}
                 </div>
               </div>
 
               {/* Sort Dropdown */}
-              <div className="filter-dropdown">
+              <div className="books_filter-dropdown">
                 <div
-                  className="toggle"
+                  className="books_toggle"
                   aria-expanded={dropdownOpen.sort}
                   onClick={() =>
                     setDropdownOpen((prevState) => ({
                       ...prevState,
                       sort: !prevState.sort,
-                    }))}
+                    }))
+                  }
                 >
                   Sort Books
                   <span
-                    className={`dropdown-icon ${dropdownOpen.sort ? "rotate" : ""}`}
+                    className={`books_dropdown-icon ${
+                      dropdownOpen.sort ? "books_rotate" : ""
+                    }`}
                   >
                     ▼
                   </span>
                 </div>
-                <div className={`dropdown-list ${dropdownOpen.sort ? "active" : ""}`}>
+                <div
+                  className={`books_dropdown-list ${
+                    dropdownOpen.sort ? "active" : ""
+                  }`}
+                >
                   {[
                     { label: "Name (A-Z)", value: "name-asc" },
                     { label: "Name (Z-A)", value: "name-desc" },
                     { label: "Date (Asc)", value: "date-asc" },
                     { label: "Date (Desc)", value: "date-desc" },
                   ].map((option) => (
-                    <div key={option.value} className="check-box-field">
+                    <div key={option.value} className="books_check-box-field">
                       <input
                         type="radio"
-                        id={`sort-${option.value}`}
+                        id={`books-sort-${option.value}`}
                         name="sortOption"
                         checked={sortOption === option.value}
                         onChange={() => handleSortChange(option.value)}
-                        className="chk-box" style={{ cursor: 'none' }}
+                        className="books_chk-box"
                       />
-                      <label htmlFor={`sort-${option.value}`} className="chk-box-label" style={{ cursor: 'none' }}>
+                      <label
+                        htmlFor={`books-sort-${option.value}`}
+                        className="books_chk-box-label"
+                      >
                         {option.label}
                       </label>
                     </div>
@@ -184,39 +196,36 @@ const PodcastSection: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Search Books..."
-                  className="search w-input"
+                  className="books_search"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
               </div>
 
               {/* Clear Filters Button */}
-              <button 
-                className="clear-filters-btn"
-                onClick={clearFilters}
-              >
+              <button className="books_clear-filters-btn" onClick={clearFilters}>
                 Clear Filters
               </button>
             </div>
 
-            {/* Podcast List */}
-            <div className="cms-podcast wrapper-grid-podcast">
-              {filteredPodcasts.map((podcast) => (
+            {/* Books List */}
+            <div className="books_cms books_wrapper-grid">
+              {filteredBooks.map((book) => (
                 <a
-                  key={podcast.id}
-                  href={podcast.link}
-                  className="card-podcast w-inline-block"
+                  key={book.id}
+                  href={book.link}
+                  className="books_card"
                 >
                   <img
-                    src={podcast.imageSrc}
-                    alt={podcast.imageAlt}
-                    className="podcast-thumbnail"
+                    src={book.imageSrc}
+                    alt={book.imageAlt}
+                    className="books_thumbnail"
                   />
-                  <div className="category-pill">{podcast.category}</div>
-                  <p className="text-size-medium text-weight-bold">
-                    {podcast.title}
+                  <div className="books_category-pill">{book.category}</div>
+                  <p className="books_text-size-medium books_text-weight-bold">
+                    {book.title}
                   </p>
-                  <div className="hide">{podcast.date}</div>
+                  <div className="books_hide">{book.date}</div>
                 </a>
               ))}
             </div>
@@ -227,4 +236,4 @@ const PodcastSection: React.FC = () => {
   );
 };
 
-export default PodcastSection;
+export default BooksSection;

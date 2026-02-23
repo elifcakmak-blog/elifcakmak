@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import Navigation from "../../0/0-navigation/navigation";
+import Navigation from "../../0/0-pages-nav/pages-nav";
 import CustomCursor from "../../0/0-cursor/page";
 import Footer from "../../0/0-footer/footer";
 import './newsletter.css';
@@ -51,7 +51,7 @@ export default function NewsletterForm() {
       <img
         src="../page-titles/newsletter.svg"
         alt="Newsletter Title Image"
-        className="podcast-image"
+        className="newsletter-image"
         style={{
           width: '40%',
           objectFit: 'cover',
@@ -62,7 +62,7 @@ export default function NewsletterForm() {
         }}
       />
 
-      <div className="floating-card">
+      <div className="newsletter-floating-card">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-[#4bfe5a] mb-5">Join Our Newsletter</h1>
           <p className="text-[#fef74b]">Resources to help you build your Muslim Success Path</p>

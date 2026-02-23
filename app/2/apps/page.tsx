@@ -11,7 +11,7 @@ import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
 
 export default function Home() {
   return (
-    <div className="podcast-container">
+    <div className="apps-container">
             
       {/* Import Cursor */}
       <CustomCursor />

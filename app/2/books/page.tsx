@@ -11,7 +11,7 @@ import CustomCursor from '../../0/0-cursor/page'; // Cursor Import
 
 export default function Home() {
   return (
-    <div className="podcast-container">
+    <div className="books-container">
             
       {/* Import Cursor */}
       <CustomCursor />
@@ -19,15 +19,15 @@ export default function Home() {
       {/* Import Navigation */}
       <PageNavigation /> 
 
-      <img src={"../page-titles/books.svg"}alt="Podcast Title Image"className="podcast-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
+      <img src={"../page-titles/books.svg"}alt="Books Title Image"className="books-image"style={{width: '40%',objectFit: 'cover',borderRadius: '8px',display: 'block',margin: '0 auto', marginTop: "20px",}}/>
 
-      {/* Import PodcastHero */}
+      {/* Import BooksHero */}
       <BooksHero />
 
-      {/* Import Podcast Links */}
+      {/* Import Books Links */}
       <BooksLinks />
 
-      {/* Import Podcast Episodes */}
+      {/* Import Books Episodes */}
       <BooksList />  
 
       {/* Import Effortless Resources */}

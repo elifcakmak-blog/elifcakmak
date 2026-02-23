@@ -10,7 +10,7 @@
   }
   
 /* Add this CSS to style the floating card */
-.floating-card {
+.newsletter-floating-card {
   background: #504081;
   box-shadow: 0px 0px 30px #fef74b;
   padding: 20px;
@@ -24,24 +24,24 @@
   
 }
 
-.floating-card form {
+.newsletter-floating-card form {
   display: flex;
   flex-direction: column;
 }
 
-.floating-card label {
+.newsletter-floating-card label {
   margin-bottom: 5px;
   color: #fef74b;
 }
 
-.floating-card input {
+.newsletter-floating-card input {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.floating-card button {
+.newsletter-floating-card button {
   padding: 10px;
   background-color: #fef74b;
   color: #504081;
@@ -53,7 +53,7 @@
   width: 40%;
 }
 
-.floating-card button:hover {
+.newsletter-floating-card button:hover {
   background-color: #efe1ff;
  
 }

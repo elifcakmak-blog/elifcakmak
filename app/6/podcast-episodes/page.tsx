@@ -14,6 +14,7 @@ interface Podcast {
 }
 
 const podcasts: Podcast[] = [
+  // Example podcast
   /*{
     id: 1,
     category: "Organization",
@@ -23,7 +24,6 @@ const podcasts: Podcast[] = [
     imageAlt: "Podcast cover for Getting Things Done",
     link: "https://example.com/podcast1",
   },*/
-  
 ];
 
 const PodcastSection: React.FC = () => {
@@ -76,59 +76,55 @@ const PodcastSection: React.FC = () => {
   );
 
   return (
-    <div className="floating-card-wrapper">
-      <section className="section_podcast">
-        <div className="container-large">
-          <div className="wrapper-podcast">
+    <div className="episode1-floating-card-wrapper">
+      <section className="episode1-section_podcast">
+        <div className="episode1-container-large">
+          <div className="episode1-wrapper-podcast">
             {/* Header */}
-            <div className="max-width-xlarge align-center">
-              <div className="margin-bottom margin-xxsmall">
-                <h2 className="heading-style-h2 text-align-center">
+            <div className="episode1-max-width-xlarge episode1-align-center">
+              <div className="episode1-margin-bottom episode1-margin-xxsmall">
+                <h2 className="episode1-heading-style-h2 episode1-text-align-center">
                   Simplify Faith, Life, and Learning<br />
                   The #1 podcast for intentional Muslim living
                 </h2>
               </div>
-              {/*<p className="text-size-regular text-align-center">
-                New episodes every week.
-              </p>*/}
             </div>
 
             {/* Filter and Sort Section */}
-            <div className="wrapper-filter-podcast">
+            <div className="episode1-wrapper-filter-podcast">
               {/* Categories Dropdown */}
-              <div className="filter-dropdown" style={{ cursor: 'none' }}>
+              <div className="episode1-filter-dropdown">
                 <div
-                  className="toggle" style={{ cursor: 'none' }}
+                  className="episode1-toggle"
                   aria-expanded={dropdownOpen.categories}
                   onClick={() =>
-                    setDropdownOpen((prevState) => ({
-                      ...prevState,
-                      categories: !prevState.categories,
-                    }))}
+                    setDropdownOpen((prev) => ({
+                      ...prev,
+                      categories: !prev.categories,
+                    }))
+                  }
                 >
                   Filter by Categories
                   <span
-                    className={`dropdown-icon ${dropdownOpen.categories ? "rotate" : ""}`} 
-                    style={{ cursor: 'none' }}
+                    className={`episode1-dropdown-icon ${dropdownOpen.categories ? "episode1-rotate" : ""}`}
                   >
                     ▼
                   </span>
                 </div>
                 <div
-                  className={`dropdown-list ${dropdownOpen.categories ? "active" : ""}`} 
-                  style={{ cursor: 'none' }}
+                  className={`episode1-dropdown-list ${dropdownOpen.categories ? "episode1-active" : ""}`}
                 >
                   {["Software Development", "Data Management", "Organization"].map(
                     (category, index) => (
-                      <div key={index} className="check-box-field" style={{ cursor: 'none' }}>
+                      <div key={index} className="episode1-check-box-field">
                         <input
                           type="checkbox"
                           id={`category-${index}`}
                           checked={selectedCategories.includes(category)}
                           onChange={() => handleCheckboxChange(category)}
-                          className="chk-box" style={{ cursor: 'none' }}
+                          className="episode1-chk-box"
                         />
-                        <label htmlFor={`category-${index}`} className="chk-box-label" style={{ cursor: 'none' }}>
+                        <label htmlFor={`category-${index}`} className="episode1-chk-box-label">
                           {category}
                         </label>
                       </div>
@@ -138,40 +134,41 @@ const PodcastSection: React.FC = () => {
               </div>
 
               {/* Sort Dropdown */}
-              <div className="filter-dropdown">
+              <div className="episode1-filter-dropdown">
                 <div
-                  className="toggle"
+                  className="episode1-toggle"
                   aria-expanded={dropdownOpen.sort}
                   onClick={() =>
-                    setDropdownOpen((prevState) => ({
-                      ...prevState,
-                      sort: !prevState.sort,
-                    }))}
+                    setDropdownOpen((prev) => ({
+                      ...prev,
+                      sort: !prev.sort,
+                    }))
+                  }
                 >
                   Sort Podcasts
                   <span
-                    className={`dropdown-icon ${dropdownOpen.sort ? "rotate" : ""}`}
+                    className={`episode1-dropdown-icon ${dropdownOpen.sort ? "episode1-rotate" : ""}`}
                   >
                     ▼
                   </span>
                 </div>
-                <div className={`dropdown-list ${dropdownOpen.sort ? "active" : ""}`}>
+                <div className={`episode1-dropdown-list ${dropdownOpen.sort ? "episode1-active" : ""}`}>
                   {[
                     { label: "Name (A-Z)", value: "name-asc" },
                     { label: "Name (Z-A)", value: "name-desc" },
                     { label: "Date (Asc)", value: "date-asc" },
                     { label: "Date (Desc)", value: "date-desc" },
                   ].map((option) => (
-                    <div key={option.value} className="check-box-field">
+                    <div key={option.value} className="episode1-check-box-field">
                       <input
                         type="radio"
                         id={`sort-${option.value}`}
                         name="sortOption"
                         checked={sortOption === option.value}
                         onChange={() => handleSortChange(option.value)}
-                        className="chk-box" style={{ cursor: 'none' }}
+                        className="episode1-chk-box"
                       />
-                      <label htmlFor={`sort-${option.value}`} className="chk-box-label" style={{ cursor: 'none' }}>
+                      <label htmlFor={`sort-${option.value}`} className="episode1-chk-box-label">
                         {option.label}
                       </label>
                     </div>
@@ -184,15 +181,15 @@ const PodcastSection: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Search Podcasts..."
-                  className="search w-input"
+                  className="episode1-search"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
               </div>
 
               {/* Clear Filters Button */}
-              <button 
-                className="clear-filters-btn"
+              <button
+                className="episode1-clear-filters-btn"
                 onClick={clearFilters}
               >
                 Clear Filters
@@ -200,23 +197,23 @@ const PodcastSection: React.FC = () => {
             </div>
 
             {/* Podcast List */}
-            <div className="cms-podcast wrapper-grid-podcast">
+            <div className="episode1-cms-podcast episode1-wrapper-grid-podcast">
               {filteredPodcasts.map((podcast) => (
                 <a
                   key={podcast.id}
                   href={podcast.link}
-                  className="card-podcast w-inline-block"
+                  className="episode1-card-podcast"
                 >
                   <img
                     src={podcast.imageSrc}
                     alt={podcast.imageAlt}
-                    className="podcast-thumbnail"
+                    className="episode1-podcast-thumbnail"
                   />
-                  <div className="category-pill">{podcast.category}</div>
-                  <p className="text-size-medium text-weight-bold">
+                  <div className="episode1-category-pill">{podcast.category}</div>
+                  <p className="episode1-text-size-medium episode1-text-weight-bold">
                     {podcast.title}
                   </p>
-                  <div className="hide">{podcast.date}</div>
+                  <div className="episode1-hide">{podcast.date}</div>
                 </a>
               ))}
             </div>

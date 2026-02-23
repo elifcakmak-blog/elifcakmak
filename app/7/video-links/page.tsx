@@ -1,97 +1,79 @@
 import React from 'react';
-import './podcastlinks.css'; // Import your CSS file
+import './video-links.css'; // Import your video-specific CSS
 
-const PodcastLinks: React.FC = () => {
+const VideoLinks: React.FC = () => {
   return (
-    <section className="subscribe-links">
-        <div className="wrapper-social-cards">
+    <section className="video_subscribe-links">
+        <div className="video_wrapper-social-cards">
             <a 
                 id="1"
-                href="https://www.youtube.com/@EasyFlow-Media"
+                href="https://www.youtube.com/@MuslimSuccessPath"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="video_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/youtube.png"
                     loading="lazy" 
                     alt="Youtube icon" 
-                    className="icon-1x1-xlarge"
+                    className="video_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Watch on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">YouTube</p>
+                    <p className="video_text-size-tiny video_text-color-charcoal"><strong>Watch on</strong></p>
+                    <p className="video_text-size-medium video_text-color-charcoal video_text-weight-bold">YouTube</p>
                 </div>
             </a>
 
             <a 
                 id="2"
-                href="https://www.tiktok.com/@easyflow.media"
+                href="https://www.tiktok.com/@muslim.success.path"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="video_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/tiktok.png"
                     loading="lazy" 
                     alt="TikTok logo" 
-                    className="icon-1x1-xlarge"
+                    className="video_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Watch on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">TikTok</p>
+                    <p className="video_text-size-tiny video_text-color-charcoal"><strong>Watch on</strong></p>
+                    <p className="video_text-size-medium video_text-color-charcoal video_text-weight-bold">TikTok</p>
                 </div>
             </a>
 
             <a 
                 id="3"
-                href="https://www.instagram.com/easyflow.media"
+                href="https://www.instagram.com/muslim.success.path"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="video_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/instagram.jpg"
                     loading="lazy" 
-                    alt="instagram icon" 
-                    className="icon-1x1-xlarge"
+                    alt="Instagram icon" 
+                    className="video_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Watch on</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Instagram</p>
-                </div>
-            </a>
-
-            <a 
-                id="4"
-                href="https://www.facebook.com/profile.php?id=61570464705667"
-                target="_blank"
-                className="card is-social-link w-inline-block"
-            >
-                <img 
-                    src="/easyflow-socials/facebook.png"
-                    loading="lazy" 
-                    alt="Facebook Logo" 
-                    className="icon-1x1-xlarge"
-                />
-                <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Watch On</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">Facebook</p>
+                    <p className="video_text-size-tiny video_text-color-charcoal"><strong>Watch on</strong></p>
+                    <p className="video_text-size-medium video_text-color-charcoal video_text-weight-bold">Instagram</p>
                 </div>
             </a>
 
             <a 
                 id="5"
-                href="https://x.com/EasyFlow_Media"
+                href="https://x.com/muslimsuccess_"
                 target="_blank"
-                className="card is-social-link w-inline-block"
+                className="video_card is-social-link w-inline-block"
             >
                 <img 
                     src="/easyflow-socials/twitter.png"
                     loading="lazy" 
                     alt="Twitter logo" 
-                    className="icon-1x1-xlarge"
+                    className="video_icon-1x1-xlarge"
                 />
                 <div>
-                    <p className="text-size-tiny text-color-charcoal"><strong>Watch On</strong></p>
-                    <p className="text-size-medium text-color-charcoal text-weight-bold">X</p>
+                    <p className="video_text-size-tiny video_text-color-charcoal"><strong>Watch on</strong></p>
+                    <p className="video_text-size-medium video_text-color-charcoal video_text-weight-bold">X</p>
                 </div>
             </a>
         </div>
@@ -99,4 +81,4 @@ const PodcastLinks: React.FC = () => {
   );
 };
 
-export default PodcastLinks;
+export default VideoLinks;

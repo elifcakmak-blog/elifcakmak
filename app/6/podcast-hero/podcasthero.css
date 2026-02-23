@@ -1,4 +1,5 @@
-.hero {
+/* Podcast-specific Hero */
+.episode1-hero {
   position: relative;
   background-image: url('/backend-images/podcasthero.svg');
   background-size: cover;
@@ -14,83 +15,81 @@
   overflow: hidden;
 }
 
-.hero::after {
+.episode1-hero::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px); /* Default blur */
-  background: rgba(255, 255, 255, 0.1); /* Optional: add translucent color */
-  transition: backdrop-filter 0.3s ease; /* Smooth transition */
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+  transition: backdrop-filter 0.3s ease;
   z-index: 0;
 }
 
-.hero:hover::after {
-  backdrop-filter: blur(15px); /* Increase blur on hover */
+.episode1-hero:hover::after {
+  backdrop-filter: blur(15px);
 }
 
+.episode1-hero:hover {
+  border-color: #fef74b;
+  transform: translateY(-8px);
+  z-index: 2;
+}
 
-  
-  .hero:hover {
-    border-color: #fef74b;
-    transform: translateY(-8px);
-    z-index: 2;
+.episode1-hero-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  max-width: 80%;
+  backdrop-filter: blur(5px);
+}
+
+.episode1-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.episode1-hero-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .episode1-hero {
+    background-position: left center;
+    align-items: flex-start;
+    padding-top: 20px;
   }
-  
-  .hero-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background */
-    padding: 30px 50px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: shadow for extra depth */
-    z-index: 2; /* Ensure content is above the background */
-    max-width: 80%; /* Optional: limit the width */
-    backdrop-filter: blur(5px); /* Optional: blur effect for transparency */
-}
 
-.hero h1 {
-    font-size: 3rem; /* Adjust font size for header */
-    margin-bottom: 15px;
-    color: #333; /* Text color */
-}
-
-.hero p {
-    font-size: 1.2rem; /* Adjust font size for paragraph */
-    color: #666; /* Text color */
-    margin-top: 0;
-}
-  
-  @media (max-width: 768px) {
-    .hero {
-      background-position: left center;
-      align-items: flex-start;
-      padding-top: 20px;
-    }
-  
-    .hero-content {
-      margin-top: 20px;
-      padding: 0 16px;
-    }
-
-    .hero-content h1 {
-      font-size: 1.8rem; /* Smaller size on mobile */
-      margin-top: 50px;
-    }
-  
-    .hero-content p {
-      font-size: 1rem; /* Smaller size on mobile */
-      margin-bottom: 50px;
-    }
+  .episode1-hero-content {
+    margin-top: 20px;
+    padding: 0 16px;
   }
-  
-  @media (min-width: 1024px) {
-    .hero-content {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: right;
-    }
+
+  .episode1-hero-content h1 {
+    font-size: 1.8rem;
+    margin-top: 50px;
   }
-  
+
+  .episode1-hero-content p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .episode1-hero-content {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+  }
+}

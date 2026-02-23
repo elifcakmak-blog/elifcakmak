@@ -1,9 +1,9 @@
-.card {
-    width: 90%;               /* responsive width */
-    max-width: 500px;         /* keeps card from growing too large on desktop */
-    height: auto;             /* let height grow based on content */
+.islam-card {
+    width: 90%;               
+    max-width: 500px;         
+    height: auto;             
     padding: 15px;
-    margin: 20px auto;        /* center on small screens */
+    margin: 20px auto;        
     border: 1px solid #ccc;
     border-radius: 12px;
     text-align: center;
@@ -15,52 +15,52 @@
     box-sizing: border-box;
 }
 
-.image-row {
+.islam-image-row {
     display: flex;
-    flex-direction: column;       /* stack image and arrows vertically */
+    flex-direction: column;       
     align-items: center;
     justify-content: center;
-    gap: 10px;                    /* space between image and arrows */
+    gap: 10px;                    
     margin-bottom: 10px;
 }
 
-.arrows-container {
+.islam-arrows-container {
     display: flex;
-    gap: 10px;                    /* space between the two arrows */
+    gap: 10px;                    
     justify-content: center;
     width: 100%;
 }
 
-.arrow {
+.islam-arrow {
     background: rgba(255,255,255,0.8);
     border: none;
     font-size: 28px;
     cursor: pointer;
     padding: 10px 14px;
     border-radius: 20px;
-    flex-shrink: 0;               /* prevent arrows from shrinking */
+    flex-shrink: 0;               
 }
 
-.image-container {
+.islam-image-container {
     width: 100%;
-    max-width: 330px;             /* responsive max size */
-    aspect-ratio: 1 / 1;          /* keep square ratio automatically */
+    max-width: 330px;             
+    aspect-ratio: 1 / 1;          
     flex-shrink: 0;
 }
 
-.image-container img {
+.islam-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.title {
+.islam-title {
     margin: 10px 0 5px;
     font-size: 18px;
 }
 
-.button {
+.islam-button {
     padding: 10px 16px;
     background-color: #e5e778;
     color: rgb(32, 87, 7);
@@ -69,18 +69,18 @@
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
-    width: 100%;               /* full-width on mobile */
-    max-width: 300px;          /* optional max width */
-    margin: 0 auto;            /* center button */
+    width: 100%;               
+    max-width: 300px;          
+    margin: 0 auto;            
 }
 
-.button:hover {
+.islam-button:hover {
     background-color: #504081;
     border: 2px solid #fef74b;
     color: white;
 }
 
-.badges-container {
+.islam-badges-container {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
@@ -88,7 +88,7 @@
     justify-content: center;
 }
 
-.badge {
+.islam-badge {
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 0.8rem;
@@ -96,12 +96,12 @@
     display: inline-block;
 }
 
-.badge.category {
+.islam-badge.category {
     background-color: #3b82f6;
     color: white;
 }
 
-.badge.tag {
+.islam-badge.tag {
     background-color: #10b981;
     color: white;
 }

@@ -25,34 +25,34 @@ const IslamCard: React.FC<IslamCardProps> = ({ title, images, etsyLink, categori
   const allTags = [...(categories || []), ...(tags || [])];
 
   return (
-    <div className="card">
-      <div className="image-row">
-        <div className="image-container">
+    <div className="islam-card">
+      <div className="islam-image-row">
+        <div className="islam-image-container">
           <img
             src={images[currentIndex]}
             alt={`${title} ${currentIndex + 1}`}
-            className="image"
+            className="islam-image"
           />
         </div>
 
-        <div className="arrows-container">
-          <button onClick={prevImage} className="arrow">◀</button>
-          <button onClick={nextImage} className="arrow">▶</button>
+        <div className="islam-arrows-container">
+          <button onClick={prevImage} className="islam-arrow">◀</button>
+          <button onClick={nextImage} className="islam-arrow">▶</button>
         </div>
       </div>
 
-      <h3 className="title">{title}</h3>
+      <h3 className="islam-title">{title}</h3>
 
       {allTags.length > 0 && (
-        <div className="badges-container">
+        <div className="islam-badges-container">
           {allTags.map((tag, index) => (
-            <span key={index} className="badge tag">{tag}</span>
+            <span key={index} className="islam-badge islam-tag">{tag}</span>
           ))}
         </div>
       )}
 
       <a href={etsyLink} target="_blank" rel="noopener noreferrer">
-        <button className="button">Visit Etsy Listing</button>
+        <button className="islam-button">Visit Etsy Listing</button>
       </a>
     </div>
   );

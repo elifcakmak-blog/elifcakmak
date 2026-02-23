@@ -1,28 +1,37 @@
 /* General Resets */
-body, h1, h2, h3, p, ul, li, a, input, button {
+.episode1-body, 
+.episode1-h1, 
+.episode1-h2, 
+.episode1-h3, 
+.episode1-p, 
+.episode1-ul, 
+.episode1-li, 
+.episode1-a, 
+.episode1-input, 
+.episode1-button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   cursor: none;
 }
 
-.section_podcast {
+.episode1-section_podcast {
   padding: 4rem 1.5rem;
-  background-color: #f9f9f9; /* Light background */
-  color: #333; /* Default text color */
+  background-color: #f9f9f9;
+  color: #333;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 15px;
 }
 
-.container-large {
+.episode1-container-large {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.floating-card-wrapper {
+.episode1-floating-card-wrapper {
   position: relative;
   max-width: 90%;
   margin: 2rem auto;
@@ -34,7 +43,7 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   z-index: 1;
 }
 
-.floating-card-wrapper::before {
+.episode1-floating-card-wrapper::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -48,7 +57,7 @@ body, h1, h2, h3, p, ul, li, a, input, button {
 }
 
 /* Centered Podcast Section */
-.wrapper-podcast {
+.episode1-wrapper-podcast {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,78 +67,72 @@ body, h1, h2, h3, p, ul, li, a, input, button {
 }
 
 /* Header Section */
-.heading-style-h2 {
+.episode1-heading-style-h2 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
   color: #504081;
 }
 
-.text-size-regular {
+.episode1-text-size-regular {
   font-size: 1rem;
   color: #555;
 }
 
 /* Filters Section */
-.wrapper-filter-podcast {
+.episode1-wrapper-filter-podcast {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  margin-top: 20px; /* Optional spacing */
+  margin-top: 20px;
 }
 
-.filter-dropdown,
-.search {
-  width: 300px; /* Adjust as needed */
-  margin-bottom: 0; /* Remove bottom margin for better alignment */
+.episode1-filter-dropdown,
+.episode1-search {
+  width: 300px;
+  margin-bottom: 0;
   cursor: none;
 }
 
-/* If you want the toggle to be more compact, adjust width */
-.toggle {
-  width: auto; /* Ensure the toggle button doesn't take up more space than needed */
+.episode1-toggle {
+  width: auto;
   cursor: none;
 }
 
-/* Filter Dropdown Menu */
-.filter-dropdown {
+.episode1-filter-dropdown {
   flex: 1;
   min-width: 200px;
   cursor: none;
 }
 
-.toggle {
+.episode1-toggle {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 200px;
   transition: background-color 0.2s ease;
-  cursor: none;
 }
 
-.toggle:hover {
+.episode1-toggle:hover {
   background-color: #f5f5f5;
-  cursor: none;
 }
 
-.dropdown-icon {
+.episode1-dropdown-icon {
   font-size: 1rem;
   color: #777;
   transition: transform 0.2s ease;
 }
 
-.toggle[aria-expanded="true"] .dropdown-icon {
-  transform: rotate(180deg); /* Rotate arrow when expanded */
-  cursor: none;
+.episode1-toggle[aria-expanded="true"] .episode1-dropdown-icon {
+  transform: rotate(180deg);
 }
 
-.dropdown-list {
+.episode1-dropdown-list {
   position: absolute;
   top: 100%;
   left: 0;
@@ -140,74 +143,67 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: none;
   z-index: 100;
-  max-height: 200px; /* Add scroll for long lists */
+  max-height: 200px;
   overflow-y: auto;
-  cursor: none;
 }
 
-.filter-dropdown:hover .dropdown-list,
-.filter-dropdown .w-dropdown-toggle[aria-expanded="true"] ~ .dropdown-list {
-  display: block; /* Show dropdown on hover or expanded */
-  cursor: none;
+.episode1-filter-dropdown:hover .episode1-dropdown-list,
+.episode1-filter-dropdown .episode1-w-dropdown-toggle[aria-expanded="true"] ~ .episode1-dropdown-list {
+  display: block;
 }
 
-.check-box-field {
+.episode1-check-box-field {
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   transition: background-color 0.2s ease;
-  cursor: none;
 }
 
-.check-box-field:hover {
+.episode1-check-box-field:hover {
   background-color: #f5f5f5;
+}
+
+.episode1-chk-box {
   cursor: none;
 }
 
-.chk-box {
-  cursor: none;
-}
-
-.chk-box-label {
+.episode1-chk-box-label {
   font-size: 1rem;
   color: #333;
 }
 
-.search {
+.episode1-search {
   flex: 1;
   max-width: 200px;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  cursor: none;
 }
 
 /* Reset Filters Button */
-.clear-filters-btn {
+.episode1-clear-filters-btn {
   background-color: #ff6b6b;
   color: #fff;
   border: none;
   padding: 0.3rem 1rem;
   border-radius: 5px;
   text-align: center;
-  cursor: none;
 }
 
-.clear-filters-btn:hover {
+.episode1-clear-filters-btn:hover {
   background-color: #e65b5b;
-  cursor: none;
 }
 
 /* Podcast Card Grid */
-.wrapper-grid-podcast {
+.episode1-wrapper-grid-podcast {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-.card-podcast {
+.episode1-card-podcast {
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 10px;
@@ -218,18 +214,18 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   overflow: hidden;
 }
 
-.card-podcast:hover {
+.episode1-card-podcast:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.podcast-thumbnail {
+.episode1-podcast-thumbnail {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.category-pill {
+.episode1-category-pill {
   background-color: #ffc107;
   color: #fff;
   font-size: 0.85rem;
@@ -240,142 +236,54 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   display: inline-block;
 }
 
-.text-size-medium {
+.episode1-text-size-medium {
   font-size: 1rem;
   margin: 1rem 0.5rem;
   color: #333;
 }
 
-.text-weight-bold {
+.episode1-text-weight-bold {
   font-weight: bold;
 }
 
-/* Main podcast grid container */
-.cms-podcast.wrapper-grid-podcast {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
-  gap: 20px; /* Space between items */
-  justify-items: center; /* Center items horizontally */
-}
-
-/* Adjust for smaller screens */
-@media (max-width: 1200px) {
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: repeat(4, 1fr); /* 4 items per row on medium screens */
-  }
-}
-
-@media (max-width: 992px) {
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row on tablets */
-  }
-}
-
-/* Responsive Design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .heading-style-h2 {
+  .episode1-heading-style-h2 {
     font-size: 2rem;
   }
 
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+  .episode1-wrapper-grid-podcast {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .wrapper-filter-podcast {
+  .episode1-wrapper-filter-podcast {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .filter-left-wrap {
+  .episode1-filter-left-wrap {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .filter-dropdown,
-  .search {
-    width: 100%; /* Ensure they take up full width on smaller screens */
-    margin-bottom: 10px; /* Optional margin for spacing */
+
+  .episode1-filter-dropdown,
+  .episode1-search {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .heading-style-h2 {
+  .episode1-heading-style-h2 {
     font-size: 1.75rem;
   }
 
-  .toggle {
+  .episode1-toggle,
+  .episode1-search {
     width: 100%;
   }
 
-  .search {
-    width: 100%;
+  .episode1-wrapper-grid-podcast {
+    grid-template-columns: 1fr;
   }
-
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: 1fr; /* 1 item per row on very small screens */
-  }
-}
-
-/* New filter dropdown styles */
-.filter-dropdown {
-  position: relative;
-  width: 100%;
-  cursor: none;
-}
-
-.toggle {
-  background-color: #f1f1f1;
-  padding: 10px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: none;
-}
-
-.dropdown-icon {
-  transition: transform 0.3s ease;
-}
-
-.rotate {
-  transform: rotate(180deg);
-}
-
-.dropdown-list {
-  display: none; /* Hidden by default */
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  margin-top: 5px;
-  z-index: 10;
-  cursor: none;
-}
-
-.dropdown-list.active {
-  display: block; /* Visible when active */
-  cursor: none;
-}
-
-.check-box-field {
-  padding: 8px 10px;
-  border-bottom: 1px solid #eee;
-  cursor: none;
-}
-
-.check-box-field:last-child {
-  border-bottom: none;
-  cursor: none;
-}
-
-.chk-box-label {
-  margin-left: 10px;
-}
-
-.chk-box {
-  cursor: pointer;
 }

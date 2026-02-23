@@ -1,12 +1,21 @@
 /* General Resets */
-body, h1, h2, h3, p, ul, li, a, input, button {
+.books_body, 
+.books_h1, 
+.books_h2, 
+.books_h3, 
+.books_p, 
+.books_ul, 
+.books_li, 
+.books_a, 
+.books_input, 
+.books_button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   cursor: none;
 }
 
-.section_books {
+.books_section_books {
   padding: 4rem 1.5rem;
   background-color: #f9f9f9; /* Light background */
   color: #333; /* Default text color */
@@ -17,12 +26,12 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   border-radius: 15px; /* Rounded corners */
 }
 
-.container-large {
+.books_container-large {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.floating-books-wrapper {
+.books_floating-wrapper {
   position: relative;
   max-width: 90%;
   margin: 2rem auto;
@@ -34,7 +43,7 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   z-index: 1;
 }
 
-.floating-books-wrapper::before {
+.books_floating-wrapper::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -47,8 +56,8 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   filter: blur(20px);
 }
 
-/* Centered Podcast Section */
-.wrapper-podcast {
+/* Centered Books Section */
+.books_wrapper-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,48 +67,47 @@ body, h1, h2, h3, p, ul, li, a, input, button {
 }
 
 /* Header Section */
-.heading-style-h2 {
+.books_heading-style-h2 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
   color: #504081;
 }
 
-.text-size-regular {
+.books_text-size-regular {
   font-size: 1rem;
   color: #555;
 }
 
 /* Filters Section */
-.wrapper-filter-podcast {
+.books_wrapper-filter {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  margin-top: 20px; /* Optional spacing */
+  margin-top: 20px;
 }
 
-.filter-dropdown,
-.search {
-  width: 300px; /* Adjust as needed */
-  margin-bottom: 0; /* Remove bottom margin for better alignment */
+.books_filter-dropdown,
+.books_search {
+  width: 300px;
+  margin-bottom: 0;
   cursor: none;
 }
 
-/* If you want the toggle to be more compact, adjust width */
-.toggle {
-  width: auto; /* Ensure the toggle button doesn't take up more space than needed */
+.books_toggle {
+  width: auto;
   cursor: none;
 }
 
 /* Filter Dropdown Menu */
-.filter-dropdown {
+.books_filter-dropdown {
   flex: 1;
   min-width: 200px;
   cursor: none;
 }
 
-.toggle {
+.books_toggle {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 0.5rem 1rem;
@@ -110,26 +118,23 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   align-items: center;
   width: 200px;
   transition: background-color 0.2s ease;
-  cursor: none;
 }
 
-.toggle:hover {
+.books_toggle:hover {
   background-color: #f5f5f5;
-  cursor: none;
 }
 
-.dropdown-icon {
+.books_dropdown-icon {
   font-size: 1rem;
   color: #777;
   transition: transform 0.2s ease;
 }
 
-.toggle[aria-expanded="true"] .dropdown-icon {
-  transform: rotate(180deg); /* Rotate arrow when expanded */
-  cursor: none;
+.books_toggle[aria-expanded="true"] .books_dropdown-icon {
+  transform: rotate(180deg);
 }
 
-.dropdown-list {
+.books_dropdown-list {
   position: absolute;
   top: 100%;
   left: 0;
@@ -140,74 +145,68 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: none;
   z-index: 100;
-  max-height: 200px; /* Add scroll for long lists */
+  max-height: 200px;
   overflow-y: auto;
   cursor: none;
 }
 
-.filter-dropdown:hover .dropdown-list,
-.filter-dropdown .w-dropdown-toggle[aria-expanded="true"] ~ .dropdown-list {
-  display: block; /* Show dropdown on hover or expanded */
-  cursor: none;
+.books_filter-dropdown:hover .books_dropdown-list,
+.books_filter-dropdown .books_w-dropdown-toggle[aria-expanded="true"] ~ .books_dropdown-list {
+  display: block;
 }
 
-.check-box-field {
+.books_check-box-field {
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   transition: background-color 0.2s ease;
-  cursor: none;
 }
 
-.check-box-field:hover {
+.books_check-box-field:hover {
   background-color: #f5f5f5;
+}
+
+.books_chk-box {
   cursor: none;
 }
 
-.chk-box {
-  cursor: none;
-}
-
-.chk-box-label {
+.books_chk-box-label {
   font-size: 1rem;
   color: #333;
 }
 
-.search {
+.books_search {
   flex: 1;
   max-width: 200px;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  cursor: none;
 }
 
 /* Reset Filters Button */
-.clear-filters-btn {
+.books_clear-filters-btn {
   background-color: #ff6b6b;
   color: #fff;
   border: none;
   padding: 0.3rem 1rem;
   border-radius: 5px;
   text-align: center;
-  cursor: none;
 }
 
-.clear-filters-btn:hover {
+.books_clear-filters-btn:hover {
   background-color: #e65b5b;
-  cursor: none;
 }
 
-/* Podcast Card Grid */
-.wrapper-grid-podcast {
+/* Books Card Grid */
+.books_wrapper-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-.card-podcast {
+.books_card {
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 10px;
@@ -218,18 +217,18 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   overflow: hidden;
 }
 
-.card-podcast:hover {
+.books_card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.podcast-thumbnail {
+.books_thumbnail {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.category-pill {
+.books_category-pill {
   background-color: #ffc107;
   color: #fff;
   font-size: 0.85rem;
@@ -240,110 +239,107 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   display: inline-block;
 }
 
-.text-size-medium {
+.books_text-size-medium {
   font-size: 1rem;
   margin: 1rem 0.5rem;
   color: #333;
 }
 
-.text-weight-bold {
+.books_text-weight-bold {
   font-weight: bold;
 }
 
-/* Main podcast grid container */
-.cms-podcast.wrapper-grid-podcast {
+/* Main books grid container */
+.books_cms.wrapper-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
-  gap: 20px; /* Space between items */
-  justify-items: center; /* Center items horizontally */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
 
-/* Adjust for smaller screens */
+/* Responsive Design */
 @media (max-width: 1200px) {
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: repeat(4, 1fr); /* 4 items per row on medium screens */
+  .books_cms.wrapper-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 992px) {
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row on tablets */
+  .books_cms.wrapper-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .heading-style-h2 {
+  .books_heading-style-h2 {
     font-size: 2rem;
   }
 
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+  .books_cms.wrapper-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .wrapper-filter-podcast {
+  .books_wrapper-filter {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .filter-left-wrap {
+  .books_filter-left-wrap {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .filter-dropdown,
-  .search {
-    width: 100%; /* Ensure they take up full width on smaller screens */
-    margin-bottom: 10px; /* Optional margin for spacing */
+
+  .books_filter-dropdown,
+  .books_search {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .heading-style-h2 {
+  .books_heading-style-h2 {
     font-size: 1.75rem;
   }
 
-  .toggle {
+  .books_toggle {
     width: 100%;
   }
 
-  .search {
+  .books_search {
     width: 100%;
   }
 
-  .cms-podcast.wrapper-grid-podcast {
-    grid-template-columns: 1fr; /* 1 item per row on very small screens */
+  .books_cms.wrapper-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 /* New filter dropdown styles */
-.filter-dropdown {
+.books_filter-dropdown {
   position: relative;
   width: 100%;
-  cursor: none;
 }
 
-.toggle {
+.books_toggle {
   background-color: #f1f1f1;
   padding: 10px;
-  cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: none;
 }
 
-.dropdown-icon {
+.books_dropdown-icon {
   transition: transform 0.3s ease;
 }
 
-.rotate {
+.books_rotate {
   transform: rotate(180deg);
 }
 
-.dropdown-list {
-  display: none; /* Hidden by default */
+.books_dropdown-list {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -353,29 +349,25 @@ body, h1, h2, h3, p, ul, li, a, input, button {
   width: 100%;
   margin-top: 5px;
   z-index: 10;
-  cursor: none;
 }
 
-.dropdown-list.active {
-  display: block; /* Visible when active */
-  cursor: none;
+.books_dropdown-list.active {
+  display: block;
 }
 
-.check-box-field {
+.books_check-box-field {
   padding: 8px 10px;
   border-bottom: 1px solid #eee;
-  cursor: none;
 }
 
-.check-box-field:last-child {
+.books_check-box-field:last-child {
   border-bottom: none;
-  cursor: none;
 }
 
-.chk-box-label {
+.books_chk-box-label {
   margin-left: 10px;
 }
 
-.chk-box {
+.books_chk-box {
   cursor: pointer;
 }

@@ -1,10 +1,10 @@
-/* podcastlinks.css */
-.subscribe-links {
+/* episode1-specific subscribe links */
+.episode1-subscribe-links {
   text-align: center;
   padding: 20px;
 }
 
-.wrapper-social-cards {
+.episode1-wrapper-social-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@
   margin-top: 20px;
 }
 
-.card {
+.episode1-card {
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
@@ -24,26 +24,26 @@
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.episode1-card:hover {
   transform: scale(1.05);
 }
 
-.icon-1x1-xlarge {
+.episode1-icon-1x1-xlarge {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
 
-.text-size-tiny {
+.episode1-text-size-tiny {
   font-size: 0.8rem;
   margin-bottom: 5px;
 }
 
-.text-size-medium {
+.episode1-text-size-medium {
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.text-color-charcoal {
+.episode1-text-color-charcoal {
   color: #333;
 }

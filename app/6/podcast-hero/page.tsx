@@ -1,14 +1,14 @@
 // HeroSection.tsx
 import React from 'react';
-import './podcasthero.css'; // Import your CSS file
+import './podcasthero.css'; // Your episode1-specific CSS
 
 const PodcastHero: React.FC = () => {
   return (
-    <section className="hero">
-        <div className="hero-content">
-            <h1>The Muslim Success Path Podcast</h1>
-            <p>Your go-to podcast for faithful, intentional, creative, organized living.</p>
-        </div>
+    <section className="episode1-hero">
+      <div className="episode1-hero-content">
+        <h1>The Muslim Success Path Podcast</h1>
+        <p>Your go-to podcast for faithful, intentional, creative, organized living.</p>
+      </div>
     </section>
   );
 };
