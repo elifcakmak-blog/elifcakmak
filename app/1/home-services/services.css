@@ -12,6 +12,7 @@
     margin: 0 auto; /* Centering */
     box-sizing: border-box; /* Includes padding in the width */
     margin-top: 40px;
+    margin-bottom: 40px;
   }
   
   /* Hover effect */
