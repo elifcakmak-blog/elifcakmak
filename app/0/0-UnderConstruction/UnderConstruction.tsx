@@ -3,14 +3,18 @@ import './UnderConstruction.css';
 
 const UnderConstruction: React.FC = () => {
   return (
-    <div className="floating-card">
-      <div className="construction-container">
-        <div className="gear-container">
-          <div className="gear gear1"></div>
-          <div className="gear gear2"></div>
-          <div className="gear gear3"></div>
+    <div className="Construction-floating-card">
+      <div className="Construction-container">
+        {/* Gears */}
+        <div className="Construction-gear-container">
+          <div className="Construction-gear Construction-gear1" />
+          <div className="Construction-gear Construction-gear2" />
+          <div className="Construction-gear Construction-gear3" />
         </div>
-        <p className="message">This page is being built right now. Check back soon!</p>
+
+        {/* Messages */}
+        <p className="Construction-message">Under construction or does not exist.</p>
+        <p className="Construction-message">Check back soon!</p>
       </div>
     </div>
   );

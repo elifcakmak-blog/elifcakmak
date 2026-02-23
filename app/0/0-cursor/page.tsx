@@ -1,3 +1,4 @@
+/* cursor.tsx    (it is actually page.tsx in the 0-cursor folder)*/
 "use client"; // Ensures this is a client-side component
 
 import { useEffect } from 'react';

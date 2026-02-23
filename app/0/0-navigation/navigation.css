@@ -1,4 +1,6 @@
-.header {
+/* navigation.css */
+
+.Nav-header {
   background: linear-gradient(115deg, #efe1ff, rgb(172, 149, 231));
   display: flex;
   box-shadow: 0 3px 10px #504081;
@@ -7,7 +9,7 @@
   align-items: center; 
   flex-wrap: wrap;
 
-  /* Sticky and transition for scroll shrink */
+  /* Sticky header */
   position: fixed;
   top: 0;
   left: 0;
@@ -16,115 +18,90 @@
   transition: all 0.3s ease;
 }
 
-/* Shrink state on scroll */
-.header.shrink {
+/* Shrink header on scroll */
+.Nav-header.shrink {
   padding: 10px 40px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.header.highlight {
-  box-shadow: 0 3px 10px #fef74b; /* Optional: highlight shadow */
+/* Shrink logo */
+.Nav-header.shrink .Nav-logo {
+  width: 250px;
 }
 
-.nav {
+/* Responsive shrink logo */
+@media (max-width: 768px) {
+  .Nav-header.shrink .Nav-logo {
+    width: 130px;
+  }
+}
+
+.Nav-nav {
   display: flex;
   gap: 16px;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.nav-link {
+.Nav-nav-link,
+.Nav-newsletter-button {
   text-decoration: none;
   color: #504081;
   font-weight: 500;
-  transition: color 0.3s;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: #fef74b;
-  transform: scale(1.12);
-}
-
-.nav-link.active::after {
-  content: '';
-  display: block;
-  width: 6px;
-  height: 6px;
-  background-color: #fef74b;
-  border: 1px solid #939851;
-  border-radius: 50%;
-  position: absolute;
-  right: -8px;
-  top: 70%;
-  transform: translateY(-50%);
-}
-
-.newsletter-button {
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3px 10px;
   background-color: #504081;
   color: #fef74b;
-  border: none;
   border-radius: 5px;
-  cursor: pointer; /* fixed from 'none' */
-  height: 60px;
-  transition: background-color 0.3s, transform 0.3s;
   font-weight: bold;
   text-align: center;
+  height: 60px;
 }
 
-.newsletter-button:hover {
+.Nav-nav-link:hover,
+.Nav-newsletter-button:hover {
   background-color: #f3ef98;
   color: #504081;
   transform: scale(1.05);
 }
 
-.newsletter-button.active::after {
-  display: none;
-}
-
-.logo-link {
+.Nav-logo-link {
   display: inline-block;
   margin: 10px;
   cursor: pointer;
   transition: transform 0.3s, filter 0.3s;
 }
 
-.logo-link:hover {
+.Nav-logo-link:hover {
   transform: scale(1.1); 
   filter: brightness(1.2);
 }
 
-/* Logo resizing on scroll */
-.logo {
+/* Logo size */
+.Nav-logo {
   width: 350px;
   height: auto;
   transition: width 0.3s ease;
 }
 
-.header.shrink .logo {
-  width: 250px; /* shrink logo on scroll */
-}
-
-/* Adjustments for smaller screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .header {
+  .Nav-header {
     flex-direction: column;
     align-items: center;
   }
 
-  .nav {
+  .Nav-nav {
     justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
   }
 
-  .logo {
+  .Nav-logo {
     width: 160px;
-  }
-
-  .header.shrink .logo {
-    width: 130px;
   }
 }

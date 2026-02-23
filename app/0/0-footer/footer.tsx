@@ -1,3 +1,4 @@
+/* footer.tsx */
 "use client";
 
 import React from "react";
@@ -10,15 +11,21 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-8">
           <div className="grid grid-cols-3 gap-8 mt-[-10px]">
             {/* Muslim Success Path Links */}
-            <div className="footer-card elif-card p-6 shadow-md rounded-md text-center">
-              <h3 className="text-2xl font-bold">Muslim Success Path</h3>
-              <a href="/2/about" className="footer-link">About</a>
-              <a href="/2/videos" className="footer-link">Videos</a>
-              <a href="/2/podcast" className="footer-link">Podcast</a>
-              <a href="/2/apps" className="footer-link">Apps</a>
-              <a href="/2/books" className="footer-link">Books</a>
-              <a href="/3" className="footer-link">Road Map</a>
-              <a href="/2/newsletter" className="footer-link">Newsletter</a>
+            <div className="footer-card Muslim-success-card p-6 shadow-md rounded-md text-center">
+              <h3 className="text-xl font-bold">Muslim Success Path</h3>
+
+              <div className="muslim-links">
+                <a href="/2/about" className="footer-link">About</a>
+                <a href="/2/crocheting" className="footer-link">Crocheting</a>
+                <a href="/2/islam" className="footer-link">Islam</a>
+                <a href="/2/organization" className="footer-link">Organization</a>
+                <a href="/2/videos" className="footer-link">Videos</a>
+                <a href="/2/podcast" className="footer-link">Podcast</a>
+                <a href="/2/apps" className="footer-link">Apps</a>
+                <a href="/2/books" className="footer-link">Books</a>
+                <a href="/3" className="footer-link">Map</a>
+                <a href="/2/newsletter" className="footer-link">Newsletter</a>
+              </div>
             </div>
 
             {/* Effortless Works Links */}
@@ -82,7 +89,7 @@ const Footer: React.FC = () => {
 
 
             {/* Social Media Links */}
-            <div className="footer-card easyflow-card p-6 shadow-md rounded-md text-center">
+            <div className="footer-card socials-card p-6 shadow-md rounded-md text-center">
               <h3 className="text-2xl font-bold">Socials</h3>
               <div className="social-icons-container">
                 <a href="https://www.instagram.com/muslim.success.path" target="_blank" rel="noopener noreferrer">

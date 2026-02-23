@@ -1,34 +1,34 @@
+/* footer.css */
 .footer {
   background: linear-gradient(135deg,rgb(148, 87, 233),#1c0e45);
   color: #efe1ff;
   padding: 40px 20px;
   margin-top: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .footer:hover {
-  transform: translateY(-10px); /* Floating card effect */
-  border: 8px solid #fef74b; /* Highlight border on hover */
+  transform: translateY(-10px);
+  border: 8px solid #fef74b;
 }
 
-/* Individual Card Styling */
+/* Individual Cards */
 .footer-card {
   display: flex;
-  flex-direction: column; /* Set direction to column for vertical alignment */
-  justify-content: flex-start; /* Align content at the top */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border: 8px solid transparent;
-  height: 330px;
-  min-height: 300px; /* Ensures consistent card height */
+  height: 340px;
+  min-height: 300px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Keyframes for the shake animation */
+/* Shake Animation */
 @keyframes spinShake {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(10deg); }
@@ -37,85 +37,94 @@
   100% { transform: rotate(0deg); }
 }
 
-/* Elif Çakmak Card */
-.elif-card {
-  background:linear-gradient(135deg,rgb(190, 156, 242),rgb(241, 234, 252));
-  color: #1c0e45; /* Dark blue text color */
-  border: 7px solid transparent; /* Default border */
+/* Muslim Success Path Card */
+.Muslim-success-card {
+  background: linear-gradient(135deg,rgb(190, 156, 242),rgb(241, 234, 252));
+  color: #1c0e45;
+  border: 7px solid transparent;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.elif-card:hover {
-  border-color: #fef74b; /* Dark blue border on hover */
+.Muslim-success-card:hover {
+  border-color: #fef74b;
   animation: spinShake 0.5s ease-in-out;
 }
 
-.elif-card .footer-link {
-  color: #504081; /* Default link color */
-  margin: 5px 0; /* Space between links */
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
+/* Muslim Links - 2 Columns, Centered, Small */
+.muslim-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+  margin-top: 10px;
+  justify-items: center; /* centers links in each column */
 }
 
-.elif-card .footer-link:hover {
-  color: #fef74b; /* Link hover color */
+.muslim-links .footer-link {
+  font-size: 0.75rem;  /* desktop size */
+  text-align: center;
+  font-weight: bold;
+  color: #504081;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.muslim-links .footer-link:hover {
+  color: #fef74b;
 }
 
 /* Effortless Works Card */
 .effortless-card {
-  background:linear-gradient(135deg,rgb(46, 26, 77),rgb(104, 79, 179));
-  color: #efe1ff; /* Light purple text color */
-  border: 7px solid transparent; /* Default border */
+  background: linear-gradient(135deg,rgb(46, 26, 77),rgb(104, 79, 179));
+  color: #efe1ff;
+  border: 7px solid transparent;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .effortless-card:hover {
-  border-color: #efe1ff; /* Light purple border on hover */
+  border-color: #efe1ff;
   animation: spinShake 0.5s ease-in-out;
 }
 
 .effortless-card .footer-link {
-  color: #fef74b; /* Default link color (yellow) */
-  margin: 5px 0; /* Space between links */
-  margin-left: -2px;
+  color: #fef74b;
+  margin: 5px 0;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
 }
 
 .effortless-card .footer-link:hover {
-  color: #1c0e45; /* Link hover color */
+  color: #1c0e45;
 }
 
-/* EasyFlow Media Card */
-.easyflow-card {
-  background:linear-gradient(135deg,rgb(230,223,32),rgb(250, 247, 216));
-  color: #1c0e45; /* Dark blue text color */
-  border: 7px solid transparent; /* Default border */
+/* Socials Card */
+.socials-card {
+  background: linear-gradient(135deg,rgb(230,223,32),rgb(250, 247, 216));
+  color: #1c0e45;
+  border: 7px solid transparent;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.easyflow-card:hover {
-  border-color: #4bfe5a; /* Dark purple border on hover */
+.socials-card:hover {
+  border-color: #4bfe5a;
   animation: spinShake 0.5s ease-in-out;
 }
 
-.easyflow-card .footer-link {
-  color: #1c0e45; /* Default link color */
-  margin: 5px 0; /* Space between links */
+.socials-card .footer-link {
+  color: #1c0e45;
+  margin: 5px 0;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.easyflow-card .footer-link:hover {
-  color: #504081; /* Link hover color */
+.socials-card .footer-link:hover {
+  color: #504081;
 }
 
 /* Social Icon Styling */
 .social-icon {
-  width: 24px; /* Visible size */
+  width: 24px;
   height: 24px;
   margin-top: 7px;
   object-fit: contain;
@@ -123,10 +132,10 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.2); /* Slight zoom on hover */
+  transform: scale(1.2);
 }
 
-/* Header Styling */
+/* Headers */
 .footer-card h3 {
   margin-bottom: 15px;
   font-size: 1.5rem;
@@ -134,14 +143,7 @@
   text-align: center;
 }
 
-/* Other Footer Elements */
-.footer-copyright {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 14px;
-  color: #efe1ff;
-}
-
+/* Footer Links at Bottom */
 .footer-links {
   margin-top: 20px;
   display: flex;
@@ -156,38 +158,50 @@
 }
 
 .footer-links .footer-link:hover {
-  color: #4bfe5a; /* Bright green on hover */
+  color: #4bfe5a;
+}
+
+/* Copyright */
+.footer-copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #efe1ff;
 }
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr !important; /* Stack cards vertically */
-    gap: 20px; /* Space between stacked cards */
+    grid-template-columns: 1fr !important;
+    gap: 20px;
   }
 
   .footer-card {
-    font-size: 0.9rem; /* Reduced font size for mobile */
-    line-height: 1.4; /* Ensure readability */
-    word-wrap: break-word; /* Break long words */
-    width: 90%; /* Adjust width to fit mobile */
-    max-width: 400px; /* Prevent excessive width */
-    margin: 10px auto; /* Center cards */
-    padding: 15px; /* Adjust padding */
-    height: auto; /* Auto height */
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 15px;
+    height: auto;
   }
 
   .footer-card h3 {
-    font-size: 1rem; /* Slightly smaller headings */
+    font-size: 1rem;
+  }
+
+  /* Muslim Links Mobile */
+  .muslim-links {
+    grid-template-columns: 1fr; /* stack links */
+  }
+
+  .muslim-links .footer-link {
+    font-size: 0.6rem;
   }
 
   .footer-card .footer-link {
-    font-size: 0.75rem; /* Smaller links */
-  }
-
-  .elif-card .footer-link,
-  .effortless-card .footer-link {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
 
   .social-icon {
@@ -199,7 +213,6 @@
     font-size: 0.4rem !important;
     line-height: 1.2;
     margin-top: 20px;
-    text-align: center;
   }
 
   .footer-links {

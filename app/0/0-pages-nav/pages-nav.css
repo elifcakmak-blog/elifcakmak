@@ -1,6 +1,6 @@
 /* pages-nav.css */
 
-.header {
+.Pages-header {
   background: linear-gradient(115deg, #efe1ff, rgb(172, 149, 231));
   display: flex;
   box-shadow: 0 3px 10px #504081;
@@ -18,15 +18,33 @@
   transition: all 0.3s ease;
 }
 
-.nav {
+/* Shrink header on scroll */
+.Pages-header.shrink {
+  padding: 10px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Shrink logo */
+.Pages-header.shrink .Pages-logo {
+  width: 250px;
+}
+
+/* Responsive shrink logo */
+@media (max-width: 768px) {
+  .Pages-header.shrink .Pages-logo {
+    width: 130px;
+  }
+}
+
+.Pages-nav {
   display: flex;
   gap: 16px;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.nav-link,
-.newsletter-button {
+.Pages-nav-link,
+.Pages-newsletter-button {
   text-decoration: none;
   color: #504081;
   font-weight: 500;
@@ -43,27 +61,27 @@
   height: 60px;
 }
 
-.nav-link:hover,
-.newsletter-button:hover {
+.Pages-nav-link:hover,
+.Pages-newsletter-button:hover {
   background-color: #f3ef98;
   color: #504081;
   transform: scale(1.05);
 }
 
-.logo-link {
+.Pages-logo-link {
   display: inline-block;
   margin: 10px;
   cursor: pointer;
   transition: transform 0.3s, filter 0.3s;
 }
 
-.logo-link:hover {
+.Pages-logo-link:hover {
   transform: scale(1.1); 
   filter: brightness(1.2);
 }
 
 /* Logo size */
-.logo {
+.Pages-logo {
   width: 350px;
   height: auto;
   transition: width 0.3s ease;
@@ -71,18 +89,18 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .header {
+  .Pages-header {
     flex-direction: column;
     align-items: center;
   }
 
-  .nav {
+  .Pages-nav {
     justify-content: center;
     gap: 12px;
     margin-top: 10px;
   }
 
-  .logo {
+  .Pages-logo {
     width: 160px;
   }
 }
