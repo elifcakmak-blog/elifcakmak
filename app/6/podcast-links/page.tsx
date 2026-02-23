@@ -8,7 +8,7 @@ const PodcastLinks: React.FC = () => {
       <div className="episode1-wrapper-social-cards">
         <a
           id="1"
-          href="https://open.spotify.com/show/elif823"
+          href="https://open.spotify.com/show/4DmkzfJ7DqrmwTopi3J9Rr"
           target="_blank"
           className="episode1-card"
         >
@@ -30,7 +30,7 @@ const PodcastLinks: React.FC = () => {
 
         <a
           id="2"
-          href="https://podcasts.apple.com/us/podcast/easyflow-media/idef145d4d-39e4-4c53-bd56-cdda4736cdeb"
+          href=""
           target="_blank"
           className="episode1-card"
         >
@@ -52,7 +52,7 @@ const PodcastLinks: React.FC = () => {
 
         <a
           id="3"
-          href="https://www.youtube.com/@EasyFlow-Media"
+          href="https://www.youtube.com/@MuslimSuccessPath"
           target="_blank"
           className="episode1-card"
         >
