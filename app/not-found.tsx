@@ -1,4 +1,3 @@
-import Link from "next/link";
 import UnderConstruction from "./0/0-UnderConstruction/UnderConstruction";
 import CustomCursor from "./0/0-cursor/page";
 import Navigation from "./0/0-pages-nav/pages-nav";
