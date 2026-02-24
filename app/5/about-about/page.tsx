@@ -19,7 +19,7 @@ Today, we are recognized as a trusted companion on the path of intentional Musli
 Our goal is to help you simplify your life, grow spiritually, and achieve your aspirations—whether through our learning resources, practical tools, or creative projects designed to inspire and uplift.
 </p>
 <Image
-    src="/elif-logo/MuslimSuccessPath-White.svg" // Replace with your image path
+    src="/Website-Logo/MuslimSuccessPath-White.svg" // Replace with your image path
     alt="Muslim Success Path"
     width={600} 
     height={400} 
