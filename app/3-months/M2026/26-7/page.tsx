@@ -3,17 +3,7 @@ import MilestonePage from '../../../3/Milestones/milestone';
 
 const App: React.FC = () => {
   const milestones = [
-    {
-      id: 1,
-      imageSrc: '/roadmap-tiles/nextt.svg',
-      title: 'Make Effortless Project Management Sheets (Business) Product Line',
-      circles: [
-        { id: 1, description: 'Make the Project Dashboard Page',color: '#504081'},
-        { id: 2, description: 'Make the Project Folder Set',color: '#504081'},
-        { id: 3, description: 'Make the Version Control Folder Set',color: '#504081'},
-        { id: 4, description: 'Make the Individual Branch Folder Set',color: '#504081'},
-      ],
-    },
+    
     {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
