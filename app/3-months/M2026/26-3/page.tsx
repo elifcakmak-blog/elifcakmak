@@ -8,8 +8,8 @@ const App: React.FC = () => {
       imageSrc: '/roadmap-tiles/building.svg',
       title: 'Code 2/2 Effortless Works Business Brand Website',
       circles: [
-        { id: 1, description: 'Make the Courses Nav Pages',color: '#504081'},
-        { id: 2, description: 'Make the Info & Contact Page & Asthetics',color: '#504081'},
+        { id: 1, description: 'Make the Courses Nav Pages- completed: 3/1/26 4:20pm EST',color: '#4bfe5a'},
+        { id: 2, description: 'Make the Info & Contact Nav Pages - completed: 3/1/26 7:15pm EST',color: '#4bfe5a'},
         { id: 3, description: 'Home Page Asthetics',color: '#504081' },
         { id: 4, description: 'Business Home Page Asthetics',color: '#504081'},
         { id: 5, description: 'Individuals Home Page Asthetics',color: '#504081'},
@@ -20,6 +20,7 @@ const App: React.FC = () => {
         { id: 10, description: 'Courses Sub Home Pages Asthetics',color: '#504081'},
         { id: 11, description: 'Contact Page Asthetics',color: '#504081'},
         { id: 12, description: 'Footer + All Pages Final Touches',color: '#504081'},
+        { id: 13, description: 'Make the Info & Contact Pages & Asthetics',color: '#504081'},
       ],
     },
     {
