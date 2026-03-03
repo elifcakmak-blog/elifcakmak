@@ -4,6 +4,36 @@ import MilestonePage from '../../../3/Milestones/milestone';
 const App: React.FC = () => {
   const milestones = [
     {
+      id: 8,
+      imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Effortless Quest: Leaderboards and Rewards Center',
+      circles: [
+        { id: 1, description: 'Effortless Quest Individuals Community Leaderboards and Rewards',color: '#504081'},
+        { id: 2, description: 'Business Community Leaderboards and Rewards',color: '#504081'},
+        { id: 3, description: 'Education Community Leaderboards and Rewards',color: '#504081'},
+        { id: 4, description: 'Team Community Leaderboards and Rewards',color: '#504081'},
+        { id: 5, description: 'Invention Community Leaderboards and Rewards',color: '#504081'},
+        { id: 6, description: 'Charity Community Leaderboards and Rewards',color: '#504081'},
+        { id: 7, description: 'Ai Companion: Leaderboards and Rewards Update',color: '#504081'},
+        { id: 8, description: 'Town Hall: Leaderboards and Rewards Update',color: '#504081'},
+      ],
+    },
+    {
+      id: 1,
+      imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Make Effortless Back Office Notions (Business) Product Line',
+      circles: [
+        { id: 1, description: 'Make the Sales Tracking Page',color: '#504081'},
+        { id: 2, description: 'Make the KPI Tracking Page',color: '#504081'},
+        { id: 3, description: 'Make the Client Tracking Page',color: '#504081'},
+        { id: 4, description: 'Make the Commission Tracking Page',color: '#504081'},
+        { id: 5, description: 'Make the Payroll Tracking Page',color: '#504081'},
+        { id: 6, description: 'Make the Recruitment Tracking Page',color: '#504081'},
+        { id: 7, description: 'Make the None of these? Page',color: '#504081'},
+        { id: 8, description: 'Fully Complete Back Offfice ',color: '#504081'},
+      ],
+    },
+    {
       id: 1,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make Effortless Personal Trackers Notions (Individual) Product Line',

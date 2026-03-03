@@ -3,6 +3,39 @@ import MilestonePage from '../../../3/Milestones/milestone';
 
 const App: React.FC = () => {
   const milestones = [
+    {
+      id: 2,
+      imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Effortless Quest: My Team Center',
+      circles: [
+        { id: 1, description: 'My Business Team Dashboard: Connect Back Office Sheets',color: '#504081'},
+        { id: 2, description: 'My Business Team Dashboard: Connect Back Office Notion',color: '#504081'},
+        { id: 3, description: 'My Business Team Dashboard: Connect Project Management Sheets',color: '#504081'},
+        { id: 4, description: 'My Business Team Dashboard: Connect Project Management Notion',color: '#504081'},
+        { id: 5, description: 'My Business and Individuals Team Dashboard: Connect Website Builder',color: '#504081'},
+        { id: 6, description: 'My Business and Individuals Team Dashboard: Connect App Builder',color: '#504081'},
+        { id: 7, description: 'My Business and Individuals Team Dashboard: Connect Onboarding Course Builder',color: '#504081'},
+        { id: 8, description: 'My Individuals Team Dasbaord: Connect Personal Trackers Sheets and Notion',color: '#504081'},
+        { id: 9, description: 'My Individuals Team Dasbaord: Connect Personal Projects Sheets and Notion',color: '#504081'},
+        { id: 10, description: 'My Individuals Team Dasbaord: Connect Life Tracker Sheets and Notion',color: '#504081'},
+      ],
+    },
+    {
+      id: 1,
+      imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Make Effortless Personal Trackers Sheets (Individual) Product Line',
+      circles: [
+        { id: 1, description: 'Make the Faith Milestones Page',color: '#504081'},
+        { id: 2, description: 'Make the Family Milestones Page',color: '#504081'},
+        { id: 3, description: 'Make the Self Care Milestones Page',color: '#504081'},
+        { id: 4, description: 'Make the Nutrition Milestones Page',color: '#504081'},
+        { id: 5, description: 'Make the Exercise Milestones Page',color: '#504081'},
+        { id: 6, description: 'Make the Skills Milestones Page',color: '#504081'},
+        { id: 7, description: 'Make the Business Milestones Page',color: '#504081'},
+        { id: 8, description: 'Make the Education Milestones Page',color: '#504081'},
+        { id: 9, description: 'Make the None of these? Services Page',color: '#504081'},
+      ],
+    },
     
     {
       id: 2,
