@@ -4,6 +4,18 @@ import MilestonePage from '../../../3/Milestones/milestone';
 const App: React.FC = () => {
   const milestones = [
     {
+      id: 1,
+      imageSrc: '/roadmap-tiles/nextt.svg',
+      title: 'Make Luma MacOS App',
+      circles: [
+        { id: 1, description: 'Coming Soon',color: '#504081' },
+        { id: 2, description: 'Coming Soon',color: '#504081'},
+        { id: 3, description: 'Coming Soon',color: '#504081'},
+        { id: 4, description: 'Coming Soon',color: '#504081'},
+        { id: 5, description: 'Coming Soon',color: '#504081'},
+      ],
+    },
+    {
       id: 2,
       imageSrc: '/roadmap-tiles/nextt.svg',
       title: 'Make 5 New Podcast Episodes',
